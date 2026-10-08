@@ -29,6 +29,30 @@ document.getElementById('trends-region-body').innerHTML = trends.regions.map(r=>
 ['top','rising'].forEach(key=>{document.getElementById(`trends-${key}-body`).innerHTML=trends[key].map(r=>`<tr><td>${esc(r.query)}</td><td>${r.interest}</td><td>${esc(r.increase)}</td></tr>`).join('');});
 const trendFileLabels={time:'CSV · chuỗi tháng (37)',region:'CSV · địa phương (63)',top:'CSV · Top (50)',rising:'CSV · Rising (50)'};
 document.getElementById('trends-downloads').innerHTML=trends.files.map(f=>`<a class="button secondary" href="${esc(f.path)}" download>${trendFileLabels[f.kind]}</a>`).join('')+'<a class="button secondary" href="research/google-trends/analysis.json" download>JSON · dữ liệu & cách tính</a>';
+const individual = data.individualTrends;
+document.getElementById('single-summary').innerHTML=individual.map(r=>`<tr><td><b>${esc(r.term)}</b><small><a href="#source-${esc(r.source)}">${esc(r.source)}</a></small></td>${r.means.map(v=>`<td>${format(v)}</td>`).join('')}<td><b>${signed(r.change)}</b></td></tr>`).join('');
+const singleSelect=document.getElementById('single-term');
+singleSelect.innerHTML=individual.map((r,i)=>`<option value="${i}">${esc(r.term)}</option>`).join('');
+function renderSingle(){
+  const r=individual[Number(singleSelect.value)];
+  const months=r.time.filter(m=>m.date>=r.config.start && m.date<=r.config.end);
+  document.getElementById('single-config').textContent=`${r.term} · ${r.config.geography} · 10/2023–09/2026 · ${r.config.category} · ${r.config.searchType} · ${r.config.queryType}. ${r.verification}`;
+  const W=1100,H=300,L=48,R=22,T=20,B=40,pw=W-L-R,ph=H-T-B;
+  const x=i=>L+i/(months.length-1)*pw,y=v=>T+(100-v)/100*ph;
+  const grid=[0,25,50,75,100].map(v=>`<line x1="${L}" y1="${y(v)}" x2="${W-R}" y2="${y(v)}" stroke="#e0e7f0"/><text x="${L-12}" y="${y(v)+4}" text-anchor="end">${v}</text>`).join('');
+  const ticks=[0,6,12,18,24,30,35].map(i=>`<text x="${x(i)}" y="${H-12}" text-anchor="middle">${months[i].date.slice(5,7)}/${months[i].date.slice(0,4)}</text>`).join('');
+  document.getElementById('single-chart').innerHTML=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="single-chart-title single-chart-desc"><title id="single-chart-title">${esc(r.term)} · chỉ số 36 tháng · thang chuẩn hóa riêng</title><desc id="single-chart-desc">Biến động trung bình 12 tháng ${signed(r.change)}. Chi tiết trong bảng dữ liệu gốc.</desc>${grid}${ticks}<polyline points="${months.map((m,i)=>`${x(i)},${y(m.value)}`).join(' ')}" fill="none" stroke="#2657a5" stroke-width="2.6"/>${months.map((m,i)=>`<circle cx="${x(i)}" cy="${y(m.value)}" r="3" fill="#2657a5"><title>${m.date.slice(0,7)}: ${m.value}</title></circle>`).join('')}</svg>`;
+  const labels={time:'Chuỗi tháng',region:'Địa phương',top:'Top',rising:'Rising'};
+  document.getElementById('single-files').innerHTML=r.files.map(f=>`<a href="${esc(f.path)}" download class="button secondary">CSV · ${labels[f.kind]} (${f.rows})</a>`).join('');
+  chart('single-region-chart',[...r.regions].sort((a,b)=>b.value-a.value).slice(0,5).map(v=>({metric:v.region,value:v.value})),100,'');
+  const negative=r.rising.filter(v=>v.increase.startsWith('-')).length;
+  document.getElementById('single-quality').textContent=`Xuất ${r.exported}; ${r.time.length} tháng gốc, ${months.length} tháng phân tích; ${r.regions.length} địa phương; Top ${r.top.length} dòng, Rising ${r.rising.length} dòng. ${negative} dòng Rising có giá trị thay đổi âm. Các dòng vắng mặt chưa được quy thành 0.`;
+  document.getElementById('single-time').innerHTML=r.time.map(m=>`<tr><td>${m.date.slice(5,7)}/${m.date.slice(0,4)}${m.date<r.config.start?'<small>Ngoài kỳ phân tích</small>':''}</td><td>${m.value}</td></tr>`).join('');
+  document.getElementById('single-regions').innerHTML=r.regions.map(m=>`<tr><td>${esc(m.region)}</td><td>${m.value}</td></tr>`).join('');
+  ['top','rising'].forEach(key=>{document.getElementById(`single-${key}`).innerHTML=r[key].map(q=>`<tr><td>${esc(q.query)}</td><td>${q.interest}</td><td>${esc(q.increase)}</td></tr>`).join('');});
+}
+singleSelect.addEventListener('change',renderSingle);
+renderSingle();
 function chart(target, rows, max = 100, unit = '%') {
   const el = document.getElementById(target);
   el.innerHTML = `<div class="bars" role="img" aria-label="${esc(rows.map(r => `${r.metric}: ${format(r.value)}${unit}`).join('; '))}">${rows.map(r => `<div class="bar-row"><span>${esc(r.metric)}</span><div class="bar-track"><div class="bar-fill" style="--bar-width:${Math.max(0,Math.min(100,r.value/max*100))}%"></div></div><span class="bar-value">${format(r.value)}${unit}</span></div>`).join('')}<div class="chart-axis"><span>0${unit}</span><span>${format(max/2)}${unit}</span><span>${format(max)}${unit}</span></div></div>`;
