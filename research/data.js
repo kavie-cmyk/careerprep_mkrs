@@ -1,0 +1,459 @@
+window.RESEARCH = {
+  "project": "Marketing in Action",
+  "updated": "2026-10-08",
+  "phase": "Category — nghiên cứu sơ bộ",
+  "sources": [
+    {
+      "id": "S01",
+      "title": "State of AI in Marketing in Vietnam 2024",
+      "publisher": "MMA × Decision Lab",
+      "url": "https://mmaglobal.com/files/documents/report_mma_x_decision_lab_-_ai_adoption_in_marketing_revised_26062024pm.pdf",
+      "period": "10/2023–02/2024",
+      "scope": "Việt Nam; n=94",
+      "type": "Khảo sát",
+      "limit": "Dữ liệu nền lịch sử; mẫu ngành marketing, không đại diện toàn bộ người mua khóa học. Câu hỏi nhiều lựa chọn không cộng thành 100%.",
+      "locator": "Phương pháp: trang 9; kỹ năng: trang 22; học tập: trang 23 (số trang PDF)."
+    },
+    {
+      "id": "S02",
+      "title": "The State of AI in Marketing 2026 — SEA",
+      "publisher": "MMA × Decision Lab",
+      "url": "https://www.decisionlab.co/the-state-of-ai-in-marketing-2026",
+      "period": "01–04/2026",
+      "scope": "Đông Nam Á; 143 thành viên MMA",
+      "type": "Khảo sát",
+      "limit": "Khảo sát trực tuyến tại 5 thị trường; không phải kết quả riêng Việt Nam. Các tỷ lệ đo khái niệm khác nhau, không cộng hoặc tính chênh lệch với S01.",
+      "locator": "Giới thiệu phương pháp và Key highlight points."
+    },
+    {
+      "id": "S03",
+      "title": "Tomorrow Marketers — trang chủ",
+      "publisher": "Tomorrow Marketers",
+      "url": "https://www.tomorrowmarketers.org/",
+      "period": "Quan sát 08/10/2026",
+      "scope": "Một nhà cung cấp; Marketing, Data & AI",
+      "type": "Nhà cung cấp",
+      "limit": "Số học viên và khách hàng doanh nghiệp là công bố tích lũy, chưa được kiểm toán độc lập; không phải quy mô toàn ngành.",
+      "locator": "Số liệu giới thiệu và phần đào tạo doanh nghiệp."
+    },
+    {
+      "id": "S04",
+      "title": "Performance Marketing with AI",
+      "publisher": "Tomorrow Marketers",
+      "url": "https://www.tomorrowmarketers.org/digital-performance-course",
+      "period": "Lớp 07/10/2026; quan sát 08/10/2026",
+      "scope": "Một khóa học chuyên sâu; người đi làm",
+      "type": "Nhà cung cấp",
+      "limit": "Giá niêm yết và early bird có điều kiện; nội dung do đơn vị đào tạo công bố, chưa đánh giá kết quả học tập.",
+      "locator": "Lịch học; đối tượng; phương pháp; bảng học phí gồm 8% VAT."
+    },
+    {
+      "id": "S05",
+      "title": "Giới thiệu BRAND Camp",
+      "publisher": "BRANDS Help Desk",
+      "url": "https://help.brandsvietnam.com/vi/article/gioi-thieu-brand-camp-1pdp84c/",
+      "period": "Cập nhật 15/07/2025",
+      "scope": "Một nền tảng e-learning",
+      "type": "Nhà cung cấp",
+      "limit": "Mô tả tính năng và hình thức cung cấp; không đo số người mua hoặc thị phần.",
+      "locator": "Hình thức khóa học; học bất cứ khi nào."
+    },
+    {
+      "id": "S06",
+      "title": "Giới thiệu Vinalink Academy",
+      "publisher": "Vinalink Academy",
+      "url": "https://vinalink.edu.vn/gioi-thieu/",
+      "period": "Quan sát 08/10/2026",
+      "scope": "Một nhà cung cấp; Digital Marketing & AI",
+      "type": "Nhà cung cấp",
+      "limit": "Số học viên tích lũy do nhà cung cấp công bố; có nhiều chuyên môn, không cộng với S03 để ước tính thị trường.",
+      "locator": "Đoạn giới thiệu và đào tạo Inhouse."
+    },
+    {
+      "id": "S07",
+      "title": "Digital Marketing Foundation",
+      "publisher": "Hướng Nghiệp Á Âu",
+      "url": "https://www.huongnghiepaau.com/digital-marketing-foundation",
+      "period": "Quan sát 08/10/2026",
+      "scope": "Một khóa nền tảng; trực tiếp và trực tuyến",
+      "type": "Nhà cung cấp",
+      "limit": "Học phí công bố; không phải giá trung bình thị trường. Đối tượng mô tả là tệp tuyển sinh, chưa phải hồ sơ học viên thực tế.",
+      "locator": "Đối tượng học; thời lượng–học phí; địa điểm học; đồ án."
+    },
+    {
+      "id": "S08",
+      "title": "Hands-On Marketing",
+      "publisher": "AIM Academy",
+      "url": "https://aimacademy.vn/khoa-hoc/hands-on-marketing/?nocache=1779059011",
+      "period": "Quan sát 08/10/2026",
+      "scope": "Một khóa marketing nền tảng",
+      "type": "Nhà cung cấp",
+      "limit": "Mô tả chương trình; chưa có dữ liệu tuyển sinh hoặc đánh giá độc lập.",
+      "locator": "Đối tượng và phương pháp học kết hợp e-learning."
+    },
+    {
+      "id": "S09",
+      "title": "Chương trình Phát triển nhân tài số",
+      "publisher": "Grow with Google",
+      "url": "https://grow.google/intl/vi_vn/nhantaiso/",
+      "period": "Quan sát 08/10/2026",
+      "scope": "Chứng nhận nghề nghiệp số tại Việt Nam",
+      "type": "Nhà cung cấp",
+      "limit": "Bao gồm nhiều nghề số; không phải tất cả học viên đều học marketing. Không xác nhận học bổng đang còn mở.",
+      "locator": "Lộ trình 1: Coursera, 3–6 tháng; tệp tìm việc/đổi việc."
+    },
+    {
+      "id": "S10",
+      "title": "Rise together with Google AI",
+      "publisher": "Grow with Google",
+      "url": "https://grow.google/intl/en_vn/rise-together-with-google-ai/",
+      "period": "Từ 2022; cập nhật trang không nêu ngày",
+      "scope": "Việt Nam; nhiều chương trình kỹ năng số",
+      "type": "Nhà cung cấp",
+      "limit": "Học bổng đã cấp không đồng nghĩa người tốt nghiệp hoặc khách hàng trả phí; số SMB bao gồm nhiều chức năng ngoài marketing.",
+      "locator": "Google Career Certificates; Rise together with Google AI."
+    },
+    {
+      "id": "S11",
+      "title": "10 xu hướng tuyển dụng năm 2026",
+      "publisher": "TopCV",
+      "url": "https://tuyendung.topcv.vn/bai-viet/xu-huong-tuyen-dung-2026/",
+      "period": "04/02/2026; tham chiếu báo cáo 2025–2026",
+      "scope": "Thị trường tuyển dụng trên dữ liệu TopCV",
+      "type": "Bối cảnh nghề nghiệp",
+      "limit": "Trang tóm tắt không nêu rõ mẫu số của tỷ lệ ưu tiên tuyển dụng; không dùng như tỷ trọng tin tuyển dụng toàn quốc hoặc nhu cầu mua khóa học.",
+      "locator": "Mục 2: ba nhóm ngành ưu tiên; mục 3: kỹ năng thực tế."
+    },
+    {
+      "id": "S12",
+      "title": "FAQ about Google Trends data",
+      "publisher": "Google Trends Help",
+      "url": "https://support.google.com/trends/answer/4365533?hl=en",
+      "period": "Phương pháp; quan sát 08/10/2026",
+      "scope": "Định nghĩa dữ liệu tìm kiếm",
+      "type": "Phương pháp",
+      "limit": "Chưa thu được dữ liệu Trends cho nghiên cứu này; chỉ dùng để chuẩn hóa cách đọc chỉ số.",
+      "locator": "Chuẩn hóa dữ liệu; chỉ số tương đối và giới hạn."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "E01",
+      "group": "Nhu cầu kỹ năng",
+      "metric": "Thiếu kỹ năng/đào tạo AI",
+      "value": 57,
+      "unit": "%",
+      "source": "S01",
+      "location": "tr.22"
+    },
+    {
+      "id": "E02",
+      "group": "Nhu cầu kỹ năng",
+      "metric": "Chi phí tích hợp AI cao",
+      "value": 44,
+      "unit": "%",
+      "source": "S01",
+      "location": "tr.22"
+    },
+    {
+      "id": "E03",
+      "group": "Nhu cầu kỹ năng",
+      "metric": "Chưa hiểu AI hiệu quả",
+      "value": 32,
+      "unit": "%",
+      "source": "S01",
+      "location": "tr.22"
+    },
+    {
+      "id": "E04",
+      "group": "Nguồn học tập",
+      "metric": "Khóa đào tạo",
+      "value": 63,
+      "unit": "%",
+      "source": "S01",
+      "location": "tr.23"
+    },
+    {
+      "id": "E05",
+      "group": "Nguồn học tập",
+      "metric": "Workshop / seminar",
+      "value": 60,
+      "unit": "%",
+      "source": "S01",
+      "location": "tr.23"
+    },
+    {
+      "id": "E06",
+      "group": "Nguồn học tập",
+      "metric": "Báo cáo ngành",
+      "value": 57,
+      "unit": "%",
+      "source": "S01",
+      "location": "tr.23"
+    },
+    {
+      "id": "E07",
+      "group": "Nguồn học tập",
+      "metric": "Trao đổi đồng nghiệp",
+      "value": 48,
+      "unit": "%",
+      "source": "S01",
+      "location": "tr.23"
+    },
+    {
+      "id": "E08",
+      "group": "Nguồn học tập",
+      "metric": "Sự kiện ngành",
+      "value": 43,
+      "unit": "%",
+      "source": "S01",
+      "location": "tr.23"
+    },
+    {
+      "id": "E09",
+      "group": "Đào tạo doanh nghiệp",
+      "metric": "Có đào tạo AI",
+      "value": 28,
+      "unit": "%",
+      "source": "S01",
+      "location": "tr.23"
+    },
+    {
+      "id": "E10",
+      "group": "Đào tạo doanh nghiệp",
+      "metric": "Dự kiến đào tạo AI",
+      "value": 34,
+      "unit": "%",
+      "source": "S01",
+      "location": "tr.23"
+    },
+    {
+      "id": "E11",
+      "group": "Đào tạo doanh nghiệp",
+      "metric": "Không đào tạo AI",
+      "value": 27,
+      "unit": "%",
+      "source": "S01",
+      "location": "tr.23"
+    },
+    {
+      "id": "E12",
+      "group": "Đào tạo doanh nghiệp",
+      "metric": "Không biết",
+      "value": 12,
+      "unit": "%",
+      "source": "S01",
+      "location": "tr.23"
+    },
+    {
+      "id": "E13",
+      "group": "Bối cảnh 2026",
+      "metric": "Kỹ năng/đào tạo là thách thức lớn nhất",
+      "value": 78,
+      "unit": "%",
+      "source": "S02",
+      "location": "Key highlights"
+    },
+    {
+      "id": "E14",
+      "group": "Bối cảnh 2026",
+      "metric": "Mức độ trưởng thành AI nâng cao",
+      "value": 57,
+      "unit": "%",
+      "source": "S02",
+      "location": "Key highlights"
+    },
+    {
+      "id": "E15",
+      "group": "Bối cảnh 2026",
+      "metric": "Tổ chức nâng cao dự kiến tăng ngân sách marketing",
+      "value": 42,
+      "unit": "%",
+      "source": "S02",
+      "location": "Key highlights; chỉ nhóm advanced"
+    },
+    {
+      "id": "E16",
+      "group": "Quy mô nhà cung cấp",
+      "metric": "Tomorrow Marketers: học viên tích lũy",
+      "value": 25000,
+      "unit": "người+",
+      "source": "S03",
+      "location": "Giới thiệu"
+    },
+    {
+      "id": "E17",
+      "group": "Quy mô nhà cung cấp",
+      "metric": "Tomorrow Marketers: khách hàng doanh nghiệp",
+      "value": 200,
+      "unit": "doanh nghiệp+",
+      "source": "S03",
+      "location": "Đào tạo doanh nghiệp"
+    },
+    {
+      "id": "E18",
+      "group": "Quy mô nhà cung cấp",
+      "metric": "Vinalink: học viên tích lũy",
+      "value": 15000,
+      "unit": "người+",
+      "source": "S06",
+      "location": "Giới thiệu"
+    },
+    {
+      "id": "E19",
+      "group": "Học phí",
+      "metric": "TM Performance: niêm yết người đi làm",
+      "value": 8910000,
+      "unit": "VND",
+      "source": "S04",
+      "location": "Standard; gồm VAT 8%"
+    },
+    {
+      "id": "E20",
+      "group": "Học phí",
+      "metric": "TM Performance: early bird người đi làm",
+      "value": 6210000,
+      "unit": "VND",
+      "source": "S04",
+      "location": "Early bird; gồm VAT 8%"
+    },
+    {
+      "id": "E21",
+      "group": "Thời lượng",
+      "metric": "TM Performance: thời lượng",
+      "value": 10,
+      "unit": "buổi",
+      "source": "S04",
+      "location": "Lịch học"
+    },
+    {
+      "id": "E22",
+      "group": "Học phí",
+      "metric": "HNAAu Foundation: trực tiếp",
+      "value": 5000000,
+      "unit": "VND",
+      "source": "S07",
+      "location": "Thời lượng–học phí"
+    },
+    {
+      "id": "E23",
+      "group": "Học phí",
+      "metric": "HNAAu Foundation: trực tuyến",
+      "value": 4000000,
+      "unit": "VND",
+      "source": "S07",
+      "location": "Thời lượng–học phí"
+    },
+    {
+      "id": "E24",
+      "group": "Thời lượng",
+      "metric": "HNAAu Foundation: thời lượng",
+      "value": 12,
+      "unit": "buổi",
+      "source": "S07",
+      "location": "Thời lượng–học phí"
+    },
+    {
+      "id": "E25",
+      "group": "Nguồn cung thay thế",
+      "metric": "Google Career Certificates: học bổng đã cấp từ 2022",
+      "value": 100000,
+      "unit": "học bổng",
+      "source": "S10",
+      "location": "Google Career Certificates"
+    },
+    {
+      "id": "E26",
+      "group": "Đào tạo doanh nghiệp",
+      "metric": "Google/NIC: doanh nghiệp nhỏ và vừa được đào tạo kỹ năng số",
+      "value": 7600,
+      "unit": "doanh nghiệp",
+      "source": "S10",
+      "location": "Rise together with Google AI"
+    },
+    {
+      "id": "E27",
+      "group": "Bối cảnh nghề nghiệp",
+      "metric": "Marketing/Truyền thông/Quảng cáo: ưu tiên tuyển dụng",
+      "value": 8.22,
+      "unit": "%",
+      "source": "S11",
+      "location": "Mục 2; mẫu số chưa rõ"
+    }
+  ],
+  "qualitative": [
+    {
+      "id": "Q01",
+      "source": "S04",
+      "finding": "Executive, manager và người định hướng Performance; lớp trực tuyến trực tiếp qua Zoom, lịch ngoài giờ; dùng case study."
+    },
+    {
+      "id": "Q02",
+      "source": "S05",
+      "finding": "Video thu sẵn, bài tập, thảo luận; học theo tiến độ cá nhân, có thể xem lại."
+    },
+    {
+      "id": "Q03",
+      "source": "S06",
+      "finding": "Digital Marketing, AI và chương trình Inhouse theo nhu cầu doanh nghiệp."
+    },
+    {
+      "id": "Q04",
+      "source": "S07",
+      "finding": "Tệp tuyển sinh gồm người mới, chuyển nghề, marketer, chủ doanh nghiệp; hai hình thức học; có đồ án lập kế hoạch."
+    },
+    {
+      "id": "Q05",
+      "source": "S08",
+      "finding": "Marketing nền tảng có tính ứng dụng, kết hợp kiến thức e-learning với học và thực hành tại lớp."
+    },
+    {
+      "id": "Q06",
+      "source": "S09",
+      "finding": "Coursera, tự học 3–6 tháng; hướng tới người tìm việc hoặc thay đổi công việc."
+    },
+    {
+      "id": "Q07",
+      "source": "S03",
+      "finding": "Có đào tạo cho cá nhân và doanh nghiệp; danh mục gồm Marketing, Data, AI."
+    }
+  ],
+  "gaps": [
+    {
+      "question": "Quy mô thị trường trả phí",
+      "status": "Chưa xác minh",
+      "need": "Người mua duy nhất/năm, số khóa mua/người, học phí thực thu; hoặc doanh thu đào tạo marketing tách riêng.",
+      "method": "Ước tính bottom-up từ tuyển sinh từng nhà cung cấp; loại trùng học viên; tách B2C và B2B."
+    },
+    {
+      "question": "Tăng trưởng hay bão hòa?",
+      "status": "Chưa đủ chuỗi thời gian",
+      "need": "Google Trends 36 tháng, lượng tìm kiếm và số đăng ký khóa học cùng kỳ.",
+      "method": "So sánh 12 tháng gần nhất với 12 tháng trước, giữ cùng từ khóa/phạm vi; kiểm tra tính mùa vụ."
+    },
+    {
+      "question": "Ai đang học?",
+      "status": "Mới có tệp tuyển sinh",
+      "need": "Nghề nghiệp, kinh nghiệm, nơi cư trú và nguồn chi trả của học viên thực tế.",
+      "method": "Phỏng vấn và khảo sát học viên; không suy cơ cấu nhu cầu từ thông điệp website."
+    },
+    {
+      "question": "Học ở đâu?",
+      "status": "Có bản đồ nguồn cung",
+      "need": "Phân bổ tuyển sinh theo online/offline và địa phương.",
+      "method": "Dữ liệu tuyển sinh phân theo hình thức; kiểm tra CRM chương trình."
+    },
+    {
+      "question": "Nguồn tăng trưởng",
+      "status": "Giả thuyết",
+      "need": "Động cơ học, ngân sách và willingness to pay cho kỹ năng AI/data, chuyển nghề và đào tạo doanh nghiệp.",
+      "method": "Phỏng vấn 3–5 người theo gợi ý workshop; dùng kết quả định tính để thiết kế khảo sát tiếp theo."
+    },
+    {
+      "question": "Google Trends / Keyword Planner / Meta Ads",
+      "status": "Chưa có dữ liệu xuất",
+      "need": "CSV gốc, ngày lấy dữ liệu, cấu hình địa lý, thời gian, từ khóa và đối tượng.",
+      "method": "Không dùng chỉ số quan tâm hoặc estimated audience làm TAM/SAM; không tạo số liệu thay thế."
+    }
+  ]
+};
