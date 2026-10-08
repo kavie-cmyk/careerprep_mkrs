@@ -15,3 +15,5 @@ main{max-width:1800px}section{padding-top:44px}h1{font-size:34px;max-width:850px
 @media(max-width:1250px){.argument-head{display:grid;grid-template-columns:48px minmax(0,1fr)}.argument-head>div{min-width:0}.argument-head>.pill{grid-column:2;margin-left:0;justify-self:start}}
 @media(max-width:900px){.sidebar{position:static;width:auto;padding:15px 20px}.brand br{display:none}.brand b{font-size:16px}.logo{width:39px;height:39px;font-size:17px}.nav-label,.sidebar-foot{display:none}.sidebar nav{display:flex;flex-direction:row;overflow-x:auto;gap:4px;margin-top:12px}.sidebar nav a{white-space:nowrap;font-size:13px;padding:7px 10px}.sidebar nav a:first-child{display:block}main{margin-left:0;padding:0 18px}.argument-head h3{font-size:20px}}
 @media(max-width:760px){.argument-head{grid-template-columns:38px minmax(0,1fr)}.argument-head h3{font-size:19px}.change-row{font-size:12px}.change-scale{font-size:9px}.change-scale span:nth-child(3),.change-scale span:nth-child(4){display:none}}
+
+.change-scale span:nth-child(1),.change-scale span:nth-child(5){transform:translateX(-50%)}
