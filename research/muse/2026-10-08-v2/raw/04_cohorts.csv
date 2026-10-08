@@ -1,0 +1,8 @@
+cohort_id,program_id,start_date,end_date,location,delivery_format,cohort_status,announced_capacity,actual_enrollment,paid_enrollment,source_ids,observed_date,limitation
+M-C101,M-P106,2026-10-02,,online,Online qua Zoom,đã khai giảng,,,,M-S104,2026-10-08,"Mã lớp FBZK320; 8 buổi - Tối T2,4,6; ngày khai giảng đã qua tại thời điểm quan sát"
+M-C102,M-P104,2026-10-09,,online,Online qua Zoom,lớp dự kiến,,,,M-S104,2026-10-08,"Mã lớp 3CZK133; 6 buổi - Tối T2,4,6; KẾ HOẠCH TƯƠNG LAI (sau ngày chốt 08/10/2026), không tính là lớp đã tổ chức"
+M-C103,M-P105,2026-10-27,,online,Online qua Zoom,lớp dự kiến,,,,M-S104,2026-10-08,"Mã lớp SEO AI K238; KẾ HOẠCH TƯƠNG LAI (sau ngày chốt), không tính là lớp đã tổ chức"
+M-C104,M-P103,2026-11-09,,online,Online qua Zoom,lớp dự kiến,,,,M-S104,2026-10-08,"Mã lớp DMPZK220; 6 buổi - Tối T2,4,6; KẾ HOẠCH TƯƠNG LAI (sau ngày chốt), không tính là lớp đã tổ chức"
+M-C105,M-P107,2026-09-28,,online,Online qua Zoom,đã khai giảng,,,,M-S104,2026-10-08,Mã lớp TIKTOK K20; 8 buổi
+M-C106,M-P102,2026-10-01,,online,Online qua nền tảng Zoom (live),đã khai giảng,,,,M-S102,2026-10-08,Lớp online tháng 10/2026; lịch học 08 buổi: Thứ 3 & Thứ 5 (19:00 - 21:00)
+M-C107,M-P103,2026-03-04,,,,loại khỏi phân tích,,130,,M-S110,2026-10-08,"Số liệu do Vinalink công bố trong tin hoạt động ('Hơn 130 học viên tham dự'); là số người tham dự, KHÔNG phân biệt học viên trả phí/miễn phí; không suy ra tuyển sinh; văn bản gốc ghi '130+' | [V2-LOẠI] QA2-01: nguồn bế giảng 27/12/2019 không hỗ trợ claim; không sử dụng số người/ngày/program_id của dòng này"

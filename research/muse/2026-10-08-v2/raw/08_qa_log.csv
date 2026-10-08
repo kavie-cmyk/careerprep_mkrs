@@ -1,0 +1,144 @@
+qa_id,file_name,row_id,check_type,result,issue,correction,reviewer
+QA-001,agent-a/sources.csv + agent-a/evidence.csv,all,schema_header,PASS,"Header khớp schema chuẩn (sources 17 cột, evidence 21 cột); mọi dòng đủ số cột; CSV parse OK.",Không cần sửa.,qa
+QA-002,agent-a/sources.csv + agent-a/evidence.csv,all,id_uniqueness,PASS,"source_id 26/26, evidence_id 32/32 duy nhất; không ID trống.",Không cần sửa.,qa
+QA-003,agent-a/evidence.csv,all,ref_integrity,PASS,"Mọi source_id được tham chiếu đều tồn tại trong sources.csv; duplicate_of dùng đúng (M-S015→M-S014, M-S020→M-S019).",Không cần sửa.,qa
+QA-004,agent-a/evidence.csv,all,controlled_vocab,PASS,question_id chỉ dùng SIZE/GROWTH; verification_status đúng 4 giá trị chuẩn; mâu thuẫn giữ cả hai + đánh dấu (task_log §Tổng hợp mâu thuẫn).,Không cần sửa.,qa
+QA-005,agent-a/evidence.csv,M-E002,quote_length,FAIL,"Trích dẫn nguyên văn 26 từ, vượt giới hạn ≤25 từ.","Rút gọn trích dẫn còn ≤25 từ (vd bỏ 'đơn vị đào tạo hàng đầu về' hoặc diễn đạt lại), giữ nguyên số liệu 30.000.",qa
+QA-006,agent-a/evidence.csv,M-E014,quote_length,FAIL,"Trích dẫn nguyên văn 33 từ, vượt giới hạn ≤25 từ.","Rút gọn trích dẫn còn ≤25 từ; đây là dữ kiện ghi để tránh nhầm phạm vi, vẫn giữ limitation.",qa
+QA-007,agent-a/evidence.csv,M-E022,quote_length,FAIL,"Trích dẫn nguyên văn 28 từ, vượt giới hạn ≤25 từ.","Rút gọn trích dẫn còn ≤25 từ, giữ nguyên số liệu 3.000 và URL website.",qa
+QA-008,agent-a/evidence.csv,M-E013/M-E026/M-E031,program_link,FLAG,"Cột program_id dùng tên mô tả tự do ('SEO PRO', 'Facebook Marketing từ A - Z', 'Marketing Foundation') thay vì mã M-P### của programs.csv.","Điều phối quyết định: ánh xạ sang M-P### nếu khớp chương trình đã có, hoặc giữ mô tả + ghi chú.",qa
+QA-009,agent-b/evidence.csv,header (M-E101→M-E120),schema_header,FAIL,"Header tự định nghĩa (evidence_id,question_id,fact,verification_status,source_ids,observed_date,note) — không khớp schema chuẩn 21 cột.",Chuẩn hóa lại theo schema chuẩn: fact→evidence_text + các trường metric (metric_type/metric_name/value/unit/period/geography); source_ids→source_id (+program_id/cohort_id nếu có); note→limitation.,qa
+QA-010,agent-b/evidence.csv,M-E102,verification_status,FAIL,verification_status='công bố nhà cung cấp (qua snippet trang chính thức)' — không đúng 1 trong 4 giá trị cho phép.,Đổi thành 'công bố nhà cung cấp'; chuyển '(qua snippet trang chính thức)' vào note/limitation.,qa
+QA-011,agent-b/evidence.csv,M-E104,verification_status,FAIL,Như QA-010 (giá trị có ngoặc giải thích).,Đổi thành 'công bố nhà cung cấp'; chuyển phần ngoặc vào note.,qa
+QA-012,agent-b/evidence.csv,M-E107,verification_status,FAIL,Như QA-010.,Đổi thành 'công bố nhà cung cấp'; chuyển phần ngoặc vào note.,qa
+QA-013,agent-b/evidence.csv,M-E108,verification_status,FAIL,verification_status gộp 2 giá trị: 'đối chiếu nguồn gốc (FAQ Coursera) / chưa xác minh (số giờ ~113 từ nguồn thứ ba)'.,Tách thành 2 dòng dữ kiện (FAQ Coursera → 'đối chiếu nguồn gốc'; số giờ ~113 → 'chưa xác minh') hoặc giữ 1 dòng với giá trị 'chưa xác minh' + limitation ghi rõ phần nào đã đối chiếu.,qa
+QA-014,agent-b/evidence.csv,M-E110,verification_status,FAIL,Như QA-010.,Đổi thành 'công bố nhà cung cấp'; chuyển phần ngoặc vào note.,qa
+QA-015,agent-b/evidence.csv,M-E111,verification_status,FAIL,Như QA-010.,Đổi thành 'công bố nhà cung cấp'; chuyển phần ngoặc vào note.,qa
+QA-016,agent-b/evidence.csv,M-E112,verification_status,FAIL,Như QA-010.,Đổi thành 'công bố nhà cung cấp'; chuyển phần ngoặc vào note.,qa
+QA-017,agent-b/evidence.csv,M-E113,verification_status,FAIL,Như QA-010.,Đổi thành 'công bố nhà cung cấp'; chuyển phần ngoặc vào note.,qa
+QA-018,agent-b/evidence.csv,M-E114,verification_status,FAIL,Như QA-010.,Đổi thành 'công bố nhà cung cấp'; chuyển phần ngoặc vào note.,qa
+QA-019,agent-b/evidence.csv,M-E118,verification_status,FAIL,Như QA-010.,Đổi thành 'công bố nhà cung cấp'; chuyển phần ngoặc vào note.,qa
+QA-020,agent-b/evidence.csv,M-E119,verification_status,FAIL,Như QA-010.,Đổi thành 'công bố nhà cung cấp'; chuyển phần ngoặc vào note.,qa
+QA-021,agent-b/evidence.csv,M-E120,verification_status,FAIL,Như QA-010.,Đổi thành 'công bố nhà cung cấp'; chuyển phần ngoặc vào note.,qa
+QA-022,agent-b/programs.csv,M-P121,data_format,FLAG,listed_price chứa chữ: '6000000-7000000 (khoảng giá theo hình thức; chưa tách niêm yết/ưu đãi)' — không parse được số.,Tách 6000000/7000000 vào value_min/value_max (hoặc 2 cột listed_price_min/max); chuyển phần chữ vào limitation.,qa
+QA-023,agent-b/cohorts.csv,M-C107,data_format,FLAG,actual_enrollment='130+' chứa ký tự '+' — không parse được số.,actual_enrollment=130; ghi '130+' dạng văn bản vào limitation.,qa
+QA-024,agent-b/cohorts.csv,M-C101→M-C107,controlled_vocab,FLAG,cohort_status dùng 'đã khai giảng' / 'lớp dự kiến' / 'đã kết thúc' — schema không định nghĩa danh mục cho phép.,Điều phối xác nhận/ban hành danh mục cohort_status chuẩn trước khi gộp.,qa
+QA-025,agent-b (4 files),all,accuracy,PASS,"ID duy nhất; source/program/cohort tham chiếu hợp lệ; số liệu spot-check khớp nguồn gốc (Brand Camp 17 khóa, 199k–899k, 1 miễn phí; HNAAU 12 buổi, 5M/4M — đối chiếu trực tiếp 08/10/2026); mâu thuẫn giữ cả hai (M-E103/104/115).",Không cần sửa.,qa
+QA-026,agent-c/evidence.csv,header (M-E201→M-E213),schema_header,FAIL,"Header tự định nghĩa (evidence_id,question_id,fact,source_id,url,locator,data_period,geography,verification_status,limitation) — không khớp schema chuẩn 21 cột.",Chuẩn hóa lại theo schema chuẩn (fact→evidence_text + metric fields; data_period→period_start/period_end).,qa
+QA-027,agent-c/evidence.csv,M-E213,schema_columns,FAIL,"Dòng chỉ có 9 cột thay vì 10 — thiếu cột url, các cột sau bị lệch (locator/data_period/geography/verification_status/limitation sai vị trí).",Viết lại dòng đủ 10 cột: url để trống; locator='đường tìm kiếm ghi trong task_log.md'; data_period trống; geography='Việt Nam'; verification_status='chưa xác minh'; limitation giữ nguyên.,qa
+QA-028,agent-c/evidence.csv,M-E213,ref_integrity,FLAG,source_id trống (dữ kiện 'tìm kiếm âm' không gắn nguồn).,"Điều phối quyết định: giữ với source_id trống + chú thích, hoặc chuyển vào task_log.",qa
+QA-029,agent-c/evidence.csv,M-E201,verification_status,FAIL,verification_status='đối chiếu nguồn gốc (báo chí đưa tin khảo sát)' — không đúng 4 giá trị chuẩn.,Đổi thành 'đối chiếu nguồn gốc'; chuyển '(báo chí đưa tin khảo sát)' vào limitation.,qa
+QA-030,agent-c/evidence.csv,M-E202,verification_status,FAIL,Như QA-029.,Đổi thành 'đối chiếu nguồn gốc'; chuyển phần ngoặc vào limitation.,qa
+QA-031,agent-c/evidence.csv,M-E203,verification_status,FAIL,Như QA-029.,Đổi thành 'đối chiếu nguồn gốc'; chuyển phần ngoặc vào limitation.,qa
+QA-032,agent-c/evidence.csv,M-E204,verification_status,FAIL,Như QA-029.,Đổi thành 'đối chiếu nguồn gốc'; chuyển phần ngoặc vào limitation.,qa
+QA-033,agent-c/evidence.csv,M-E205,verification_status,FAIL,verification_status='công bố chính thức (văn bản luật)' — không đúng 4 giá trị chuẩn.,Đổi thành 'đối chiếu nguồn gốc' (văn bản luật đã đọc trực tiếp) hoặc 'công bố nhà cung cấp'; chuyển phần ngoặc vào limitation.,qa
+QA-034,agent-c/evidence.csv,M-E206,verification_status,FAIL,verification_status='chưa xác minh (mẫu quy chế — không phải khảo sát hay số liệu doanh nghiệp cụ thể)'.,Đổi thành 'chưa xác minh'; chuyển phần ngoặc vào limitation.,qa
+QA-035,agent-c/evidence.csv,M-E207,verification_status,FAIL,verification_status='tự thuật người học (độc lập – không do NCC chọn lọc)'.,Đổi thành 'tự thuật người học'; chuyển phần ngoặc vào limitation.,qa
+QA-036,agent-c/evidence.csv,M-E208,verification_status,FAIL,verification_status='công bố nhà cung cấp (tuyển chọn)'.,Đổi thành 'công bố nhà cung cấp'; chuyển '(tuyển chọn)' vào limitation.,qa
+QA-037,agent-c/evidence.csv,M-E209,verification_status,FAIL,Như QA-036.,Đổi thành 'công bố nhà cung cấp'; chuyển phần ngoặc vào limitation.,qa
+QA-038,agent-c/evidence.csv,M-E210,verification_status,FAIL,Như QA-036.,Đổi thành 'công bố nhà cung cấp'; chuyển phần ngoặc vào limitation.,qa
+QA-039,agent-c/evidence.csv,M-E211,verification_status,FAIL,Như QA-036.,Đổi thành 'công bố nhà cung cấp'; chuyển phần ngoặc vào limitation.,qa
+QA-040,agent-c/evidence.csv,M-E212,verification_status,FAIL,verification_status='chưa xác minh (tự xưng trên diễn đàn)'.,Đổi thành 'chưa xác minh'; chuyển phần ngoặc vào limitation.,qa
+QA-041,agent-c/evidence.csv,M-E213,verification_status,FAIL,verification_status='chưa xác minh (kết quả âm)'.,Đổi thành 'chưa xác minh'; chuyển phần ngoặc vào limitation (sau khi sửa QA-027).,qa
+QA-042,agent-c/learner_voices.csv,M-V207,value_accuracy,FAIL,Gán sai: occupation 'CEO' (của Nguyễn Tuấn Khanh) nhưng experience/outcome 'mất rất nhiều kinh phí... chi phí 1 triệu/lợi nhuận 60 triệu' là của Hồ Thị Mỹ Cảm (Business Development Director) — đối chiếu trực tiếp wms.vn ngày 08/10/2026.,Trích xuất lại và gán đúng occupation↔quote theo trang gốc; kiểm tra cả 11 lời kể hiện có trên trang.,qa
+QA-043,agent-c/learner_voices.csv,M-V208,value_accuracy,FAIL,"Gán sai: occupation 'Business Development Director' nhưng outcome 'được dạy nhiều kiến thức chưa từng nghe dù đã học nhiều khóa trước' là quote của Nguyễn Hoàng Nam (CEO, Mint's Closet).",Như QA-042.,qa
+QA-044,agent-c/learner_voices.csv,M-V209,value_accuracy,FAIL,"Gán sai: occupation 'CEO, Mint's Closet' (Nguyễn Hoàng Nam) nhưng experience/outcome 'freelancer 2 năm... lấp full 8 phòng trọ trong 1 tuần' là của Dương Minh Huy (Business Owner, Nhà trọ SACH).",Như QA-042.,qa
+QA-045,agent-c/learner_voices.csv,M-V210,value_accuracy,FAIL,"Gán sai: occupation 'Business Owner, Nhà trọ SACH' nhưng short_verbatim_excerpt 'Muốn làm sale giỏi phải biết marketing.' là quote của Phan Bá Thông (Business Development Manager).",Như QA-042.,qa
+QA-046,agent-c/learner_voices.csv,M-V211,value_accuracy,FAIL,Gán sai: occupation 'Sales Manager' (Trần Minh Tiến) nhưng verbatim là quote của Phan Bá Thông (Business Development Manager).,Như QA-042.,qa
+QA-047,agent-c/evidence.csv,M-E208,value_accuracy,FLAG,M-E208 tổng hợp 10 lời kể WMS — kế thừa lỗi gán sai của M-V207→M-V211.,Cập nhật M-E208 sau khi sửa M-V207–M-V211.,qa
+QA-048,agent-c/learner_voices.csv,M-V201→M-V221,program_link,FLAG,"Cột program_id dùng tên mô tả tự do ('WMS – khóa Digital Marketing', 'CASK – Route to Market Strategy'...) thay vì mã M-P### của programs.csv (các NCC WMS/CASK/CAS không có trong programs.csv của agent B).",Điều phối quyết định: bổ sung program rows cho WMS/CASK/CAS hoặc giữ mô tả + ghi chú.,qa
+QA-049,agent-c (3 files),all,accuracy,PASS,learner_status đúng (actual_learner); trích dẫn ≤25 từ; không PII (SĐT/email); PwC 75/74/60 (M-E201–203) đối chiếu trực tiếp vir.com.vn; review clevergirls (M-E207/M-V201) và thread tinhte (M-E212/M-V202) đối chiếu trực tiếp.,Không cần sửa.,qa
+QA-050,agent-d/search_demand.csv,M-K301→M-K540,id_allocation,FLAG,Tràn khoảng ID: đã dùng tới M-K540 trong khi khoảng được cấp là M-K301→M-K399 (141 ID ngoài khoảng: M-K400–M-K540). Đã kiểm tra: KHÔNG trùng với agent khác (không file nào khác dùng tiền tố M-K).,Điều phối cấp lại/mở rộng khoảng ID cho agent D (vd M-K301→M-K599) trước khi freeze pack; không cần đánh lại ID vì chưa xảy ra trùng.,qa
+QA-051,agent-d/evidence.csv,header (M-E301→M-E306),schema_header,FAIL,"Header tự định nghĩa (evidence_id,question_id,source_id,search_id,statement,verification_status,locator,note) — không khớp schema chuẩn 21 cột.",Chuẩn hóa lại theo schema chuẩn (statement→evidence_text + metric fields; search_id giữ ở cột search_id nếu cần liên kết).,qa
+QA-052,agent-d/evidence.csv,M-E306,ref_integrity,FLAG,"source_id trống; nội dung là ghi chú trạng thái ('ghi nhận trạng thái, không phải dữ kiện thị trường') — không phải dữ kiện.",Chuyển vào task_log hoặc giữ với source_id='N/A' + ghi chú rõ không phải dữ kiện thị trường.,qa
+QA-053,agent-d/search_demand.csv,M-K303→M-K533,data_format,FLAG,value_type='số chính xác' cho 231 dòng Trends index — dễ bị đọc nhầm thành volume đo được.,Đổi value_type thành 'index Trends 0–100 (không phải volume)' (validation_note và unit đã ghi đúng).,qa
+QA-054,agent-d (3 files),all,accuracy,PASS,intent_label đúng danh mục; ánh xạ file→seed đã công bố là suy luận (file raw tồn tại tại category-v2/trends-raw/); 2.600/880 lượt/tháng (M-K301/302) đối chiếu trực tiếp ychoc.com; ví dụ 2.000/tháng của mona.media đã loại đúng (xác nhận là 'Giả sử'); không quy đổi index→volume.,Không cần sửa.,qa
+QA-055,agent-e/evidence.csv,M-E428,schema_columns,FAIL,"Dòng có 22 cột thay vì 21 — thừa 1 cột trống trước geography, các cột sau bị lệch.",Xóa cột trống thừa (dồn trái 1 vị trí từ geography trở đi).,qa
+QA-056,agent-e/evidence.csv,M-E429,schema_columns,FAIL,Như QA-055 (22 cột).,Xóa cột trống thừa.,qa
+QA-057,agent-e/evidence.csv,M-E430,schema_columns,FAIL,Như QA-055 (22 cột).,Xóa cột trống thừa.,qa
+QA-058,agent-e/evidence.csv,M-E434,schema_columns,FAIL,Như QA-055 (22 cột).,Xóa cột trống thừa.,qa
+QA-059,agent-e/evidence.csv,M-E435,schema_columns,FAIL,Như QA-055 (22 cột).,Xóa cột trống thừa.,qa
+QA-060,agent-e/evidence.csv,M-E401,verification_status,FAIL,verification_status='chưa xác minh (báo cáo gốc chưa đọc trực tiếp)' — không đúng 4 giá trị chuẩn.,Đổi thành 'chưa xác minh'; chuyển phần ngoặc vào limitation.,qa
+QA-061,agent-e/evidence.csv,M-E415,data_format,FLAG,value='43/24' gộp 2 số liệu trong 1 ô.,Tách thành 2 dòng (43% và 24%) hoặc ghi range vào value_min/value_max.,qa
+QA-062,agent-e/evidence.csv,M-E418,data_format,FLAG,"value='0,1/0,2/0,32/0,43/0,45/0,5' gộp 6 số liệu theo ngành trong 1 ô.",Tách thành 6 dòng theo ngành.,qa
+QA-063,agent-e/evidence.csv,M-E419,data_format,FLAG,"value='22,2/33/33,2' gộp 3 số liệu theo ngành trong 1 ô.",Tách thành 3 dòng theo ngành.,qa
+QA-064,agent-e/evidence.csv,M-E420,data_format,FLAG,"value='30,5-49,3' là khoảng gộp nhiều ngành trong 1 ô.","Tách thành dòng riêng theo ngành (BĐS 49,3%; sản xuất ~45%; TC-NH 42,1%; bán lẻ/giáo dục/CNTT 30,5–35%).",qa
+QA-065,agent-e/evidence.csv,M-E422,data_format,FLAG,"value='8,1/30,6' gộp 2 số liệu trong 1 ô.",Tách thành 2 dòng.,qa
+QA-066,agent-e/evidence.csv,M-E410,data_format,FLAG,value_min='>' — ký tự so sánh trong trường số.,"Đặt value_min=85 (hoặc để trống), ghi 'trên 85%' vào metric_name/limitation.",qa
+QA-067,agent-e/evidence.csv,M-E433,data_format,FLAG,"unit='%,;' — lỗi gõ thừa dấu ';'.",Sửa unit thành '%'.,qa
+QA-068,agent-e/evidence.csv,M-E403,value_accuracy,FLAG,"Số 27,51% (marketing-truyền thông-quảng cáo có nguy cơ bị thay thế) KHÔNG thấy trong bài vneconomy.vn đã kiểm tra trực tiếp ngày 08/10/2026 (bài chỉ liệt kê danh sách ngành, không có con số này).",Đối chiếu lại với nguoiquansat.vn hoặc ảnh biểu đồ trong bài trước khi dùng; ghi rõ nguồn chứa số này.,qa
+QA-069,agent-e (2 files),all,accuracy,PASS,"59,1%/44,1% (M-E401/402) đối chiếu trực tiếp vneconomy.vn; 43/24/22/72/40/79% (M-E414–417, M-E434) đối chiếu trực tiếp elsaspeak.com; geography ngoài VN (APME/toàn cầu) được gắn nhãn NHÓM BỐI CẢNH, không gộp vào VN; không biến 'ứng dụng AI'→'nhu cầu đào tạo', không suy willingness-to-pay.",Không cần sửa.,qa
+QA-070,all agents,all,ref_integrity,PASS,Không có source_id tham chiếu nào bị treo (mọi source_id trong evidence/programs/cohorts/voices/search_demand đều tồn tại trong sources); mọi evidence_id/program_id/cohort_id/voice_id/search_id duy nhất trong file của mình.,Không cần sửa.,qa
+QA-071,all task_log.md,all,gap_documented,PASS,"Mọi NEEDS_INPUT/BLOCKED/NOT_FOUND_PUBLIC đều có đường tìm kiếm ghi trong task_log (A: fanpage NEEDS_INPUT; D: Keyword Planner NEEDS_INPUT, Ahrefs BLOCKED; B/C/E: các tìm kiếm âm có truy vấn).",Không cần sửa.,qa
+QA-F101,01_sources.csv,M-S417,fix_applied,PASS,Sửa lỗi QA-068,"Bổ sung nguồn baomoi.com (Báo Pháp luật VN) — bài báo XÁC NHẬN có con số 27,51% cho marketing-truyền thông-quảng cáo, dẫn báo cáo TopCV 2025-2026.",coordinator
+QA-F102,02_evidence.csv,M-E002,fix_applied,PASS,Sửa lỗi QA-005,"Rút gọn trích dẫn còn ≤25 từ, giữ nguyên số liệu.",coordinator
+QA-F103,02_evidence.csv,M-E014,fix_applied,PASS,Sửa lỗi QA-006,"Rút gọn trích dẫn còn ≤25 từ, giữ nguyên số liệu.",coordinator
+QA-F104,02_evidence.csv,M-E022,fix_applied,PASS,Sửa lỗi QA-007,"Rút gọn trích dẫn còn ≤25 từ, giữ nguyên số liệu.",coordinator
+QA-F105,02_evidence.csv,M-E102,fix_applied,PASS,Sửa lỗi QA-010..021,verification_status chuẩn hóa về 'công bố nhà cung cấp'; phần ngoặc chuyển vào limitation.,coordinator
+QA-F106,02_evidence.csv,M-E104,fix_applied,PASS,Sửa lỗi QA-010..021,verification_status chuẩn hóa về 'công bố nhà cung cấp'; phần ngoặc chuyển vào limitation.,coordinator
+QA-F107,02_evidence.csv,M-E107,fix_applied,PASS,Sửa lỗi QA-010..021,verification_status chuẩn hóa về 'công bố nhà cung cấp'; phần ngoặc chuyển vào limitation.,coordinator
+QA-F108,02_evidence.csv,M-E108,fix_applied,PASS,Sửa lỗi QA-013,"Tách thành M-E121 (FAQ Coursera, đối chiếu nguồn gốc) và M-E122 (~113 giờ, chưa xác minh).",coordinator
+QA-F109,02_evidence.csv,M-E110,fix_applied,PASS,Sửa lỗi QA-010..021,verification_status chuẩn hóa về 'công bố nhà cung cấp'; phần ngoặc chuyển vào limitation.,coordinator
+QA-F110,02_evidence.csv,M-E111,fix_applied,PASS,Sửa lỗi QA-010..021,verification_status chuẩn hóa về 'công bố nhà cung cấp'; phần ngoặc chuyển vào limitation.,coordinator
+QA-F111,02_evidence.csv,M-E112,fix_applied,PASS,Sửa lỗi QA-010..021,verification_status chuẩn hóa về 'công bố nhà cung cấp'; phần ngoặc chuyển vào limitation.,coordinator
+QA-F112,02_evidence.csv,M-E113,fix_applied,PASS,Sửa lỗi QA-010..021,verification_status chuẩn hóa về 'công bố nhà cung cấp'; phần ngoặc chuyển vào limitation.,coordinator
+QA-F113,02_evidence.csv,M-E114,fix_applied,PASS,Sửa lỗi QA-010..021,verification_status chuẩn hóa về 'công bố nhà cung cấp'; phần ngoặc chuyển vào limitation.,coordinator
+QA-F114,02_evidence.csv,M-E118,fix_applied,PASS,Sửa lỗi QA-010..021,verification_status chuẩn hóa về 'công bố nhà cung cấp'; phần ngoặc chuyển vào limitation.,coordinator
+QA-F115,02_evidence.csv,M-E119,fix_applied,PASS,Sửa lỗi QA-010..021,verification_status chuẩn hóa về 'công bố nhà cung cấp'; phần ngoặc chuyển vào limitation.,coordinator
+QA-F116,02_evidence.csv,M-E120,fix_applied,PASS,Sửa lỗi QA-010..021,verification_status chuẩn hóa về 'công bố nhà cung cấp'; phần ngoặc chuyển vào limitation.,coordinator
+QA-F117,02_evidence.csv,M-E101→M-E120,fix_applied,PASS,Sửa lỗi QA-009,"Chuẩn hóa header B về schema 21 cột: fact→evidence_text, source_ids→source_id, note+observed_date→limitation; ánh xạ program_id M-P###.",coordinator
+QA-F118,02_evidence.csv,M-E201,fix_applied,PASS,Sửa lỗi QA-029,verification_status chuẩn hóa về 'đối chiếu nguồn gốc'.,coordinator
+QA-F119,02_evidence.csv,M-E202,fix_applied,PASS,Sửa lỗi QA-030,verification_status chuẩn hóa về 'đối chiếu nguồn gốc'.,coordinator
+QA-F120,02_evidence.csv,M-E203,fix_applied,PASS,Sửa lỗi QA-031,verification_status chuẩn hóa về 'đối chiếu nguồn gốc'.,coordinator
+QA-F121,02_evidence.csv,M-E204,fix_applied,PASS,Sửa lỗi QA-032,verification_status chuẩn hóa về 'đối chiếu nguồn gốc'.,coordinator
+QA-F122,02_evidence.csv,M-E205,fix_applied,PASS,Sửa lỗi QA-033,verification_status chuẩn hóa về 'đối chiếu nguồn gốc'.,coordinator
+QA-F123,02_evidence.csv,M-E206,fix_applied,PASS,Sửa lỗi QA-034,verification_status chuẩn hóa về 'chưa xác minh'.,coordinator
+QA-F124,02_evidence.csv,M-E207,fix_applied,PASS,Sửa lỗi QA-035,verification_status chuẩn hóa về 'tự thuật người học'.,coordinator
+QA-F125,02_evidence.csv,M-E208,fix_applied,PASS,Sửa lỗi QA-047,Cập nhật sau khi sửa gán sai M-V207→M-V211 và bổ sung M-V222.,coordinator
+QA-F126,02_evidence.csv,M-E208,fix_applied,PASS,Sửa lỗi QA-036,verification_status chuẩn hóa về 'công bố nhà cung cấp'.,coordinator
+QA-F127,02_evidence.csv,M-E209,fix_applied,PASS,Sửa lỗi QA-037,verification_status chuẩn hóa về 'công bố nhà cung cấp'.,coordinator
+QA-F128,02_evidence.csv,M-E210,fix_applied,PASS,Sửa lỗi QA-038,verification_status chuẩn hóa về 'công bố nhà cung cấp'.,coordinator
+QA-F129,02_evidence.csv,M-E211,fix_applied,PASS,Sửa lỗi QA-039,verification_status chuẩn hóa về 'công bố nhà cung cấp'.,coordinator
+QA-F130,02_evidence.csv,M-E212,fix_applied,PASS,Sửa lỗi QA-040,verification_status chuẩn hóa về 'chưa xác minh'.,coordinator
+QA-F131,02_evidence.csv,M-E213,fix_applied,PASS,Sửa lỗi QA-027+QA-041,"Viết lại đủ cột: source_id trống (tìm kiếm âm), verification_status='chưa xác minh'.",coordinator
+QA-F132,02_evidence.csv,M-E201→M-E213,fix_applied,PASS,Sửa lỗi QA-026,"Chuẩn hóa header C về schema 21 cột: fact→evidence_text, url→locator, data_period→period_start/period_end.",coordinator
+QA-F133,07_task_log.csv,M-E306,fix_applied,PASS,Sửa lỗi QA-052,Chuyển ghi chú trạng thái NEEDS_INPUT/BLOCKED sang task log; không giữ trong evidence.,coordinator
+QA-F134,02_evidence.csv,M-E301→M-E305,fix_applied,PASS,Sửa lỗi QA-051,"Chuẩn hóa header D về schema 21 cột: statement→evidence_text, search_id→locator.",coordinator
+QA-F135,02_evidence.csv,M-E401,fix_applied,PASS,Sửa lỗi QA-060,verification_status → 'chưa xác minh'.,coordinator
+QA-F136,02_evidence.csv,M-E410,fix_applied,PASS,Sửa lỗi QA-066,"unit '%,;'→'%'; giữ 'trên 85%' trong evidence_text/limitation.",coordinator
+QA-F137,02_evidence.csv,M-E415,fix_applied,PASS,Sửa lỗi QA-061,"Tách '43/24' thành 2 dòng M-E437, M-E438.",coordinator
+QA-F138,02_evidence.csv,M-E418,fix_applied,PASS,Sửa lỗi QA-062,Tách thành 6 dòng theo ngành (M-E439→M-E444).,coordinator
+QA-F139,02_evidence.csv,M-E419,fix_applied,PASS,Sửa lỗi QA-063,Tách thành 3 dòng theo ngành (M-E445→M-E447).,coordinator
+QA-F140,02_evidence.csv,M-E420,fix_applied,PASS,Sửa lỗi QA-064,"Tách thành 4 dòng theo ngành (M-E448→M-E451); bán lẻ/giáo dục/CNTT giữ khoảng 30,5–35.",coordinator
+QA-F141,02_evidence.csv,M-E422,fix_applied,PASS,Sửa lỗi QA-065,"Tách thành 2 dòng (M-E452, M-E453).",coordinator
+QA-F142,02_evidence.csv,M-E428,fix_applied,PASS,Sửa lỗi QA-055,Xóa cột trống thừa (22→21 cột).,coordinator
+QA-F143,02_evidence.csv,M-E429,fix_applied,PASS,Sửa lỗi QA-056,Xóa cột trống thừa (22→21 cột).,coordinator
+QA-F144,02_evidence.csv,M-E430,fix_applied,PASS,Sửa lỗi QA-057,Xóa cột trống thừa (22→21 cột).,coordinator
+QA-F145,02_evidence.csv,M-E433,fix_applied,PASS,Sửa lỗi QA-067,"unit '%,;' → '%'.",coordinator
+QA-F146,02_evidence.csv,M-E434,fix_applied,PASS,Sửa lỗi QA-058,Xóa cột trống thừa (22→21 cột).,coordinator
+QA-F147,02_evidence.csv,M-E435,fix_applied,PASS,Sửa lỗi QA-059,Xóa cột trống thừa (22→21 cột).,coordinator
+QA-F148,03_programs.csv,M-P121,fix_applied,PASS,Sửa lỗi QA-022,listed_price chuẩn hóa '6000000-7000000'; phần chữ chuyển vào promotion_conditions.,coordinator
+QA-F149,04_cohorts.csv,M-C107,fix_applied,PASS,Sửa lỗi QA-023,actual_enrollment '130+' → 130; văn bản gốc giữ trong limitation.,coordinator
+QA-F150,04_cohorts.csv,M-C101→M-C107,fix_applied,PASS,Sửa lỗi QA-024,Xác nhận cohort_status đã đúng danh mục spec (lớp dự kiến/đã khai giảng/đã kết thúc/chưa rõ).,coordinator
+QA-F151,05_learner_voices.csv,M-V207,fix_applied,PASS,Sửa lỗi QA-042,Gán lại đúng người↔lời kể theo trang wms.vn (đối chiếu trực tiếp 08/10/2026); trích dẫn ≤25 từ.,coordinator
+QA-F152,05_learner_voices.csv,M-V208,fix_applied,PASS,Sửa lỗi QA-043,Gán lại đúng người↔lời kể theo trang wms.vn (đối chiếu trực tiếp 08/10/2026); trích dẫn ≤25 từ.,coordinator
+QA-F153,05_learner_voices.csv,M-V209,fix_applied,PASS,Sửa lỗi QA-044,Gán lại đúng người↔lời kể theo trang wms.vn (đối chiếu trực tiếp 08/10/2026); trích dẫn ≤25 từ.,coordinator
+QA-F154,05_learner_voices.csv,M-V210,fix_applied,PASS,Sửa lỗi QA-045,Gán lại đúng người↔lời kể theo trang wms.vn (đối chiếu trực tiếp 08/10/2026); trích dẫn ≤25 từ.,coordinator
+QA-F155,05_learner_voices.csv,M-V211,fix_applied,PASS,Sửa lỗi QA-046,Gán lại đúng người↔lời kể theo trang wms.vn (đối chiếu trực tiếp 08/10/2026); trích dẫn ≤25 từ.,coordinator
+QA-F156,05_learner_voices.csv,M-V222,fix_applied,PASS,Sửa lỗi QA-042..046,Bổ sung lời kể Phan Bá Thông (có trên trang gốc nhưng agent bỏ sót).,coordinator
+QA-F157,05_learner_voices.csv,M-V203→M-V222,fix_applied,PASS,Sửa lỗi QA-008,"program_id giữ mô tả tự do (WMS/CASK/CAS không có trong programs.csv của agent B) — ghi chú trong README, không ép mã giả.",coordinator
+QA-F158,05_learner_voices.csv,M-V213→M-V221,fix_applied,PASS,Sửa lỗi QA-048,Tương tự QA-008: giữ mô tả chương trình tự do + ghi chú README.,coordinator
+QA-F159,06_search_demand.csv,M-K303→M-K533,fix_applied,PASS,Sửa lỗi QA-053,value_type 'số chính xác' → 'index tương đối 0–100 (không phải volume)' cho 231 dòng Trends index.,coordinator
+QA-F160,06_search_demand.csv,M-K301→M-K540,fix_applied,PASS,Sửa lỗi QA-050,"Phê duyệt mở rộng khoảng ID M-K301→M-K599 (không trùng agent nào); giữ nguyên ID, không đánh lại.",coordinator
+QA-F161,02_evidence.csv,M-E403,fix_applied,PASS,Sửa lỗi QA-068 (áp dụng sót trong build),"source_id=M-S401;M-S417; locator cập nhật bài baomoi.com xác nhận 27,51%; verification_status='đối chiếu nguồn gốc'.",coordinator
+QA2V-001,size-growth/findings.csv,SG-E027,audit_decision,FAIL,"Dùng số ""130 người"" từ M-E109 trong khi QA2-01 cấm sử dụng",Đã xóa số 130; ghi 0 tin tách được trả phí,QA độc lập v2
+QA2V-002,providers/findings.csv,PF-060,ref_integrity,FAIL,"source_url cắt cụt giữa slug, mất truy vết",Đã khôi phục URL đầy đủ từ verification M-E021,QA độc lập v2
+QA2V-F01,size-growth/findings.csv,SG-E015,accuracy,FLAG,chuỗi giá: mốc 2020 (litado.edu.vn) 404 — mắt xích yếu nhất,"Hạ nhãn chuỗi, ghi rõ trong limitation",QA độc lập v2
+QA2V-F02,size-growth/findings.csv,SG-E019,accuracy,FLAG,"nhãn ""bằng chứng"" cho chuỗi dù 2/4 mốc chỉ snippet","Đổi nhãn thành ""tín hiệu""",QA độc lập v2
+QA2V-F03,size-growth/findings.csv,SG-E021,accuracy,FLAG,"mốc saigonreview ""~2026"" nhưng asset từ 02/2024",Sửa mốc thành ~2024,QA độc lập v2
+QA2V-F04,size-growth/findings.csv,SG-E024,accuracy,FLAG,"""trung tâm ~31"" không truy vết được",Sửa thành trung điểm khoảng ~34,QA độc lập v2
+QA2V-F05,providers/findings.csv,PF-029,accuracy,FLAG,"price_unit=price_per_person mâu thuẫn ""chưa rõ người hay cặp""","Đổi thành ""chưa rõ đơn vị"" (QA2-11)",QA độc lập v2
+QA2V-F06,learners/findings.csv,F-L20,accuracy,FLAG,URL TikTok sai định dạng,Ghi rõ không truy vết được video gốc,QA độc lập v2
+QA2V-F07,providers/findings.csv,PF-031,accuracy,FLAG,"claim Top 6/Top 10 từ snippet-era, không xác nhận được","Ghi ""chỉ tham khảo""",QA độc lập v2
+QA2V-F08,growth/findings.csv,G-F206,accuracy,FLAG,"tham chiếu ""claim C084""/""v3"" không tồn tại",Gỡ tham chiếu,QA độc lập v2
+QA2V-100,toàn bộ,—,fabrication_check,PASS,Spot-check 12 URL: không phát hiện dữ liệu bịa đặt,—,QA độc lập v2

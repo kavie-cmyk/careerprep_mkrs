@@ -1,0 +1,49 @@
+task_id,agent_owner,question_id,requested_data,search_routes,status,result_evidence_ids,unresolved_issue,required_input
+M-T-A01,agent-a,SIZE,Tuyển sinh/học viên tích lũy Tomorrow Marketers,tìm kiếm mở (số học viên; doanh thu/founder phỏng vấn); browser.open trang sự kiện,PARTIAL,"M-E001,M-E002,M-E028,M-E031",Mâu thuẫn 15.000+ vs gần 30.000 — giữ cả hai; không có tuyển mới theo kỳ,
+M-T-A02,agent-a,SIZE,Tuyển sinh/học viên AIM Academy,tìm kiếm mở (số học viên; báo chí 2021-2023); trang chủ; elearning (fetch lỗi),PARTIAL,"M-E003,M-E004,M-E005,M-E006",Trang elearning ghi theo snippet; không có tuyển mới theo kỳ,
+M-T-A03,agent-a,SIZE,Tuyển sinh/học viên Vinalink Academy,tìm kiếm mở; hồ sơ TopCV (snippet),PARTIAL,"M-E007,M-E008,M-E009,M-E010,M-E011,M-E012,M-E013",Mâu thuẫn 3 số tích lũy + 3 mức/tháng — giữ tất cả; nguồn thứ cấp có dấu hiệu sao chép PR,
+M-T-A04,agent-a,SIZE,Số học viên marketing tách riêng HNAAu,tìm kiếm mở; browser.open trang chủ,NOT_FOUND_PUBLIC,"M-E014,M-E015,M-E016",Chỉ có số toàn khối ngành — ghi rõ KHÔNG dùng cho Category marketing,
+M-T-A05,agent-a,SIZE,Người học trả phí BRAND Camp; số khóa theo năm,tìm kiếm mở; 3 trang promo brandcamp.asia,PARTIAL,"M-E017,M-E018,M-E019,M-E020",Không tìm được unique_paid_buyers của BRAND Camp,
+M-T-A06,agent-a,SIZE,Học viên Google Career Certificates tại VN,tìm kiếm mở (học bổng; Coursera),PARTIAL,"M-E021,M-E022,M-E023,M-E024,M-E032",Tất cả là chỉ tiêu học bổng (announced_intake); học bổng ≠ khách trả phí,
+M-T-A07,agent-a,SIZE,Người học khóa marketing trên Unica/Kyna,tìm kiếm mở (Unica; Kyna; khóa Facebook Marketing từ A-Z),PARTIAL,"M-E025,M-E026,M-E027",Counter 9.753 chưa rõ gồm học thử hay trả phí; Kyna đã ngừng hoạt động (2017),
+M-T-A08,agent-a,SIZE,Tổng học viên MOA/PMAX Academy/EQVN,tìm kiếm mở,PARTIAL,M-E030,"NOT_FOUND_PUBLIC cho tổng học viên PMAX Academy, EQVN; MOA chỉ có cohort_capacity",
+M-T-A09,agent-a,SIZE,Doanh thu đào tạo marketing tách riêng (course_revenue) mọi đơn vị,tìm kiếm mở (doanh thu năm; masothue),NOT_FOUND_PUBLIC,,Không đơn vị nào công bố; lưu ý Vinalink Logistics là công ty khác,
+M-T-A10,agent-a,GROWTH,Tỷ lệ lấp đầy/hoàn thành/mua lại,rà soát trang về chúng tôi/thành tựu 6 đơn vị,NOT_FOUND_PUBLIC,,Không có công bố chính thức,
+M-T-A11,agent-a,SIZE,Lịch khai giảng/ảnh lớp đếm được trên fanpage,chưa thực hiện qua text (cần live browser/Facebook CLI),NEEDS_INPUT,,,live browser hoặc Facebook CLI có đăng nhập để đếm sĩ số từ ảnh lớp
+M-T-B01,agent-b,WHERE/SIZE,Chương trình/lớp/giá Tomorrow Marketers,search web; mở trực tiếp 3 trang,FOUND,"M-E102,M-E110,M-P101,M-P102",PARTIAL: số buổi/lịch Performance Marketing with AI (trang render thiếu),
+M-T-B02,agent-b,WHERE/SIZE,Chương trình/giá BRAND Camp,search web; trang danh mục Digital Marketing; snippet trang chủ,FOUND,"M-E105,M-E118,M-P109→M-P119",PARTIAL: URL riêng 5/11 khóa; phạm vi ưu đãi 30% chưa xác minh,
+M-T-B03,agent-b,WHERE/SIZE,Chương trình/lớp/giá Vinalink Academy,search web; trang lịch khai giảng; trang chi tiết; trang chủ,FOUND,"M-E101,M-E103,M-E104,M-E109,M-E115,M-E116,M-E117,M-P103→M-P108,M-C101→M-C107",Mâu thuẫn giữ cả hai (SEO AI 6 vs 9 buổi; giá FB AI; giá Plan); NOT_FOUND_PUBLIC: giá 4 khóa (Content/SEO AI/TikTok/Ecommerce),
+M-T-B04,agent-b,WHERE/SIZE,Chương trình/giá HNAAu,search web; trang DMF (đầy đủ); snippet 3 trang còn lại,FOUND,"M-E106,M-E112,M-E113,M-E120,M-P120→M-P123",NOT_FOUND_PUBLIC: lịch khai giảng cụ thể HNAAu,
+M-T-B05,agent-b,WHERE/SIZE,Chương trình/giá AIM Academy,search web; snippet trang chính thức (fetch trực tiếp lỗi 1 lần),FOUND,"M-E107,M-E111,M-E114,M-P124→M-P126","PARTIAL: fetch lỗi upstream 1 lần (dùng snippet, đã ghi rõ); NOT_FOUND_PUBLIC: lịch khai giảng AIM",
+M-T-B06,agent-b,WHERE/SIZE,Google Career Certificates (bối cảnh),search web; FAQ Coursera (đối chiếu); review thứ ba,FOUND,"M-E121,M-E122,M-P127","Bối cảnh kỹ năng số, tách khỏi 5 đơn vị VN",
+M-T-B07,agent-b,WHERE/SIZE,Số chỗ công bố (announced_capacity) mọi lớp,3+ đường tìm kiếm,NOT_FOUND_PUBLIC,,Không đơn vị nào công bố số chỗ,
+M-T-C01,agent-c,WHO/GROWTH_SOURCE,Khảo sát động lực học & chi trả đào tạo,browser.search VN/EN (Q&Me; PwC 2025 VN; British Council PDF),FOUND,"M-E201,M-E202,M-E203,M-E204,M-E205,M-E206",Không tìm được khảo sát Q&Me/Decision Lab về động lực học marketing,
+M-T-C02,agent-c,WHO,Lời kể người học độc lập,browser.search (review khóa học; AIM; digital marketing),FOUND,"M-V201,M-V202",Chỉ 2 lời kể độc lập có nội dung thực chất; phần lớn sau tường đăng nhập,
+M-T-C03,agent-c,WHO,Lời kể do NCC tuyển chọn,"browser.search (TM alumni; Vinalink; CASK); mở wms.vn, cask.vn",FOUND,M-V203→M-V222,"19/21 lời kể do NCC chọn lọc — thiên lệch tích cực, cấm dùng làm phân bố",
+M-T-C04,agent-c,GROWTH_SOURCE,Khảo sát hỏi trực tiếp 'ai trả tiền' khóa marketing,nhiều truy vấn VN/EN; rà Navigos/Anphabe/WEF/Adecco,NOT_FOUND_PUBLIC,M-E213,Kết quả âm — khớp claim C084 của v3,
+M-T-C05,agent-c,WHO,Lời kể prospective_learner thực chất,diễn đàn (webtretho/voz/facebook),NOT_FOUND_PUBLIC,,Diễn đàn yêu cầu đăng nhập; Facebook sau tường đăng nhập,
+M-T-C06,agent-c,WHO,Trang review AIM Academy,browser.open aimacademy.vn/review-khoa-hoc-aim-academy/,BLOCKED,,upstream_fetch_failed; không retry theo quy tắc,
+M-T-D01,agent-d,GROWTH,Search volume tuyệt đối 5 seed + biến thể,9 lượt browser.search (blog SEO/case study/glossary VN); mở toàn văn 3 bài,PARTIAL,"M-K301,M-K302","PARTIAL: chỉ 2 biến thể từ ychoc.com (~2022, ước tính mô hình, thiếu địa lý/thời kỳ); NOT_FOUND_PUBLIC cho 5 seed nguyên văn",
+M-T-D02,agent-d,GROWTH,Truy cập Keyword Planner,—,NEEDS_INPUT,,,tài khoản Google Ads
+M-T-D03,agent-d,GROWTH,Truy cập Ahrefs/SEMrush/Ubersuggest,—,BLOCKED,,Cần đăng nhập/trả phí; không vượt,
+M-T-D04,agent-d,GROWTH,Ý định tìm kiếm (related queries nguyên văn + nhãn),CSV Trends đã lưu (không re-export); batch 06:11,FOUND,M-K303→M-K540,"231 truy vấn gắn nhãn; index 0–100 giữ nguyên, không quy đổi volume",
+M-T-D05,agent-d,GROWTH,Ví dụ truy vấn EQVN,eqvn.net/semantic-keywords-la-gi/,FOUND,M-K534→M-K540,"7 truy vấn minh họa, không số liệu",
+M-T-E01,agent-e,GROWTH_SOURCE,Nhu cầu nâng cao kỹ năng marketing (TopCV; Navigos; Anphabe),browser.search,FOUND,M-E401→M-E407,Gián tiếp qua báo chí; báo cáo gốc chưa đọc trực tiếp,
+M-T-E02,agent-e,GROWTH_SOURCE,Khảo sát MISA 360 marketer (bản gốc),2 lượt browser.search,NOT_FOUND_PUBLIC,M-E410,"Chỉ có nguồn thứ cấp (Tạp chí NCKH ĐH Sao Đỏ 2/2025); đây là mức ứng dụng AI, không phải nhu cầu đào tạo",
+M-T-E03,agent-e,GROWTH_SOURCE,Ngân sách L&D doanh nghiệp (HRD 2022; Ken Research),browser.search,FOUND,M-E418→M-E451,"Dữ liệu 2022; đào tạo chung, không tách marketing",
+M-T-E04,agent-e,GROWTH_SOURCE,Đào tạo nội bộ vs thuê ngoài; rào cản ngân sách,browser.search (ELSA; Navigos),FOUND,"M-E415→M-E417,M-E452,M-E453",Khảo sát gốc chưa xác định đầy đủ,
+M-T-E05,agent-e,GROWTH_SOURCE,Giao dịch đào tạo đã thực hiện (FPT; British Council; Học viện AI),browser.search,FOUND,M-E427→M-E436,Tự công bố NCC hoặc nguồn thứ cấp; British Council 2019 ngoài khung ưu tiên,
+M-T-E06,agent-e,GROWTH_SOURCE,Bên chi trả đào tạo marketing (DN hay cá nhân),browser.search,NOT_FOUND_PUBLIC,,"Chỉ ra văn bản pháp luật chung, không tách marketing",
+M-T-E07,agent-e,GROWTH_SOURCE,Ngân sách đào tạo marketing tách riêng,"các luồng 1,2,5,6",NOT_FOUND_PUBLIC,,Chỉ có L&D chung,
+M-T-E08,agent-e,GROWTH_SOURCE,Adecco/Q&Me/Nielsen/Decision Lab,rà thư viện báo cáo,NOT_FOUND_PUBLIC,,Adecco chỉ có dải lương; Q&Me không có báo cáo đào tạo,
+M-T-E09,agent-e,GROWTH_SOURCE,Bối cảnh quốc tế (ManpowerGroup; Mercer; WEF),browser.search (qua Tanca),FOUND,M-E437+context,"ghi rõ geography, không điền vào ô VN",
+M-T-D99,agent-d,GROWTH,Truy cập Google Keyword Planner / Ahrefs / SEMrush / Ubersuggest lấy search volume tuyệt đối,không truy cập được trong phạm vi subagent (cần tài khoản/đăng nhập),NEEDS_INPUT,,"M-E306 là ghi chú trạng thái, không phải dữ kiện thị trường — chuyển từ evidence sang task log",tài khoản Google Ads (Keyword Planner) hoặc Ahrefs/SEMrush bản trả phí
+V2-T01,size-growth,Q1,Doanh thu đào tạo marketing tách riêng từng NCC,search mở: doanh thu/mã số thuế/phỏng vấn founder; hồ sơ thuế DN tư nhân,NOT_FOUND_PUBLIC,,0 NCC công bố; hồ sơ thuế không công khai,Số nội bộ từng NCC
+V2-T02,size-growth,Q1,Unique buyers vs lượt mua,tìm trong công bố NCC và khảo sát,NOT_FOUND_PUBLIC,,0 nguồn tách,CRM NCC hoặc khảo sát người học
+V2-T03,size-growth,Q1+Q2,Lớp thực + HV thực tế + học phí thực thu,text search,NEEDS_INPUT,,Chỉ 1 tin không tách trả phí (đã loại M-C107),Đếm ảnh lớp khai giảng fanpage — cần live browser/FB CLI
+V2-T04,size-growth,Q1,Tỷ lệ trùng người học giữa các NCC,tìm khảo sát công khai,NOT_FOUND_PUBLIC,,0 dữ liệu,Khảo sát người học
+V2-T05,providers,Q4,Giá hợp đồng B2B,"website NCC (đều ""liên hệ tư vấn"")",NOT_FOUND_PUBLIC,,0 NCC công bố,Phê duyệt hỏi giá trực tiếp
+V2-T06,learners,Q3,"Khảo sát ""ai trả tiền"" khóa marketing",tìm VN/EN nhiều truy vấn,NOT_FOUND_PUBLIC,,Kết quả âm M-E213,Thiết kế khảo sát mới
+V2-T07,learners,Q3,Lời kể độc lập về DN chi trả khóa marketing cụ thể,tìm kiếm mở,NOT_FOUND_PUBLIC,,0 lời kể,Phỏng vấn người học
+V2-T08,growth,Q5,Ngân sách đào tạo marketing tách riêng của DN,"báo cáo L&D, khảo sát DN",NOT_FOUND_PUBLIC,,"Chỉ có L&D chung, không tách marketing",Khảo sát DN / phỏng vấn HR
+V2-T09,growth,Q5,Dữ liệu năng lực MIA (syllabus/học phí/giảng viên/alumni),tìm kiếm công khai,NEEDS_INPUT,,0 dữ kiện công khai,Đầu vào nội bộ CareerPrep
