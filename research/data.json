@@ -200,6 +200,94 @@
       "type": "CSV xuất riêng",
       "limit": "Từ khóa/địa lý/thời gian đối chiếu CSV và mô tả người cung cấp; chưa có ảnh cấu hình riêng cho từ khóa này. Mỗi bộ có thang chuẩn hóa riêng; không so sánh độ lớn chỉ số giữa từ khóa. Không suy số người muốn mua khóa học từ truy vấn về kỹ thuật, công cụ hoặc sách.",
       "locator": "time: 37 dòng; region: 60 dòng; top: 50 dòng; rising: 50 dòng. Loại 09/2023 khỏi so sánh ba kỳ 12 tháng."
+    },
+    {
+      "id": "S19",
+      "title": "Lịch khai giảng Vinalink",
+      "publisher": "Vinalink Academy",
+      "url": "https://vinalink.edu.vn/lich-khai-giang/",
+      "period": "Quan sát 08/10/2026",
+      "scope": "5 lịch lớp tại mục “Online toàn quốc” có ngày xác định",
+      "locator": "Bảng lịch: 28/09, 02/10, 09/10, 27/10, 09/11/2026",
+      "limit": "Lịch công bố không chứng minh lớp đã tổ chức hoặc có học viên trả phí; quan sát có thể thay đổi.",
+      "type": "Nhà cung cấp"
+    },
+    {
+      "id": "S20",
+      "title": "Foundation of Digital Marketing",
+      "publisher": "BRAND Camp",
+      "url": "https://www.brandcamp.asia/course/10-foundation-of-digital-marketing",
+      "period": "Quan sát 08/10/2026",
+      "scope": "Một khóa video thu sẵn; tự học",
+      "locator": "Mục học phí trên trang chi tiết khóa học",
+      "limit": "Giá trên trang chi tiết 299,000 VND; trang danh mục Digital Marketing hiển thị giá khác. Chưa xác nhận VAT, giao dịch thực thu hoặc hiệu lực ưu đãi; không suy giá thị trường.",
+      "type": "Nhà cung cấp"
+    },
+    {
+      "id": "S21",
+      "title": "Performance Marketing P1: Proposal & Pitching",
+      "publisher": "BRAND Camp",
+      "url": "https://www.brandcamp.asia/course/156-performance-marketing-p1-proposal-pitching",
+      "period": "Quan sát 08/10/2026",
+      "scope": "Một khóa video thu sẵn; tự học",
+      "locator": "Mục học phí trên trang chi tiết khóa học",
+      "limit": "Giá trên trang chi tiết 499,000 VND; trang danh mục Digital Marketing hiển thị giá khác. Chưa xác nhận VAT, giao dịch thực thu hoặc hiệu lực ưu đãi; không suy giá thị trường.",
+      "type": "Nhà cung cấp"
+    },
+    {
+      "id": "S22",
+      "title": "Performance Marketing P2: Execution & Analytics",
+      "publisher": "BRAND Camp",
+      "url": "https://www.brandcamp.asia/course/188-performance-marketing-p2-execution-analytics",
+      "period": "Quan sát 08/10/2026",
+      "scope": "Một khóa video thu sẵn; tự học",
+      "locator": "Mục học phí trên trang chi tiết khóa học",
+      "limit": "Giá trên trang chi tiết 599,000 VND; trang danh mục Digital Marketing hiển thị giá khác. Chưa xác nhận VAT, giao dịch thực thu hoặc hiệu lực ưu đãi; không suy giá thị trường.",
+      "type": "Nhà cung cấp"
+    },
+    {
+      "id": "S23",
+      "title": "Facebook AI Marketing 2026",
+      "publisher": "Vinalink Academy",
+      "url": "https://vinalink.edu.vn/cac-khoa-hoc/facebook-marketing/",
+      "period": "Quan sát 08/10/2026",
+      "scope": "Một khóa trực tuyến tương tác",
+      "locator": "Mục 10, phần FAQ: 8 buổi, Zoom; nội dung ứng dụng AI",
+      "limit": "Hai phần cùng trang nêu học phí khác nhau: 9,9/7,4 triệu và 7,9/5,9 triệu. Không đưa vào biểu đồ giá; đầu ra là lời hứa nhà cung cấp.",
+      "type": "Nhà cung cấp"
+    },
+    {
+      "id": "S24",
+      "title": "Lời kể người học trên trang WMS",
+      "publisher": "WMS",
+      "url": "https://wms.vn/chuong-trinh-hoc/ai-marketing-automation/",
+      "period": "Quan sát 08/10/2026; không xác định ngày xuất bản",
+      "scope": "Hai lời kể về chương trình Digital Marketing/IME",
+      "locator": "Mục cảm nhận: Nguyễn Thùy Dương (Nha Go Furniture); Phạm Ngọc Hương Trang (Hoozing Vietnam)",
+      "limit": "Lời kể do đơn vị đăng tải, chưa xác minh độc lập. Nằm trên trang AI nhưng kể về các chương trình khác; không dùng để chứng minh hiệu quả khóa AI.",
+      "type": "Nhà cung cấp"
+    },
+    {
+      "id": "S25",
+      "title": "Trường hợp người học Brand Development",
+      "publisher": "Tomorrow Marketers",
+      "url": "https://www.tomorrowmarketers.org/chinh-sach-gia-cuu-hoc-vien",
+      "period": "Quan sát 08/10/2026; không xác định ngày xuất bản",
+      "scope": "Một trường hợp co-founder/creative Mềm",
+      "locator": "Phần cảm nhận: hai founder, làm bài cuối khóa trên doanh nghiệp của mình",
+      "limit": "Lời kể được nhà cung cấp tuyển chọn; không đại diện cơ cấu học viên. Giá cựu học viên trên trang khác điều kiện giá cho người đăng ký mới.",
+      "type": "Nhà cung cấp"
+    },
+    {
+      "id": "S26",
+      "title": "Gói nghiên cứu Muse · bản gốc",
+      "publisher": "Muse · tài liệu người dùng cung cấp",
+      "url": "research/muse/2026-10-08/MIA_Category_Research_Pack.zip",
+      "period": "Quan sát 08/10/2026",
+      "scope": "83 dòng nguồn; 119 bằng chứng; 27 chương trình; 22 lời kể",
+      "locator": "05_learner_voices.csv, cột provider_curated; các CSV gốc trong ZIP",
+      "limit": "Chỉ các bằng chứng ghi rõ đã đối chiếu mới dùng để lập luận. Nhãn QA của Muse không thay thế kiểm chứng; không ghép nguồn Trends khác kỳ.",
+      "type": "Dữ liệu cung cấp"
     }
   ],
   "evidence": [
@@ -535,6 +623,87 @@
       "value": 121.41119221411189,
       "unit": "%",
       "location": "10/2025–09/2026 so với 10/2024–09/2025; không ghép thang chỉ số với bộ khác"
+    },
+    {
+      "id": "E38",
+      "group": "Học phí",
+      "metric": "BRAND Camp Foundation: giá trên trang chi tiết",
+      "value": 299000,
+      "unit": "VND",
+      "source": "S20",
+      "location": "Học phí; quan sát trên trang chi tiết, khác trang danh mục"
+    },
+    {
+      "id": "E39",
+      "group": "Học phí",
+      "metric": "BRAND Camp Performance P1: giá trên trang chi tiết",
+      "value": 499000,
+      "unit": "VND",
+      "source": "S21",
+      "location": "Học phí; quan sát trên trang chi tiết, khác trang danh mục"
+    },
+    {
+      "id": "E40",
+      "group": "Học phí",
+      "metric": "BRAND Camp Performance P2: giá trên trang chi tiết",
+      "value": 599000,
+      "unit": "VND",
+      "source": "S22",
+      "location": "Học phí; quan sát trên trang chi tiết, khác trang danh mục"
+    },
+    {
+      "id": "E41",
+      "group": "Thời lượng",
+      "metric": "Vinalink Facebook AI Marketing: thời lượng",
+      "value": 8,
+      "unit": "buổi",
+      "source": "S23",
+      "location": "FAQ: 8 buổi; online qua Zoom"
+    },
+    {
+      "id": "E42",
+      "group": "Lịch lớp công bố",
+      "metric": "Vinalink: lịch có ngày trong mục Online toàn quốc",
+      "value": 5,
+      "unit": "lịch",
+      "source": "S19",
+      "location": "28/09, 02/10, 09/10, 27/10, 09/11/2026"
+    },
+    {
+      "id": "E43",
+      "group": "Lịch lớp công bố",
+      "metric": "Vinalink: lịch sau ngày 08/10/2026 trong mẫu",
+      "value": 3,
+      "unit": "lịch",
+      "source": "S19",
+      "location": "09/10, 27/10, 09/11/2026; không phải lớp đã tổ chức"
+    },
+    {
+      "id": "E44",
+      "group": "Chất lượng mẫu định tính",
+      "metric": "Muse · Do nhà cung cấp tuyển chọn",
+      "value": 20,
+      "unit": "lời kể",
+      "source": "S26",
+      "location": "Đếm provider_curated=yes/no/unknown; mẫu có chủ đích, không đại diện người học"
+    },
+    {
+      "id": "E45",
+      "group": "Chất lượng mẫu định tính",
+      "metric": "Muse · Không do nhà cung cấp tuyển chọn",
+      "value": 1,
+      "unit": "lời kể",
+      "source": "S26",
+      "location": "Đếm provider_curated=yes/no/unknown; mẫu có chủ đích, không đại diện người học"
+    },
+    {
+      "id": "E46",
+      "group": "Chất lượng mẫu định tính",
+      "metric": "Muse · Chưa rõ người tuyển chọn",
+      "value": 1,
+      "unit": "lời kể",
+      "source": "S26",
+      "location": "Đếm provider_curated=yes/no/unknown; mẫu có chủ đích, không đại diện người học"
     }
   ],
   "qualitative": [
@@ -602,6 +771,26 @@
       "id": "Q13",
       "source": "S17",
       "finding": "Top của marketing thực chiến gồm chiến lược marketing, marketing là gì, digital marketing và sách digital marketing. Từ khóa chưa tách rõ ý định mua khóa học ngắn hạn."
+    },
+    {
+      "id": "Q14",
+      "source": "S23",
+      "finding": "Vinalink công bố Facebook AI Marketing, 8 buổi online qua Zoom, thực hành và đầu ra kế hoạch/đo lường. AI và ứng dụng đã xuất hiện trong mẫu nguồn cung; chưa chứng minh chất lượng."
+    },
+    {
+      "id": "Q15",
+      "source": "S24",
+      "finding": "Một Deputy Director tại Nha Go Furniture kể về việc học phù hợp ngành và thiết lập quảng cáo hướng đến khách hàng mục tiêu. Lời kể do WMS đăng tải; chương trình Digital Marketing, không phải bằng chứng kết quả khóa AI."
+    },
+    {
+      "id": "Q16",
+      "source": "S24",
+      "finding": "Một SEO Executive tại Hoozing Vietnam kể về chuyển từ ngành khác sang Digital Marketing và vai trò của tư duy giải quyết vấn đề. Lời kể do WMS đăng tải; chưa xác minh độc lập."
+    },
+    {
+      "id": "Q17",
+      "source": "S25",
+      "finding": "Trường hợp co-founder/creative Mềm kể về nhu cầu hiểu thương hiệu để phối hợp với đội marketing và làm bài cuối khóa trên doanh nghiệp của mình. Lời kể được Tomorrow Marketers tuyển chọn; không suy cơ cấu học viên hoặc mức chi trả."
     }
   ],
   "gaps": [
@@ -613,21 +802,21 @@
     },
     {
       "question": "Tăng trưởng hay bão hòa?",
-      "status": "Có 5 chuỗi tìm kiếm; chưa đủ kết luận thị trường",
-      "need": "Lượng tìm kiếm tuyệt đối, số đăng ký và doanh thu đào tạo cùng kỳ; xác nhận cấu hình CSV.",
-      "method": "Đã đối chiếu 5 bộ xuất riêng theo ba kỳ 12 tháng; bổ sung lượng tìm kiếm và tuyển sinh thực tế."
+      "status": "Đã có tín hiệu tìm kiếm; thiếu tăng trưởng tuyển sinh",
+      "need": "Số đăng ký trả phí và doanh thu đào tạo cùng kỳ; phạm vi chương trình nhất quán.",
+      "method": "Dùng 5 chuỗi Google Trends để đọc xu hướng tương đối. Đối chiếu tuyển sinh thực tế khi có; không quy Trends thành quy mô thị trường."
     },
     {
       "question": "Ai đang học?",
-      "status": "Mới có tệp tuyển sinh",
-      "need": "Nghề nghiệp, kinh nghiệm, nơi cư trú và nguồn chi trả của học viên thực tế.",
-      "method": "Phỏng vấn và khảo sát học viên; không suy cơ cấu nhu cầu từ thông điệp website."
+      "status": "Có ba trường hợp người học; mẫu tuyển chọn",
+      "need": "Bài toán công việc, rào cản, động cơ lựa chọn và nguồn chi trả; cơ cấu học viên thực tế.",
+      "method": "Phỏng vấn người học theo vai trò/công việc; kiểm tra dữ liệu tuyển sinh. Lời kể website chỉ gợi ý giả thuyết."
     },
     {
       "question": "Học ở đâu?",
-      "status": "Có bản đồ nguồn cung",
-      "need": "Phân bổ tuyển sinh theo online/offline và địa phương.",
-      "method": "Dữ liệu tuyển sinh phân theo hình thức; kiểm tra CRM chương trình."
+      "status": "Có hình thức học, giá và lịch công bố",
+      "need": "Phân bổ tuyển sinh theo hình thức; xác nhận giá thực thu và số lớp thực sự tổ chức.",
+      "method": "Đối chiếu dữ liệu lớp và giao dịch khi có; giá video tự học và lớp tương tác tách riêng."
     },
     {
       "question": "Nguồn tăng trưởng",
@@ -636,10 +825,10 @@
       "method": "Phỏng vấn 3–5 người theo gợi ý workshop; dùng kết quả định tính để thiết kế khảo sát tiếp theo."
     },
     {
-      "question": "Xác nhận cấu hình / lượng tìm kiếm tuyệt đối",
-      "status": "Đã nhận 5 bộ xuất riêng; ảnh học marketing đã xác nhận",
-      "need": "Xác nhận cấu hình còn lại khi có; lượng tìm kiếm tuyệt đối và dữ liệu tuyển sinh. Các từ khóa bổ sung thiếu dữ liệu theo phản hồi người cung cấp.",
-      "method": "Không quy thiếu dữ liệu thành không có nhu cầu. Ước tính Meta không tính lựa chọn Advantage+ trong ảnh nhận được, nên chưa sử dụng để so sánh quy mô theo sở thích."
+      "question": "Giới hạn dữ liệu tìm kiếm",
+      "status": "Dùng Google Trends hiện có",
+      "need": "Các bộ CSV còn lại thiếu ảnh cấu hình riêng; một số từ khóa bổ sung thiếu dữ liệu.",
+      "method": "Không quy thiếu dữ liệu thành 0. Search volume tuyệt đối chưa có nên không ước tính lượt tìm kiếm; Meta Advantage+ không dùng làm quy mô nhu cầu."
     }
   ],
   "trends": {
@@ -5659,6 +5848,406 @@
       "kind": "Phản hồi người cung cấp",
       "date": "2026-10-08",
       "note": "Người cung cấp cho biết hầu hết từ khóa bổ sung được đề xuất không có dữ liệu nên không gửi CSV; chưa có danh sách xác nhận từng từ khóa hoặc ảnh thông báo. Ghi là chưa đủ dữ liệu, không quy thành 0 hoặc không có nhu cầu."
+    },
+    {
+      "kind": "Tích hợp nghiên cứu bổ sung",
+      "date": "2026-10-08",
+      "note": "Giữ nguyên gói Muse, bổ sung bằng chứng được đối chiếu; tiếp tục dùng Google Trends hiện có theo yêu cầu người cung cấp. Không chờ lượng tìm kiếm tuyệt đối để phân tích xu hướng."
     }
-  ]
+  ],
+  "muse": {
+    "observed": "2026-10-08",
+    "scope": "Đào tạo marketing ngắn hạn tại Việt Nam",
+    "sha256": "a15377588b3a68019eaa7f7ab0e89f01df3b7620d65f830ca3ccfc0fb5dbe930",
+    "rawCounts": {
+      "01_sources.csv": 83,
+      "02_evidence.csv": 119,
+      "03_programs.csv": 27,
+      "04_cohorts.csv": 7,
+      "05_learner_voices.csv": 22,
+      "06_search_demand.csv": 240,
+      "07_task_log.csv": 39,
+      "08_qa_log.csv": 132
+    },
+    "voiceCuration": {
+      "providerCurated": 20,
+      "notProviderCurated": 1,
+      "unknown": 1
+    },
+    "reviewedVoices": [
+      {
+        "rawId": "M-V203",
+        "fact": "Q15",
+        "role": "Quản lý doanh nghiệp",
+        "context": "Deputy Director · Nha Go Furniture",
+        "task": "Quảng cáo phù hợp khách hàng và bối cảnh ngành",
+        "signal": "Học gắn với bài toán doanh nghiệp",
+        "source": "S24"
+      },
+      {
+        "rawId": "M-V204",
+        "fact": "Q16",
+        "role": "Người chuyển nghề",
+        "context": "SEO Executive · Hoozing Vietnam",
+        "task": "Chuyển từ ngành khác sang Digital Marketing",
+        "signal": "Xây tư duy và năng lực giải quyết vấn đề",
+        "source": "S24"
+      },
+      {
+        "rawId": "M-V216",
+        "fact": "Q17",
+        "role": "Nhà sáng lập",
+        "context": "Co-founder/Creative · Mềm",
+        "task": "Hiểu thương hiệu để phối hợp với đội marketing",
+        "signal": "Làm bài cuối khóa trên doanh nghiệp của mình",
+        "source": "S25"
+      }
+    ],
+    "priceBenchmarks": [
+      {
+        "label": "Foundation · 85 video",
+        "format": "Video thu sẵn · tự học",
+        "value": 0.299,
+        "fact": "E38",
+        "source": "S20"
+      },
+      {
+        "label": "Performance P1 · 25 video",
+        "format": "Video thu sẵn · tự học",
+        "value": 0.499,
+        "fact": "E39",
+        "source": "S21"
+      },
+      {
+        "label": "Performance P2 · 19 video",
+        "format": "Video thu sẵn · tự học",
+        "value": 0.599,
+        "fact": "E40",
+        "source": "S22"
+      },
+      {
+        "label": "HNAAu Foundation · online",
+        "format": "Lớp có giảng viên · 12 buổi",
+        "value": 4,
+        "fact": "E23",
+        "source": "S07"
+      },
+      {
+        "label": "HNAAu Foundation · trực tiếp",
+        "format": "Lớp có giảng viên · 12 buổi",
+        "value": 5,
+        "fact": "E22",
+        "source": "S07"
+      },
+      {
+        "label": "TM Performance · early bird",
+        "format": "Zoom tương tác · 10 buổi",
+        "value": 6.21,
+        "fact": "E20",
+        "source": "S04"
+      },
+      {
+        "label": "TM Performance · niêm yết",
+        "format": "Zoom tương tác · 10 buổi",
+        "value": 8.91,
+        "fact": "E19",
+        "source": "S04"
+      }
+    ],
+    "reviewDecisions": [
+      {
+        "item": "M-P101",
+        "decision": "Đối chiếu một phần",
+        "use": "10 buổi Zoom; giá người đi làm 8,91 triệu/early bird 6,21 triệu, VAT 8%.",
+        "limit": "4,899 triệu trong gói thuộc chính sách/campaign khác; không dùng thay giá người đăng ký mới.",
+        "source": "S04"
+      },
+      {
+        "item": "M-P120",
+        "decision": "Đối chiếu một phần",
+        "use": "12 buổi; 4 triệu online, 5 triệu trực tiếp.",
+        "limit": "Khác hình thức, không chỉ có giá 5 triệu.",
+        "source": "S07"
+      },
+      {
+        "item": "M-P106",
+        "decision": "Đối chiếu một phần",
+        "use": "8 buổi online, có lời hứa ứng dụng AI.",
+        "limit": "Học phí mâu thuẫn ngay trong cùng trang; không đưa vào chart.",
+        "source": "S23"
+      },
+      {
+        "item": "BRAND Camp · 3 khóa",
+        "decision": "Đối chiếu trang chi tiết",
+        "use": "299/499/599 nghìn đồng; tách video tự học.",
+        "limit": "Trang danh mục có giá khác; chưa xác nhận giá giao dịch thực thu.",
+        "source": "S20–S22"
+      },
+      {
+        "item": "M-V203 / M-V204 / M-V216",
+        "decision": "Đối chiếu nội dung nguồn",
+        "use": "Ba trường hợp định tính, giữ vai trò và bối cảnh.",
+        "limit": "Đều do nhà cung cấp tuyển chọn; không chứng minh tỷ trọng nhu cầu hoặc hiệu quả đào tạo.",
+        "source": "S24–S25"
+      },
+      {
+        "item": "04_cohorts.csv",
+        "decision": "Giữ là lịch/tín hiệu hoạt động",
+        "use": "5 lịch lớp Vinalink có ngày; 3 sau ngày quan sát.",
+        "limit": "Ngày đã qua không chứng minh lớp đã diễn ra; không có số tuyển sinh trả phí.",
+        "source": "S19"
+      },
+      {
+        "item": "M-K301 / M-K302",
+        "decision": "Không dùng cho search volume hiện tại",
+        "use": "Giữ trong bản gốc.",
+        "limit": "Thông tin SEO khoảng 2022; thiếu công cụ, địa lý và kỳ đo rõ ràng.",
+        "source": "S26"
+      },
+      {
+        "item": "M-S301 · 238 dòng truy vấn",
+        "decision": "Không ghép với Trends hiện có",
+        "use": "Giữ trong bản gốc; tiếp tục dùng 5 bộ CSV người dùng cung cấp.",
+        "limit": "Tham chiếu bộ xuất/đường dẫn và kỳ khác; 20 dòng trùng theo khóa–nguồn–metric. Không tính tỷ trọng intent.",
+        "source": "S26"
+      },
+      {
+        "item": "M-E031 · mã lớp TM142",
+        "decision": "Không dùng làm số lớp đã tổ chức",
+        "use": "Giữ trong bản gốc.",
+        "limit": "Mã lớp không chứng minh số lớp hoặc số người học.",
+        "source": "S26"
+      },
+      {
+        "item": "Dữ liệu nghề số/việc làm chung",
+        "decision": "Chỉ bối cảnh liên quan",
+        "use": "Không đưa vào số liệu quy mô Category.",
+        "limit": "Rủi ro tự động hóa, học bổng nghề số và ngân sách L&D chung khác nhu cầu mua khóa marketing.",
+        "source": "S26"
+      }
+    ],
+    "programs": [
+      {
+        "rawId": "M-P101",
+        "provider": "Tomorrow Marketers",
+        "name": "Performance Marketing with AI",
+        "url": "https://www.tomorrowmarketers.org/digital-performance-course",
+        "review": "Đối chiếu một phần",
+        "verified": "10 buổi Zoom; giá người đi làm 8,91 triệu/early bird 6,21 triệu, VAT 8%."
+      },
+      {
+        "rawId": "M-P102",
+        "provider": "Tomorrow Marketers",
+        "name": "AI Digital Marketing",
+        "url": "https://www.tomorrowmarketers.org/digital-planning/",
+        "review": "Chưa đối chiếu bổ sung",
+        "verified": ""
+      },
+      {
+        "rawId": "M-P103",
+        "provider": "Vinalink Academy",
+        "name": "Agentic Marketing Plan 2026 (AI Marketing Plan 2026 – Lập kế hoạch Marketing với AI & AI Agent)",
+        "url": "https://vinalink.edu.vn/cac-khoa-hoc/digital-marketing-plan/khoa-hoc-lap-ke-hoach-digital-marketing-hieu-qua-theo-chuan-quoc-te.html",
+        "review": "Chưa đối chiếu bổ sung",
+        "verified": ""
+      },
+      {
+        "rawId": "M-P104",
+        "provider": "Vinalink Academy",
+        "name": "Agentic Content Marketing – Xây hệ thống nội dung đa kênh bằng AI",
+        "url": "",
+        "review": "Chưa đối chiếu bổ sung",
+        "verified": ""
+      },
+      {
+        "rawId": "M-P105",
+        "provider": "Vinalink Academy",
+        "name": "SEO AI 5.0 - Tối ưu website để Google & AI chọn bạn",
+        "url": "",
+        "review": "Chưa đối chiếu bổ sung",
+        "verified": ""
+      },
+      {
+        "rawId": "M-P106",
+        "provider": "Vinalink Academy",
+        "name": "Facebook AI Marketing 2026 – Xây hệ thống tăng Lead, tăng đơn & tối ưu chuyển đổi bằng AI",
+        "url": "http://vinalink.edu.vn/cac-khoa-hoc/facebook-marketing/",
+        "review": "Đối chiếu một phần",
+        "verified": "8 buổi online, có lời hứa ứng dụng AI."
+      },
+      {
+        "rawId": "M-P107",
+        "provider": "Vinalink Academy",
+        "name": "TikTok Marketing với AI – Xây kênh triệu view & bán hàng hiệu quả (TikTok AI Commerce 2026)",
+        "url": "",
+        "review": "Chưa đối chiếu bổ sung",
+        "verified": ""
+      },
+      {
+        "rawId": "M-P108",
+        "provider": "Vinalink Academy",
+        "name": "Khóa học AI Ecommerce - Xây kênh TMĐT kiếm tiền với AI",
+        "url": "",
+        "review": "Chưa đối chiếu bổ sung",
+        "verified": ""
+      },
+      {
+        "rawId": "M-P109",
+        "provider": "BRAND Camp",
+        "name": "Foundation of Digital Marketing",
+        "url": "https://www.brandcamp.asia/course/10-foundation-of-digital-marketing",
+        "review": "Đối chiếu học phí trang chi tiết",
+        "verified": "0.299 triệu đồng · Video thu sẵn · tự học · khác giá trang danh mục"
+      },
+      {
+        "rawId": "M-P110",
+        "provider": "BRAND Camp",
+        "name": "Performance Marketing (P1): Proposal & Pitching",
+        "url": "https://www.brandcamp.asia/course/156-performance-marketing-p1-proposal-pitching",
+        "review": "Đối chiếu học phí trang chi tiết",
+        "verified": "0.499 triệu đồng · Video thu sẵn · tự học · khác giá trang danh mục"
+      },
+      {
+        "rawId": "M-P111",
+        "provider": "BRAND Camp",
+        "name": "Performance Marketing (P2): Execution & Analytics",
+        "url": "https://www.brandcamp.asia/course/188-performance-marketing-p2-execution-analytics",
+        "review": "Đối chiếu học phí trang chi tiết",
+        "verified": "0.599 triệu đồng · Video thu sẵn · tự học · khác giá trang danh mục"
+      },
+      {
+        "rawId": "M-P112",
+        "provider": "BRAND Camp",
+        "name": "Digital Performance Marketing: Tối ưu để tăng trưởng",
+        "url": "https://www.brandcamp.asia/course/141-digital-performance-marketing-toi-uu-de-tang-truong",
+        "review": "Chưa đối chiếu bổ sung",
+        "verified": ""
+      },
+      {
+        "rawId": "M-P113",
+        "provider": "BRAND Camp",
+        "name": "IMC Plan: Hoạch định Kế hoạch Truyền thông Tổng lực",
+        "url": "",
+        "review": "Chưa đối chiếu bổ sung",
+        "verified": ""
+      },
+      {
+        "rawId": "M-P114",
+        "provider": "BRAND Camp",
+        "name": "Segmentation & Targeting: Phân khúc Thị trường & Lựa chọn Phân khúc mục tiêu",
+        "url": "",
+        "review": "Chưa đối chiếu bổ sung",
+        "verified": ""
+      },
+      {
+        "rawId": "M-P115",
+        "provider": "BRAND Camp",
+        "name": "Positioning Strategy Masterclass: Chiến lược Định vị Thương hiệu",
+        "url": "",
+        "review": "Chưa đối chiếu bổ sung",
+        "verified": ""
+      },
+      {
+        "rawId": "M-P116",
+        "provider": "BRAND Camp",
+        "name": "Strategic & IMC Planning (P2): Construct the Brand Communication Strategy",
+        "url": "",
+        "review": "Chưa đối chiếu bổ sung",
+        "verified": ""
+      },
+      {
+        "rawId": "M-P117",
+        "provider": "BRAND Camp",
+        "name": "Content Marketing Planning: Hoạch định Nội dung thông minh",
+        "url": "https://www.brandcamp.asia/course/151-content-marketing-planning-hoach-dinh-noi-dung-thong-minh",
+        "review": "Chưa đối chiếu bổ sung",
+        "verified": ""
+      },
+      {
+        "rawId": "M-P118",
+        "provider": "BRAND Camp",
+        "name": "Market Research for Business Decisions: Nghiên cứu thị trường cho quyết định kinh doanh",
+        "url": "",
+        "review": "Chưa đối chiếu bổ sung",
+        "verified": ""
+      },
+      {
+        "rawId": "M-P119",
+        "provider": "BRAND Camp",
+        "name": "Social Media Manager (Phần 1): Hoạch định Chiến lược Mạng xã hội",
+        "url": "https://www.brandcamp.asia/course/287-social-media-manager-phan-1-hoach-dinh-chien-luoc-mang-xa-hoi",
+        "review": "Chưa đối chiếu bổ sung",
+        "verified": ""
+      },
+      {
+        "rawId": "M-P120",
+        "provider": "Hướng Nghiệp Á Âu",
+        "name": "Digital Marketing Foundation",
+        "url": "https://www.huongnghiepaau.com/digital-marketing-foundation",
+        "review": "Đối chiếu một phần",
+        "verified": "12 buổi; 4 triệu online, 5 triệu trực tiếp."
+      },
+      {
+        "rawId": "M-P121",
+        "provider": "Hướng Nghiệp Á Âu",
+        "name": "Chạy quảng cáo Facebook (Facebook Ads)",
+        "url": "https://www.huongnghiepaau.com/khoa-hoc-chay-quang-cao-facebook",
+        "review": "Chưa đối chiếu bổ sung",
+        "verified": ""
+      },
+      {
+        "rawId": "M-P122",
+        "provider": "Hướng Nghiệp Á Âu",
+        "name": "Đào Tạo SEO",
+        "url": "https://www.huongnghiepaau.com/khoa-hoc-seo",
+        "review": "Chưa đối chiếu bổ sung",
+        "verified": ""
+      },
+      {
+        "rawId": "M-P123",
+        "provider": "Hướng Nghiệp Á Âu",
+        "name": "Chuyên viên Social Media",
+        "url": "https://www.huongnghiepaau.com/chuyen-vien-social-media",
+        "review": "Chưa đối chiếu bổ sung",
+        "verified": ""
+      },
+      {
+        "rawId": "M-P124",
+        "provider": "AIM Academy",
+        "name": "Hands-On Marketing",
+        "url": "https://aimacademy.vn/khoa-hoc/hands-on-marketing/",
+        "review": "Chưa đối chiếu bổ sung",
+        "verified": ""
+      },
+      {
+        "rawId": "M-P125",
+        "provider": "AIM Academy",
+        "name": "Market Research",
+        "url": "https://aimacademy.vn/khoa-hoc/market-research/",
+        "review": "Chưa đối chiếu bổ sung",
+        "verified": ""
+      },
+      {
+        "rawId": "M-P126",
+        "provider": "AIM Academy",
+        "name": "Marketing Management (chương trình 5 khóa: Hands-On Marketing, Market Research, Data Analytics For Marketers, Brand Management Excellence, Advanced Marketing Management)",
+        "url": "https://aimacademy.vn/khoa-hoc/marketing-management/",
+        "review": "Chưa đối chiếu bổ sung",
+        "verified": ""
+      },
+      {
+        "rawId": "M-P127",
+        "provider": "Google (qua Coursera)",
+        "name": "Digital Marketing & E-commerce Professional Certificate",
+        "url": "https://www.coursera.org/professional-certificates/google-digital-marketing-ecommerce",
+        "review": "Chưa đối chiếu bổ sung",
+        "verified": ""
+      }
+    ],
+    "limitations": [
+      "Không xác nhận toàn bộ 119 bằng chứng hoặc 83 dòng nguồn.",
+      "Không dùng nhãn QA của Muse để coi bằng chứng đã được kiểm chứng độc lập.",
+      "Không chuyển chỉ số Trends thành lượng tìm kiếm, người mua hoặc doanh thu."
+    ]
+  }
 }
