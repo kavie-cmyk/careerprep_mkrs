@@ -30,6 +30,14 @@ document.getElementById('trends-region-body').innerHTML = trends.regions.map(r=>
 const trendFileLabels={time:'CSV · chuỗi tháng (37)',region:'CSV · địa phương (63)',top:'CSV · Top (50)',rising:'CSV · Rising (50)'};
 document.getElementById('trends-downloads').innerHTML=trends.files.map(f=>`<a class="button secondary" href="${esc(f.path)}" download>${trendFileLabels[f.kind]}</a>`).join('')+'<a class="button secondary" href="research/google-trends/analysis.json" download>JSON · dữ liệu & cách tính</a>';
 const individual = data.individualTrends;
+function drawIndividualChanges(){
+  const W=1100,H=280,L=230,R=55,T=28,B=40,pw=W-L-R,ph=H-T-B;
+  const x=v=>L+(v+50)/200*pw;
+  const ticks=[-50,0,50,100,150].map(v=>`<line x1="${x(v)}" y1="${T}" x2="${x(v)}" y2="${H-B}" stroke="${v===0?'#a9b7ca':'#e0e7f0'}"/><text x="${x(v)}" y="${H-17}" text-anchor="middle">${v>0?'+':''}${v}%</text>`).join('');
+  const bars=individual.map((r,i)=>{const y=T+(i+0.5)*ph/individual.length;return `<text x="${L-15}" y="${y+4}" text-anchor="end">${esc(r.term)}</text><rect x="${Math.min(x(0),x(r.change))}" y="${y-10}" width="${Math.abs(x(r.change)-x(0))}" height="20" rx="2" fill="${r.change>0?'#2657a5':'#7b879b'}"/><text x="${r.change>0?x(r.change)+8:x(r.change)-8}" y="${y+4}" text-anchor="${r.change>0?'start':'end'}">${signed(r.change)}</text>`;}).join('');
+  document.getElementById('single-change-chart').innerHTML=`<h4>Biến động chỉ số trung bình 12 tháng · cả 5 từ khóa</h4><p class="caption">10/2025–09/2026 so với 10/2024–09/2025 · biến động trong từng từ khóa, không phải tăng trưởng doanh thu</p><svg viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="changes-title changes-desc"><title id="changes-title">Biến động chỉ số tìm kiếm của năm từ khóa</title><desc id="changes-desc">${esc(individual.map(r=>`${r.term}: ${signed(r.change)}`).join('; '))}. Các bộ xuất riêng có thang chuẩn hóa riêng; chỉ đối chiếu mức thay đổi theo thời gian trong từng từ khóa.</desc>${ticks}${bars}</svg>`;
+}
+drawIndividualChanges();
 document.getElementById('single-summary').innerHTML=individual.map(r=>`<tr><td><b>${esc(r.term)}</b><small><a href="#source-${esc(r.source)}">${esc(r.source)}</a></small></td>${r.means.map(v=>`<td>${format(v)}</td>`).join('')}<td><b>${signed(r.change)}</b></td></tr>`).join('');
 const singleSelect=document.getElementById('single-term');
 singleSelect.innerHTML=individual.map((r,i)=>`<option value="${i}">${esc(r.term)}</option>`).join('');

@@ -178,6 +178,28 @@
       "type": "CSV xuất riêng",
       "limit": "Từ khóa/địa lý/thời gian đối chiếu CSV và mô tả người cung cấp; chưa có ảnh cấu hình riêng cho từ khóa này. Không so sánh độ lớn chỉ số với bộ xuất riêng khác. Chỉ số địa phương là quan tâm tương đối, không phải số lượt hoặc số học viên. CSV Rising có thể có giá trị giảm; giữ nguyên và không diễn giải tất cả là tăng trưởng.",
       "locator": "time: 37 dòng; region: 50 dòng; top: 50 dòng; rising: 50 dòng. Loại 09/2023 khỏi so sánh ba kỳ 12 tháng."
+    },
+    {
+      "id": "S17",
+      "title": "Google Trends — marketing thực chiến (xuất riêng)",
+      "publisher": "Google Trends · dữ liệu người dùng cung cấp",
+      "url": "research/google-trends/individual/time_series_VN_20231001-0000_20261008-1754 (1).csv",
+      "period": "10/2023–09/2026; xuất 2026-10-08 17:54",
+      "scope": "Việt Nam; marketing thực chiến; 36 tháng phân tích",
+      "type": "CSV xuất riêng",
+      "limit": "Từ khóa/địa lý/thời gian đối chiếu CSV và mô tả người cung cấp; chưa có ảnh cấu hình riêng cho từ khóa này. Mỗi bộ có thang chuẩn hóa riêng; không so sánh độ lớn chỉ số giữa từ khóa. Không suy số người muốn mua khóa học từ truy vấn về kỹ thuật, công cụ hoặc sách.",
+      "locator": "time: 37 dòng; region: 10 dòng; top: 5 dòng; rising: 5 dòng. Loại 09/2023 khỏi so sánh ba kỳ 12 tháng."
+    },
+    {
+      "id": "S18",
+      "title": "Google Trends — ai marketing (xuất riêng)",
+      "publisher": "Google Trends · dữ liệu người dùng cung cấp",
+      "url": "research/google-trends/individual/time_series_VN_20231001-0000_20261008-1755.csv",
+      "period": "10/2023–09/2026; xuất 2026-10-08 17:55",
+      "scope": "Việt Nam; ai marketing; 36 tháng phân tích",
+      "type": "CSV xuất riêng",
+      "limit": "Từ khóa/địa lý/thời gian đối chiếu CSV và mô tả người cung cấp; chưa có ảnh cấu hình riêng cho từ khóa này. Mỗi bộ có thang chuẩn hóa riêng; không so sánh độ lớn chỉ số giữa từ khóa. Không suy số người muốn mua khóa học từ truy vấn về kỹ thuật, công cụ hoặc sách.",
+      "locator": "time: 37 dòng; region: 60 dòng; top: 50 dòng; rising: 50 dòng. Loại 09/2023 khỏi so sánh ba kỳ 12 tháng."
     }
   ],
   "evidence": [
@@ -495,6 +517,24 @@
       "value": -33.6405529953917,
       "unit": "%",
       "location": "10/2025–09/2026 so với 10/2024–09/2025; không ghép thang chỉ số với bộ khác"
+    },
+    {
+      "id": "E36",
+      "source": "S17",
+      "group": "Xu hướng tìm kiếm · xuất riêng",
+      "metric": "marketing thực chiến: biến động chỉ số trung bình 12 tháng (xuất riêng)",
+      "value": -19.964028776978417,
+      "unit": "%",
+      "location": "10/2025–09/2026 so với 10/2024–09/2025; không ghép thang chỉ số với bộ khác"
+    },
+    {
+      "id": "E37",
+      "source": "S18",
+      "group": "Xu hướng tìm kiếm · xuất riêng",
+      "metric": "ai marketing: biến động chỉ số trung bình 12 tháng (xuất riêng)",
+      "value": 121.41119221411189,
+      "unit": "%",
+      "location": "10/2025–09/2026 so với 10/2024–09/2025; không ghép thang chỉ số với bộ khác"
     }
   ],
   "qualitative": [
@@ -552,6 +592,16 @@
       "id": "Q11",
       "source": "S15",
       "finding": "CSV mang nhãn Rising chỉ có 6 truy vấn và toàn bộ increase percent âm. Đây là đặc điểm file xuất cần đối chiếu với giao diện; chưa dùng như danh sách truy vấn đang tăng."
+    },
+    {
+      "id": "Q12",
+      "source": "S18",
+      "finding": "Top/Rising của ai marketing có truy vấn về tools, agent, news và tên mô hình/công cụ như Gemini, Claude, Perplexity, Copilot. Tăng quan tâm AI chưa chứng minh tăng nhu cầu mua khóa đào tạo."
+    },
+    {
+      "id": "Q13",
+      "source": "S17",
+      "finding": "Top của marketing thực chiến gồm chiến lược marketing, marketing là gì, digital marketing và sách digital marketing. Từ khóa chưa tách rõ ý định mua khóa học ngắn hạn."
     }
   ],
   "gaps": [
@@ -563,9 +613,9 @@
     },
     {
       "question": "Tăng trưởng hay bão hòa?",
-      "status": "Có tín hiệu tìm kiếm; chưa đủ kết luận thị trường",
+      "status": "Có 5 chuỗi tìm kiếm; chưa đủ kết luận thị trường",
       "need": "Lượng tìm kiếm tuyệt đối, số đăng ký và doanh thu đào tạo cùng kỳ; xác nhận cấu hình CSV.",
-      "method": "Đã so sánh trung bình 12 tháng của 5 từ khóa; kiểm chứng với Keyword Planner và tuyển sinh thực tế."
+      "method": "Đã đối chiếu 5 bộ xuất riêng theo ba kỳ 12 tháng; bổ sung lượng tìm kiếm và tuyển sinh thực tế."
     },
     {
       "question": "Ai đang học?",
@@ -587,9 +637,9 @@
     },
     {
       "question": "Xác nhận cấu hình / lượng tìm kiếm tuyệt đối",
-      "status": "Đã xác nhận ảnh học marketing; đang bổ sung",
-      "need": "Ảnh cấu hình riêng của các từ khóa còn lại; Keyword Planner/search volume và dữ liệu tuyển sinh.",
-      "method": "Meta hiện báo ước tính không tính lựa chọn Advantage+; ảnh nhận được không dùng để ước tính quy mô theo sở thích."
+      "status": "Đã nhận 5 bộ xuất riêng; ảnh học marketing đã xác nhận",
+      "need": "Xác nhận cấu hình còn lại khi có; lượng tìm kiếm tuyệt đối và dữ liệu tuyển sinh. Các từ khóa bổ sung thiếu dữ liệu theo phản hồi người cung cấp.",
+      "method": "Không quy thiếu dữ liệu thành không có nhu cầu. Ước tính Meta không tính lựa chọn Advantage+ trong ảnh nhận được, nên chưa sử dụng để so sánh quy mô theo sở thích."
     }
   ],
   "trends": {
@@ -4366,6 +4416,1249 @@
           "sha256": "28b409375ad780cc1ceae276886a0716e98d9535416bbfb8ae22f67cc7bbd482"
         }
       ]
+    },
+    {
+      "source": "S17",
+      "term": "marketing thực chiến",
+      "exported": "2026-10-08 17:54",
+      "normalization": "Mỗi bộ xuất riêng chuẩn hóa 0–100; không so sánh độ lớn chỉ số giữa từ khóa.",
+      "config": {
+        "geography": "Việt Nam",
+        "start": "2023-10-01",
+        "end": "2026-09-30",
+        "category": "Tất cả danh mục",
+        "searchType": "Tìm kiếm trên web",
+        "queryType": "Cụm từ tìm kiếm"
+      },
+      "verification": "Từ khóa/địa lý/thời gian đối chiếu CSV và mô tả người cung cấp; chưa có ảnh cấu hình riêng cho từ khóa này.",
+      "time": [
+        {
+          "date": "2023-09-01",
+          "value": 56
+        },
+        {
+          "date": "2023-10-01",
+          "value": 73
+        },
+        {
+          "date": "2023-11-01",
+          "value": 68
+        },
+        {
+          "date": "2023-12-01",
+          "value": 63
+        },
+        {
+          "date": "2024-01-01",
+          "value": 52
+        },
+        {
+          "date": "2024-02-01",
+          "value": 28
+        },
+        {
+          "date": "2024-03-01",
+          "value": 100
+        },
+        {
+          "date": "2024-04-01",
+          "value": 52
+        },
+        {
+          "date": "2024-05-01",
+          "value": 56
+        },
+        {
+          "date": "2024-06-01",
+          "value": 66
+        },
+        {
+          "date": "2024-07-01",
+          "value": 36
+        },
+        {
+          "date": "2024-08-01",
+          "value": 45
+        },
+        {
+          "date": "2024-09-01",
+          "value": 50
+        },
+        {
+          "date": "2024-10-01",
+          "value": 74
+        },
+        {
+          "date": "2024-11-01",
+          "value": 56
+        },
+        {
+          "date": "2024-12-01",
+          "value": 54
+        },
+        {
+          "date": "2025-01-01",
+          "value": 42
+        },
+        {
+          "date": "2025-02-01",
+          "value": 34
+        },
+        {
+          "date": "2025-03-01",
+          "value": 48
+        },
+        {
+          "date": "2025-04-01",
+          "value": 41
+        },
+        {
+          "date": "2025-05-01",
+          "value": 39
+        },
+        {
+          "date": "2025-06-01",
+          "value": 41
+        },
+        {
+          "date": "2025-07-01",
+          "value": 49
+        },
+        {
+          "date": "2025-08-01",
+          "value": 41
+        },
+        {
+          "date": "2025-09-01",
+          "value": 37
+        },
+        {
+          "date": "2025-10-01",
+          "value": 32
+        },
+        {
+          "date": "2025-11-01",
+          "value": 62
+        },
+        {
+          "date": "2025-12-01",
+          "value": 47
+        },
+        {
+          "date": "2026-01-01",
+          "value": 46
+        },
+        {
+          "date": "2026-02-01",
+          "value": 23
+        },
+        {
+          "date": "2026-03-01",
+          "value": 34
+        },
+        {
+          "date": "2026-04-01",
+          "value": 44
+        },
+        {
+          "date": "2026-05-01",
+          "value": 40
+        },
+        {
+          "date": "2026-06-01",
+          "value": 35
+        },
+        {
+          "date": "2026-07-01",
+          "value": 27
+        },
+        {
+          "date": "2026-08-01",
+          "value": 24
+        },
+        {
+          "date": "2026-09-01",
+          "value": 31
+        }
+      ],
+      "means": [
+        57.416666666666664,
+        46.333333333333336,
+        37.083333333333336
+      ],
+      "change": -19.964028776978417,
+      "regions": [
+        {
+          "region": "Đà Nẵng",
+          "value": 100
+        },
+        {
+          "region": "Hồ Chí Minh",
+          "value": 92
+        },
+        {
+          "region": "Hà Nội",
+          "value": 80
+        },
+        {
+          "region": "Cần Thơ",
+          "value": 76
+        },
+        {
+          "region": "Thái Nguyên",
+          "value": 65
+        },
+        {
+          "region": "Bình Dương",
+          "value": 52
+        },
+        {
+          "region": "Khánh Hòa",
+          "value": 46
+        },
+        {
+          "region": "Đồng Nai",
+          "value": 35
+        },
+        {
+          "region": "Thanh Hoá",
+          "value": 26
+        },
+        {
+          "region": "Hải Phòng",
+          "value": 19
+        }
+      ],
+      "top": [
+        {
+          "query": "chiến lược marketing",
+          "interest": 100,
+          "increase": "-1%"
+        },
+        {
+          "query": "marketing là gì",
+          "interest": 32,
+          "increase": "-10%"
+        },
+        {
+          "query": "digital marketing",
+          "interest": 21,
+          "increase": "20%"
+        },
+        {
+          "query": "digital marketing từ chiến lược đến thực thi",
+          "interest": 11,
+          "increase": "8%"
+        },
+        {
+          "query": "sách digital marketing",
+          "interest": 5,
+          "increase": "60%"
+        }
+      ],
+      "rising": [
+        {
+          "query": "sách digital marketing",
+          "interest": 5,
+          "increase": "60%"
+        },
+        {
+          "query": "digital marketing",
+          "interest": 21,
+          "increase": "20%"
+        },
+        {
+          "query": "digital marketing từ chiến lược đến thực thi",
+          "interest": 11,
+          "increase": "8%"
+        },
+        {
+          "query": "chiến lược marketing",
+          "interest": 100,
+          "increase": "-1%"
+        },
+        {
+          "query": "marketing là gì",
+          "interest": 32,
+          "increase": "-10%"
+        }
+      ],
+      "files": [
+        {
+          "kind": "time",
+          "path": "research/google-trends/individual/time_series_VN_20231001-0000_20261008-1754 (1).csv",
+          "rows": 37,
+          "sha256": "d197e60f14adfab4dd1e4f86dda7d76c697339659ec8210cfd7f2bd1bb421f6b"
+        },
+        {
+          "kind": "region",
+          "path": "research/google-trends/individual/by_region_VN_20231001-0000_20261008-1754 (1).csv",
+          "rows": 10,
+          "sha256": "1a77f43c8a038499ea59b8c4c5f42e66bc7b95859a4ea6cb1cb3498809df95b4"
+        },
+        {
+          "kind": "top",
+          "path": "research/google-trends/individual/searched_with_top-searches_queries_VN_20231001-0000_20261008-1754 (1).csv",
+          "rows": 5,
+          "sha256": "aaa5ecb76a376802a7e973c4868532e1cf40a9c3b5ffefe61e00b2d18d9be782"
+        },
+        {
+          "kind": "rising",
+          "path": "research/google-trends/individual/searched_with_rising-searches_queries_VN_20231001-0000_20261008-1754 (1).csv",
+          "rows": 5,
+          "sha256": "f4c621ef694c6db23b32612e0f6a262b540ebbc4806feb96a399cdb3cf6ab599"
+        }
+      ]
+    },
+    {
+      "source": "S18",
+      "term": "ai marketing",
+      "exported": "2026-10-08 17:55",
+      "normalization": "Mỗi bộ xuất riêng chuẩn hóa 0–100; không so sánh độ lớn chỉ số giữa từ khóa.",
+      "config": {
+        "geography": "Việt Nam",
+        "start": "2023-10-01",
+        "end": "2026-09-30",
+        "category": "Tất cả danh mục",
+        "searchType": "Tìm kiếm trên web",
+        "queryType": "Cụm từ tìm kiếm"
+      },
+      "verification": "Từ khóa/địa lý/thời gian đối chiếu CSV và mô tả người cung cấp; chưa có ảnh cấu hình riêng cho từ khóa này.",
+      "time": [
+        {
+          "date": "2023-09-01",
+          "value": 19
+        },
+        {
+          "date": "2023-10-01",
+          "value": 21
+        },
+        {
+          "date": "2023-11-01",
+          "value": 18
+        },
+        {
+          "date": "2023-12-01",
+          "value": 15
+        },
+        {
+          "date": "2024-01-01",
+          "value": 22
+        },
+        {
+          "date": "2024-02-01",
+          "value": 18
+        },
+        {
+          "date": "2024-03-01",
+          "value": 25
+        },
+        {
+          "date": "2024-04-01",
+          "value": 21
+        },
+        {
+          "date": "2024-05-01",
+          "value": 20
+        },
+        {
+          "date": "2024-06-01",
+          "value": 21
+        },
+        {
+          "date": "2024-07-01",
+          "value": 26
+        },
+        {
+          "date": "2024-08-01",
+          "value": 26
+        },
+        {
+          "date": "2024-09-01",
+          "value": 25
+        },
+        {
+          "date": "2024-10-01",
+          "value": 27
+        },
+        {
+          "date": "2024-11-01",
+          "value": 28
+        },
+        {
+          "date": "2024-12-01",
+          "value": 26
+        },
+        {
+          "date": "2025-01-01",
+          "value": 25
+        },
+        {
+          "date": "2025-02-01",
+          "value": 30
+        },
+        {
+          "date": "2025-03-01",
+          "value": 37
+        },
+        {
+          "date": "2025-04-01",
+          "value": 32
+        },
+        {
+          "date": "2025-05-01",
+          "value": 39
+        },
+        {
+          "date": "2025-06-01",
+          "value": 64
+        },
+        {
+          "date": "2025-07-01",
+          "value": 44
+        },
+        {
+          "date": "2025-08-01",
+          "value": 33
+        },
+        {
+          "date": "2025-09-01",
+          "value": 26
+        },
+        {
+          "date": "2025-10-01",
+          "value": 27
+        },
+        {
+          "date": "2025-11-01",
+          "value": 75
+        },
+        {
+          "date": "2025-12-01",
+          "value": 82
+        },
+        {
+          "date": "2026-01-01",
+          "value": 64
+        },
+        {
+          "date": "2026-02-01",
+          "value": 67
+        },
+        {
+          "date": "2026-03-01",
+          "value": 98
+        },
+        {
+          "date": "2026-04-01",
+          "value": 95
+        },
+        {
+          "date": "2026-05-01",
+          "value": 88
+        },
+        {
+          "date": "2026-06-01",
+          "value": 84
+        },
+        {
+          "date": "2026-07-01",
+          "value": 73
+        },
+        {
+          "date": "2026-08-01",
+          "value": 57
+        },
+        {
+          "date": "2026-09-01",
+          "value": 100
+        }
+      ],
+      "means": [
+        21.5,
+        34.25,
+        75.83333333333333
+      ],
+      "change": 121.41119221411189,
+      "regions": [
+        {
+          "region": "Hồ Chí Minh",
+          "value": 100
+        },
+        {
+          "region": "Hà Nội",
+          "value": 85
+        },
+        {
+          "region": "Đà Nẵng",
+          "value": 69
+        },
+        {
+          "region": "Gia Lai",
+          "value": 58
+        },
+        {
+          "region": "Quảng Nam",
+          "value": 54
+        },
+        {
+          "region": "Hà Giang",
+          "value": 47
+        },
+        {
+          "region": "Hưng Yên",
+          "value": 47
+        },
+        {
+          "region": "Cần Thơ",
+          "value": 47
+        },
+        {
+          "region": "Hải Phòng",
+          "value": 47
+        },
+        {
+          "region": "Đồng Nai",
+          "value": 45
+        },
+        {
+          "region": "Thừa Thiên Huế",
+          "value": 44
+        },
+        {
+          "region": "Cao Bằng",
+          "value": 43
+        },
+        {
+          "region": "Bắc Ninh",
+          "value": 43
+        },
+        {
+          "region": "Tuyên Quang",
+          "value": 42
+        },
+        {
+          "region": "Bình Dương",
+          "value": 42
+        },
+        {
+          "region": "Lâm Đồng",
+          "value": 41
+        },
+        {
+          "region": "Khánh Hòa",
+          "value": 40
+        },
+        {
+          "region": "Phú Thọ",
+          "value": 40
+        },
+        {
+          "region": "Hà Nam",
+          "value": 38
+        },
+        {
+          "region": "Lai Châu",
+          "value": 37
+        },
+        {
+          "region": "Bắc Giang",
+          "value": 36
+        },
+        {
+          "region": "Nam Định",
+          "value": 35
+        },
+        {
+          "region": "Bình Định",
+          "value": 34
+        },
+        {
+          "region": "Long An",
+          "value": 33
+        },
+        {
+          "region": "Thái Nguyên",
+          "value": 33
+        },
+        {
+          "region": "Vĩnh Phúc",
+          "value": 33
+        },
+        {
+          "region": "Sơn La",
+          "value": 32
+        },
+        {
+          "region": "Quảng Ninh",
+          "value": 32
+        },
+        {
+          "region": "Đắk Lắk",
+          "value": 31
+        },
+        {
+          "region": "Thanh Hoá",
+          "value": 30
+        },
+        {
+          "region": "Bà Rịa - Vũng Tàu",
+          "value": 28
+        },
+        {
+          "region": "Nghệ An",
+          "value": 26
+        },
+        {
+          "region": "Quảng Bình",
+          "value": 26
+        },
+        {
+          "region": "Thái Bình",
+          "value": 25
+        },
+        {
+          "region": "Phú Yên",
+          "value": 25
+        },
+        {
+          "region": "Vĩnh Long",
+          "value": 25
+        },
+        {
+          "region": "Bạc Liêu",
+          "value": 25
+        },
+        {
+          "region": "Tiền Giang",
+          "value": 24
+        },
+        {
+          "region": "Bến Tre",
+          "value": 24
+        },
+        {
+          "region": "Ninh Bình",
+          "value": 23
+        },
+        {
+          "region": "Hà Tĩnh",
+          "value": 23
+        },
+        {
+          "region": "Ninh Thuận",
+          "value": 23
+        },
+        {
+          "region": "Tây Ninh",
+          "value": 22
+        },
+        {
+          "region": "Hải Dương",
+          "value": 22
+        },
+        {
+          "region": "Đăk Nông",
+          "value": 22
+        },
+        {
+          "region": "Bình Phước",
+          "value": 21
+        },
+        {
+          "region": "An Giang",
+          "value": 20
+        },
+        {
+          "region": "Sóc Trăng",
+          "value": 20
+        },
+        {
+          "region": "Cà Mau",
+          "value": 19
+        },
+        {
+          "region": "Hậu Giang",
+          "value": 19
+        },
+        {
+          "region": "Đồng Tháp",
+          "value": 18
+        },
+        {
+          "region": "Lào Cai",
+          "value": 17
+        },
+        {
+          "region": "Lạng Sơn",
+          "value": 17
+        },
+        {
+          "region": "Quảng Ngãi",
+          "value": 16
+        },
+        {
+          "region": "tỉnh Kiên Giang",
+          "value": 16
+        },
+        {
+          "region": "Yên Bái",
+          "value": 15
+        },
+        {
+          "region": "Trà Vinh",
+          "value": 15
+        },
+        {
+          "region": "Bình Thuận",
+          "value": 14
+        },
+        {
+          "region": "Hòa Bình",
+          "value": 13
+        },
+        {
+          "region": "Quảng Trị",
+          "value": 13
+        }
+      ],
+      "top": [
+        {
+          "query": "ai in marketing",
+          "interest": 100,
+          "increase": "1.200%"
+        },
+        {
+          "query": "ai for marketing",
+          "interest": 95,
+          "increase": "2.250%"
+        },
+        {
+          "query": "digital marketing",
+          "interest": 45,
+          "increase": "500%"
+        },
+        {
+          "query": "ai digital marketing",
+          "interest": 45,
+          "increase": "500%"
+        },
+        {
+          "query": "marketing là gì",
+          "interest": 40,
+          "increase": "20%"
+        },
+        {
+          "query": "ai marketing là gì",
+          "interest": 40,
+          "increase": "20%"
+        },
+        {
+          "query": "ai là gì",
+          "interest": 40,
+          "increase": "20%"
+        },
+        {
+          "query": "ai marketing news",
+          "interest": 35,
+          "increase": "Breakout"
+        },
+        {
+          "query": "ai content marketing",
+          "interest": 34,
+          "increase": "600%"
+        },
+        {
+          "query": "content marketing",
+          "interest": 33,
+          "increase": "550%"
+        },
+        {
+          "query": "google ai",
+          "interest": 32,
+          "increase": "350%"
+        },
+        {
+          "query": "ai marketing tools",
+          "interest": 26,
+          "increase": "1.500%"
+        },
+        {
+          "query": "email marketing",
+          "interest": 18,
+          "increase": "900%"
+        },
+        {
+          "query": "social media marketing",
+          "interest": 16,
+          "increase": "1.700%"
+        },
+        {
+          "query": "ai marketing automation",
+          "interest": 16,
+          "increase": "1.900%"
+        },
+        {
+          "query": "ai in digital marketing",
+          "interest": 15,
+          "increase": "1.500%"
+        },
+        {
+          "query": "ai marketing agent",
+          "interest": 14,
+          "increase": "Breakout"
+        },
+        {
+          "query": "ai tools for marketing",
+          "interest": 14,
+          "increase": "2.300%"
+        },
+        {
+          "query": "ai marketing agency",
+          "interest": 13,
+          "increase": "950%"
+        },
+        {
+          "query": "tuyển marketing",
+          "interest": 13,
+          "increase": "250%"
+        },
+        {
+          "query": "affiliate marketing ai",
+          "interest": 13,
+          "increase": "400%"
+        },
+        {
+          "query": "chiến lược marketing",
+          "interest": 13,
+          "increase": "80%"
+        },
+        {
+          "query": "affiliate marketing",
+          "interest": 13,
+          "increase": "400%"
+        },
+        {
+          "query": "ai chat",
+          "interest": 13,
+          "increase": "650%"
+        },
+        {
+          "query": "chat ai",
+          "interest": 13,
+          "increase": "550%"
+        },
+        {
+          "query": "open ai",
+          "interest": 12,
+          "increase": "1.800%"
+        },
+        {
+          "query": "gemini ai",
+          "interest": 12,
+          "increase": "Breakout"
+        },
+        {
+          "query": "ai for digital marketing",
+          "interest": 12,
+          "increase": "2.700%"
+        },
+        {
+          "query": "ai news today",
+          "interest": 11,
+          "increase": "Breakout"
+        },
+        {
+          "query": "linkedin",
+          "interest": 10,
+          "increase": "2.200%"
+        },
+        {
+          "query": "influencer marketing",
+          "interest": 10,
+          "increase": "1.250%"
+        },
+        {
+          "query": "ai hay",
+          "interest": 9,
+          "increase": "80%"
+        },
+        {
+          "query": "docs",
+          "interest": 9,
+          "increase": "4.950%"
+        },
+        {
+          "query": "gg ai",
+          "interest": 9,
+          "increase": "180%"
+        },
+        {
+          "query": "claude ai",
+          "interest": 8,
+          "increase": "Breakout"
+        },
+        {
+          "query": "claude",
+          "interest": 8,
+          "increase": "Breakout"
+        },
+        {
+          "query": "check ai",
+          "interest": 7,
+          "increase": "2.350%"
+        },
+        {
+          "query": "ai marketing solutions",
+          "interest": 6,
+          "increase": "Breakout"
+        },
+        {
+          "query": "đại học tài chính marketing",
+          "interest": 6,
+          "increase": "10%"
+        },
+        {
+          "query": "generative ai for marketing",
+          "interest": 5,
+          "increase": "Breakout"
+        },
+        {
+          "query": "digital marketing là gì",
+          "interest": 4,
+          "increase": "140%"
+        },
+        {
+          "query": "canva ai",
+          "interest": 3,
+          "increase": "1.150%"
+        },
+        {
+          "query": "gemini google ai",
+          "interest": 3,
+          "increase": "Breakout"
+        },
+        {
+          "query": "perplexity ai",
+          "interest": 3,
+          "increase": "Breakout"
+        },
+        {
+          "query": "copilot ai",
+          "interest": 3,
+          "increase": "Breakout"
+        },
+        {
+          "query": "ai digital marketing agency",
+          "interest": 3,
+          "increase": "1.150%"
+        },
+        {
+          "query": "bard ai",
+          "interest": 2,
+          "increase": "300%"
+        },
+        {
+          "query": "deepseek ai",
+          "interest": 2,
+          "increase": "Breakout"
+        },
+        {
+          "query": "bard",
+          "interest": 2,
+          "increase": "300%"
+        },
+        {
+          "query": "bing ai",
+          "interest": 2,
+          "increase": "250%"
+        }
+      ],
+      "rising": [
+        {
+          "query": "ai marketing agent",
+          "interest": 14,
+          "increase": "Breakout"
+        },
+        {
+          "query": "gemini ai",
+          "interest": 12,
+          "increase": "Breakout"
+        },
+        {
+          "query": "ai news today",
+          "interest": 11,
+          "increase": "Breakout"
+        },
+        {
+          "query": "claude ai",
+          "interest": 8,
+          "increase": "Breakout"
+        },
+        {
+          "query": "claude",
+          "interest": 8,
+          "increase": "Breakout"
+        },
+        {
+          "query": "ai marketing solutions",
+          "interest": 6,
+          "increase": "Breakout"
+        },
+        {
+          "query": "generative ai for marketing",
+          "interest": 5,
+          "increase": "Breakout"
+        },
+        {
+          "query": "gemini google ai",
+          "interest": 3,
+          "increase": "Breakout"
+        },
+        {
+          "query": "perplexity ai",
+          "interest": 3,
+          "increase": "Breakout"
+        },
+        {
+          "query": "copilot ai",
+          "interest": 3,
+          "increase": "Breakout"
+        },
+        {
+          "query": "deepseek ai",
+          "interest": 2,
+          "increase": "Breakout"
+        },
+        {
+          "query": "deepseek",
+          "interest": 2,
+          "increase": "Breakout"
+        },
+        {
+          "query": "google ai studio",
+          "interest": 2,
+          "increase": "Breakout"
+        },
+        {
+          "query": "gamma ai",
+          "interest": 2,
+          "increase": "Breakout"
+        },
+        {
+          "query": "grok",
+          "interest": 2,
+          "increase": "Breakout"
+        },
+        {
+          "query": "content marketing strategies",
+          "interest": 2,
+          "increase": "Breakout"
+        },
+        {
+          "query": "free ai tools for marketing",
+          "interest": 2,
+          "increase": "Breakout"
+        },
+        {
+          "query": "blackbox ai",
+          "interest": 2,
+          "increase": "Breakout"
+        },
+        {
+          "query": "email marketing campaigns",
+          "interest": 2,
+          "increase": "Breakout"
+        },
+        {
+          "query": "google analytics",
+          "interest": 1,
+          "increase": "Breakout"
+        },
+        {
+          "query": "notebooklm",
+          "interest": 1,
+          "increase": "Breakout"
+        },
+        {
+          "query": "máy photocopy",
+          "interest": 1,
+          "increase": "Breakout"
+        },
+        {
+          "query": "walmart near me",
+          "interest": 1,
+          "increase": "Breakout"
+        },
+        {
+          "query": "viral marketing strategies",
+          "interest": 1,
+          "increase": "Breakout"
+        },
+        {
+          "query": "nickvui",
+          "interest": 1,
+          "increase": "Breakout"
+        },
+        {
+          "query": "leonardo ai",
+          "interest": 1,
+          "increase": "Breakout"
+        },
+        {
+          "query": "tuyển nhân viên it",
+          "interest": 1,
+          "increase": "Breakout"
+        },
+        {
+          "query": "tuyển kế toán trưởng",
+          "interest": 1,
+          "increase": "Breakout"
+        },
+        {
+          "query": "humanize ai",
+          "interest": 1,
+          "increase": "Breakout"
+        },
+        {
+          "query": "bing ai chat",
+          "interest": 0,
+          "increase": "Breakout"
+        },
+        {
+          "query": "iphone 14 pro max cũ",
+          "interest": 0,
+          "increase": "Breakout"
+        },
+        {
+          "query": "deep learning tutorials",
+          "interest": 0,
+          "increase": "Breakout"
+        },
+        {
+          "query": "老虎",
+          "interest": 0,
+          "increase": "Breakout"
+        },
+        {
+          "query": "ai marketing news",
+          "interest": 35,
+          "increase": "Breakout"
+        },
+        {
+          "query": "napkin ai",
+          "interest": 0,
+          "increase": "Breakout"
+        },
+        {
+          "query": "tuyển dụng biên hòa",
+          "interest": 0,
+          "increase": "Breakout"
+        },
+        {
+          "query": "docs",
+          "interest": 9,
+          "increase": "4.950%"
+        },
+        {
+          "query": "việc làm long biên",
+          "interest": 0,
+          "increase": "4.900%"
+        },
+        {
+          "query": "natural language processing",
+          "interest": 0,
+          "increase": "4.250%"
+        },
+        {
+          "query": "ai for digital marketing",
+          "interest": 12,
+          "increase": "2.700%"
+        },
+        {
+          "query": "check ai",
+          "interest": 7,
+          "increase": "2.350%"
+        },
+        {
+          "query": "ai tools for marketing",
+          "interest": 14,
+          "increase": "2.300%"
+        },
+        {
+          "query": "ai for marketing",
+          "interest": 95,
+          "increase": "2.250%"
+        },
+        {
+          "query": "linkedin",
+          "interest": 10,
+          "increase": "2.200%"
+        },
+        {
+          "query": "ai marketing automation",
+          "interest": 16,
+          "increase": "1.900%"
+        },
+        {
+          "query": "open ai",
+          "interest": 12,
+          "increase": "1.800%"
+        },
+        {
+          "query": "social media marketing",
+          "interest": 16,
+          "increase": "1.700%"
+        },
+        {
+          "query": "ai marketing tools",
+          "interest": 26,
+          "increase": "1.500%"
+        },
+        {
+          "query": "ai in digital marketing",
+          "interest": 15,
+          "increase": "1.500%"
+        },
+        {
+          "query": "influencer marketing",
+          "interest": 10,
+          "increase": "1.250%"
+        }
+      ],
+      "files": [
+        {
+          "kind": "time",
+          "path": "research/google-trends/individual/time_series_VN_20231001-0000_20261008-1755.csv",
+          "rows": 37,
+          "sha256": "554e0858de7723b62095f7d4b2ed5e0fa78afb5c892cef8fa489e12ed3c5811a"
+        },
+        {
+          "kind": "region",
+          "path": "research/google-trends/individual/by_region_VN_20231001-0000_20261008-1755.csv",
+          "rows": 60,
+          "sha256": "8ac0945d3e08a5977848b76afdb617441180251d286e4d7e3f4d1fe857efdf2b"
+        },
+        {
+          "kind": "top",
+          "path": "research/google-trends/individual/searched_with_top-searches_queries_VN_20231001-0000_20261008-1755.csv",
+          "rows": 50,
+          "sha256": "1c03d5bfed0e19bdd5a7e8a853eeed2cb0554fefaa5cd453aa3464c2d3bc99cb"
+        },
+        {
+          "kind": "rising",
+          "path": "research/google-trends/individual/searched_with_rising-searches_queries_VN_20231001-0000_20261008-1755.csv",
+          "rows": 50,
+          "sha256": "76d61ff38163336c7a5015f6c3e25c458f3a964b7e1104495547a7bac9c1c86c"
+        }
+      ]
+    }
+  ],
+  "researchNotes": [
+    {
+      "kind": "Phản hồi người cung cấp",
+      "date": "2026-10-08",
+      "note": "Người cung cấp cho biết hầu hết từ khóa bổ sung được đề xuất không có dữ liệu nên không gửi CSV; chưa có danh sách xác nhận từng từ khóa hoặc ảnh thông báo. Ghi là chưa đủ dữ liệu, không quy thành 0 hoặc không có nhu cầu."
     }
   ]
 }
