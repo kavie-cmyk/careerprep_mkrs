@@ -1,0 +1,303 @@
+{
+  "review_date": "2026-10-08",
+  "scope": "Kiểm tra toàn bộ cấu trúc 8 CSV; đối chiếu chọn lọc nguồn quyết định. Không chứng nhận toàn bộ dữ kiện.",
+  "originals_match_existing_zip": true,
+  "raw_counts": {
+    "01_sources.csv": 83,
+    "02_evidence.csv": 119,
+    "03_programs.csv": 27,
+    "04_cohorts.csv": 7,
+    "05_learner_voices.csv": 22,
+    "06_search_demand.csv": 240,
+    "07_task_log.csv": 39,
+    "08_qa_log.csv": 132
+  },
+  "muse_verification_labels": {
+    "công bố nhà cung cấp": 42,
+    "chưa xác minh": 60,
+    "đối chiếu nguồn gốc": 16,
+    "tự thuật người học": 1
+  },
+  "structural_checks": {
+    "duplicate_primary_ids": 0,
+    "malformed_csv_rows": 0,
+    "missing_source_ids": 0,
+    "unresolved_program_references": 25
+  },
+  "issues": [
+    {
+      "id": "QA2-01",
+      "row_ids": [
+        "M-C107",
+        "M-S110"
+      ],
+      "severity": "FAIL",
+      "observation": "Nguồn bế giảng Facebook Marketing K86 công bố 27/12/2019; không nêu 130 người hoặc 04/03/2026. M-C107 nối M-P103 (AI Marketing Plan).",
+      "decision": "Không sử dụng số người, ngày hoặc program_id của dòng này; không tự sửa thành lớp 2019 hay đoán nguồn khác.",
+      "source_url": "https://vinalink.edu.vn/khoa-hoc-vua-tot-nghiep/vinalink-be-giang-khoa-hoc-facebook-marketing-k86-vtvha-noi.html",
+      "locator": "Tiêu đề, ngày bài và nội dung chính"
+    },
+    {
+      "id": "QA2-02",
+      "row_ids": [
+        "M-C101",
+        "M-C105",
+        "M-C106",
+        "M-E116",
+        "M-E119"
+      ],
+      "severity": "FLAG",
+      "observation": "Trạng thái đã khai giảng được suy từ lịch có ngày đã qua; chưa có bằng chứng sự kiện diễn ra. Trang TM hiện hiển thị lịch 09/11/2026, không còn lịch 01/10 trong trích xuất đọc được.",
+      "decision": "Chỉ dùng lịch công bố. Giữ ghi nhận lịch 01/10 của Muse ở nhóm chưa xác minh; không biến thành tuyển sinh.",
+      "source_url": "https://www.tomorrowmarketers.org/digital-planning/",
+      "locator": "Lịch khai giảng hiện đọc được"
+    },
+    {
+      "id": "QA2-03",
+      "row_ids": [
+        "M-S301",
+        "M-E304",
+        "M-K303–M-K533"
+      ],
+      "severity": "FLAG",
+      "observation": "231 dòng Trends tham chiếu kỳ 01/2024–10/2026 và đường dẫn không nằm trong gói; ánh xạ file–seed do Muse suy từ nội dung. Khác kỳ 10/2023–09/2026 của dữ liệu người dùng.",
+      "decision": "Không ghép số và không tính tỷ trọng ý định; giữ bộ người dùng làm nguồn phân tích chính.",
+      "source_url": "",
+      "locator": ""
+    },
+    {
+      "id": "QA2-04",
+      "row_ids": [
+        "M-K353",
+        "M-K354",
+        "M-K355",
+        "M-K356",
+        "M-K357",
+        "M-K358",
+        "M-K359",
+        "M-K360",
+        "M-K361",
+        "M-K362",
+        "M-K363",
+        "M-K364",
+        "M-K365",
+        "M-K366",
+        "M-K367",
+        "M-K368",
+        "M-K369",
+        "M-K370",
+        "M-K371",
+        "M-K372",
+        "M-K373",
+        "M-K374",
+        "M-K375",
+        "M-K376",
+        "M-K377",
+        "M-K378",
+        "M-K379",
+        "M-K380",
+        "M-K381",
+        "M-K382",
+        "M-K383",
+        "M-K384",
+        "M-K385",
+        "M-K386",
+        "M-K387",
+        "M-K388",
+        "M-K389",
+        "M-K390",
+        "M-K391",
+        "M-K392",
+        "M-K393",
+        "M-K394",
+        "M-K395",
+        "M-K396",
+        "M-K397",
+        "M-K455",
+        "M-K456",
+        "M-K457",
+        "M-K458",
+        "M-K459",
+        "M-K460",
+        "M-K461",
+        "M-K512",
+        "M-K513",
+        "M-K514",
+        "M-K515",
+        "M-K516",
+        "M-K517",
+        "M-K518",
+        "M-K519",
+        "M-K520",
+        "M-K521",
+        "M-K522",
+        "M-K523",
+        "M-K524",
+        "M-K525",
+        "M-K526",
+        "M-K527",
+        "M-K528",
+        "M-K529",
+        "M-K530",
+        "M-K531",
+        "M-K532",
+        "M-K533"
+      ],
+      "severity": "FLAG",
+      "observation": "74 dòng Rising lưu Search interest ở value và tăng trưởng %/Breakout trong validation_note; metric_name/unit chưa tách rõ hai chỉ số.",
+      "decision": "Không coi value là mức tăng trưởng; bảo toàn hai trường riêng nếu xác nhận được CSV gốc. Theo Google, Rising hiển thị % tăng trưởng hoặc Breakout >5000%; chưa tự sửa số gốc.",
+      "source_url": "https://support.google.com/trends/answer/4355000?hl=en",
+      "locator": "Rising searches"
+    },
+    {
+      "id": "QA2-05",
+      "row_ids": [
+        "M-K301",
+        "M-K302",
+        "M-E301",
+        "M-E302"
+      ],
+      "severity": "FLAG",
+      "observation": "Bài SEO có số 2600/880 nhưng không cho đủ địa lý, kỳ đo, công cụ cụ thể.",
+      "decision": "Không dùng làm volume hiện tại hoặc lượng khách hàng tiềm năng. Không để khoảng trống này chặn nghiên cứu.",
+      "source_url": "https://ychoc.com/chay-google-ads-hieu-qua/",
+      "locator": "Mục Nhóm quảng cáo từ khóa đơn"
+    },
+    {
+      "id": "QA2-06",
+      "row_ids": [
+        "M-E403"
+      ],
+      "severity": "FAIL",
+      "observation": "Nguy cơ tự động hóa bị gán skill_gap; BaoMoi dẫn lại TopCV nhưng nhãn đối chiếu nguồn gốc chưa chứng minh đã đọc báo cáo gốc.",
+      "decision": "Chỉ giữ là dự báo tác động AI theo nguồn thứ cấp; không dùng làm tỷ lệ thiếu kỹ năng hay nhu cầu đào tạo.",
+      "source_url": "",
+      "locator": ""
+    },
+    {
+      "id": "QA2-07",
+      "row_ids": [
+        "M-E409",
+        "M-E413",
+        "M-E427",
+        "M-E445",
+        "M-E446",
+        "M-E447"
+      ],
+      "severity": "FAIL",
+      "observation": "Triển khai chương trình AI, thời gian đào tạo và giờ đào tạo bị gán completed_transaction. Không có bằng chứng hợp đồng trả phí marketing.",
+      "decision": "Không dùng như giao dịch hoàn thành. Đào tạo đã diễn ra và mua dịch vụ đào tạo là hai chỉ số riêng.",
+      "source_url": "",
+      "locator": ""
+    },
+    {
+      "id": "QA2-08",
+      "row_ids": [
+        "M-E423",
+        "M-E424",
+        "M-E417",
+        "M-E452",
+        "M-E453"
+      ],
+      "severity": "FLAG",
+      "observation": "Quy mô thị trường L&D, rào cản và việc chưa cấp ngân sách bị gán approved_budget. Phạm vi không riêng marketing.",
+      "decision": "Chỉ bối cảnh; không tính ngân sách marketing đã duyệt hoặc willingness to pay.",
+      "source_url": "",
+      "locator": ""
+    },
+    {
+      "id": "QA2-09",
+      "row_ids": [
+        "M-E001",
+        "M-E003",
+        "M-E006",
+        "M-E007",
+        "M-E008",
+        "M-E017",
+        "M-E018",
+        "M-E025",
+        "M-E030",
+        "M-E031",
+        "M-E211"
+      ],
+      "severity": "FLAG",
+      "observation": "Loại nguồn công bố nhà cung cấp không đồng nghĩa truy cập trực tiếp. Có dòng locator chỉ snippet/chưa mở trang.",
+      "decision": "Chỉ sử dụng sau đối chiếu nội dung nguồn; nguồn thứ cấp không nâng thành nguồn gốc.",
+      "source_url": "",
+      "locator": ""
+    },
+    {
+      "id": "QA2-10",
+      "row_ids": [
+        "M-E013",
+        "M-E026",
+        "M-E031",
+        "M-V201",
+        "M-V202",
+        "M-V203",
+        "M-V204",
+        "M-V205",
+        "M-V206",
+        "M-V207",
+        "M-V208",
+        "M-V209",
+        "M-V210",
+        "M-V211",
+        "M-V212",
+        "M-V213",
+        "M-V214",
+        "M-V215",
+        "M-V216",
+        "M-V217",
+        "M-V218",
+        "M-V219",
+        "M-V220",
+        "M-V221",
+        "M-V222"
+      ],
+      "severity": "FLAG",
+      "observation": "3 evidence và toàn bộ 22 voice dùng mô tả tự do trong program_id, không tồn tại trong bảng programs.",
+      "decision": "Không nối tự động; lưu mô tả chương trình riêng khi chuẩn hóa, chỉ cấp mã khi xác nhận đúng chương trình.",
+      "source_url": "",
+      "locator": ""
+    },
+    {
+      "id": "QA2-11",
+      "row_ids": [
+        "M-P124",
+        "M-P125"
+      ],
+      "severity": "PASS",
+      "observation": "Nguồn AIM xác nhận 6.500.000 và 8.500.000 VND cho cặp hai người.",
+      "decision": "Giữ nguyên giá/cặp. Không gộp với giá/người hoặc gọi giá thị trường.",
+      "source_url": "https://aimacademy.vn/khoa-hoc/market-research/",
+      "locator": "Học phí và điều kiện học theo cặp"
+    },
+    {
+      "id": "QA2-12",
+      "row_ids": [
+        "README.md",
+        "M-E404",
+        "M-E406",
+        "M-E407"
+      ],
+      "severity": "FAIL",
+      "observation": "README ghi 19/22 curated ở phần giới hạn nhưng bảng thực tế là 20/22; gán nhầm Navigos 78,5% cho M-E406 thay vì M-E404, và skill_need 76,8% nằm M-E407.",
+      "decision": "Đếm từ CSV: yes=20/no=1/unknown=1; tham chiếu nội dung dòng, không lấy README làm nguồn số liệu.",
+      "source_url": "",
+      "locator": ""
+    },
+    {
+      "id": "QA2-13",
+      "row_ids": [
+        "M-V203–M-V212",
+        "M-V222"
+      ],
+      "severity": "FLAG",
+      "observation": "Trích nguyên văn cộng theo M-S202 khoảng 83 từ (đếm khoảng trắng); vượt giới hạn 25 từ/nguồn đã yêu cầu.",
+      "decision": "Không lặp quote khi xuất báo cáo; dùng diễn giải có nguồn. Không sửa đầu vào.",
+      "source_url": "",
+      "locator": ""
+    }
+  ]
+}

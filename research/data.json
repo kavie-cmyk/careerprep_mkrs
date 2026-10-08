@@ -88,8 +88,8 @@
       "period": "Quan sát 08/10/2026",
       "scope": "Một khóa marketing nền tảng",
       "type": "Nhà cung cấp",
-      "limit": "Mô tả chương trình; chưa có dữ liệu tuyển sinh hoặc đánh giá độc lập.",
-      "locator": "Đối tượng và phương pháp học kết hợp e-learning."
+      "limit": "Mô tả chương trình; chưa có dữ liệu tuyển sinh hoặc đánh giá độc lập. Giá áp dụng theo cặp hai người, không phải đơn giá/người.",
+      "locator": "Đối tượng và phương pháp học kết hợp e-learning. Học phí 6.500.000 VND cho 1 cặp 2 người."
     },
     {
       "id": "S09",
@@ -288,6 +288,28 @@
       "locator": "05_learner_voices.csv, cột provider_curated; các CSV gốc trong ZIP",
       "limit": "Chỉ các bằng chứng ghi rõ đã đối chiếu mới dùng để lập luận. Nhãn QA của Muse không thay thế kiểm chứng; không ghép nguồn Trends khác kỳ.",
       "type": "Dữ liệu cung cấp"
+    },
+    {
+      "id": "S27",
+      "title": "Bế giảng Facebook Marketing K86 (VTV-Hà Nội)",
+      "publisher": "Vinalink Academy",
+      "url": "https://vinalink.edu.vn/khoa-hoc-vua-tot-nghiep/vinalink-be-giang-khoa-hoc-facebook-marketing-k86-vtvha-noi.html",
+      "period": "Công bố 27/12/2019; đối chiếu 08/10/2026",
+      "scope": "Một bài bế giảng lịch sử",
+      "locator": "Tiêu đề, ngày 20:50 | 27/12/2019 và nội dung chính",
+      "type": "Nhà cung cấp",
+      "limit": "Không nêu 130 học viên, 04/03/2026 hoặc AI Marketing Plan. Dùng để xác định M-C107 không được nguồn hỗ trợ; không suy số tuyển sinh."
+    },
+    {
+      "id": "S28",
+      "title": "Market Research · học phí theo cặp",
+      "publisher": "AIM Academy",
+      "url": "https://aimacademy.vn/khoa-hoc/market-research/",
+      "period": "Quan sát 08/10/2026",
+      "scope": "Một chương trình; giá cho cặp hai người",
+      "locator": "Học phí 8.500.000 VND; điều kiện áp dụng cho 1 cặp 2 người",
+      "type": "Nhà cung cấp",
+      "limit": "Giá công bố, không phải học phí thực thu; không so trực tiếp với đơn giá/người."
     }
   ],
   "evidence": [
@@ -6005,10 +6027,10 @@
         "source": "S26"
       },
       {
-        "item": "M-S301 · 238 dòng truy vấn",
+        "item": "M-S301 · 231 dòng Trends + 7 ví dụ EQVN",
         "decision": "Không ghép với Trends hiện có",
         "use": "Giữ trong bản gốc; tiếp tục dùng 5 bộ CSV người dùng cung cấp.",
-        "limit": "Tham chiếu bộ xuất/đường dẫn và kỳ khác; 20 dòng trùng theo khóa–nguồn–metric. Không tính tỷ trọng intent.",
+        "limit": "Kỳ và đường dẫn CSV không khớp bộ người dùng; ánh xạ seed do Muse suy. Rising có Search interest và %/Breakout cần giữ riêng. Không tính tỷ trọng intent.",
         "source": "S26"
       },
       {
@@ -6023,6 +6045,34 @@
         "decision": "Chỉ bối cảnh liên quan",
         "use": "Không đưa vào số liệu quy mô Category.",
         "limit": "Rủi ro tự động hóa, học bổng nghề số và ngân sách L&D chung khác nhu cầu mua khóa marketing.",
+        "source": "S26"
+      },
+      {
+        "item": "M-C107 · 130 học viên / 04.03.2026",
+        "decision": "Loại khỏi bằng chứng tuyển sinh",
+        "use": "Chỉ giữ nguyên dòng gốc để tra cứu lỗi nguồn.",
+        "limit": "URL là bài Facebook Marketing K86 ngày 27.12.2019, không nêu số 130; program_id nối nhầm AI Marketing Plan.",
+        "source": "S27"
+      },
+      {
+        "item": "M-P124 / M-P125 · AIM",
+        "decision": "Đối chiếu giá và điều kiện",
+        "use": "Hands-On 6,5 triệu/cặp; Market Research 8,5 triệu/cặp hai người.",
+        "limit": "Không trộn giá/cặp với giá/người; không tự suy giá thực thu.",
+        "source": "S08 / S28"
+      },
+      {
+        "item": "M-E403 / M-E409 / M-E427",
+        "decision": "Loại khỏi thước đo nhu cầu mua",
+        "use": "Chỉ bối cảnh rủi ro AI, ứng dụng AI hoặc đào tạo nội bộ.",
+        "limit": "Không phải tỷ lệ thiếu kỹ năng hoặc giao dịch đào tạo marketing đã trả phí. Nhãn gốc của Muse chưa đúng loại chỉ số.",
+        "source": "S26"
+      },
+      {
+        "item": "Nguồn snippet / mã chương trình",
+        "decision": "Chưa đủ đối chiếu",
+        "use": "25 tham chiếu program_id chưa nối được với bảng chương trình; giữ mô tả gốc.",
+        "limit": "Nhãn loại nguồn và PASS do điều phối không xác nhận chính xác dữ kiện. Xem audit.json để tra đúng ID.",
         "source": "S26"
       }
     ],
@@ -6216,16 +6266,16 @@
         "provider": "AIM Academy",
         "name": "Hands-On Marketing",
         "url": "https://aimacademy.vn/khoa-hoc/hands-on-marketing/",
-        "review": "Chưa đối chiếu bổ sung",
-        "verified": ""
+        "review": "Đối chiếu giá và điều kiện",
+        "verified": "6,5 triệu/cặp hai người."
       },
       {
         "rawId": "M-P125",
         "provider": "AIM Academy",
         "name": "Market Research",
         "url": "https://aimacademy.vn/khoa-hoc/market-research/",
-        "review": "Chưa đối chiếu bổ sung",
-        "verified": ""
+        "review": "Đối chiếu giá và điều kiện",
+        "verified": "8,5 triệu/cặp hai người."
       },
       {
         "rawId": "M-P126",
@@ -6248,6 +6298,7 @@
       "Không xác nhận toàn bộ 119 bằng chứng hoặc 83 dòng nguồn.",
       "Không dùng nhãn QA của Muse để coi bằng chứng đã được kiểm chứng độc lập.",
       "Không chuyển chỉ số Trends thành lượng tìm kiếm, người mua hoặc doanh thu."
-    ]
+    ],
+    "audit": "research/muse/2026-10-08/audit.json"
   }
 }

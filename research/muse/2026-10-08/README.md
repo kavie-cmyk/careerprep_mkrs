@@ -7,3 +7,5 @@ reviewed.json ghi các quyết định sử dụng, trường hợp người h�
 Giữ Google Trends hiện có để phân tích xu hướng. Không ghép 238 dòng truy vấn trong gói Muse với bộ CSV khác kỳ; không sử dụng hai search volume lịch sử thiếu phạm vi. Nghiên cứu vẫn tiếp tục khi chưa có search volume tuyệt đối.
 
 Giá BRAND Camp lấy từ trang chi tiết, có mâu thuẫn với trang danh mục. Học phí Vinalink có mâu thuẫn trong cùng trang, không đưa vào biểu đồ. Lịch công bố không phải số lớp đã tổ chức. Lời kể do nhà cung cấp tuyển chọn không đại diện cơ cấu người học hoặc willingness to pay.
+
+Rà soát bổ sung: audit.json ghi 13 nhóm kiểm tra, gồm M-C107 nguồn không hỗ trợ số/ngày/chương trình; phạm vi giá AIM theo cặp; metric_type AI/giao dịch và các tham chiếu program_id chưa giải quyết. Giữ nguyên 8 CSV và README đầu vào; không xác nhận toàn bộ nguồn.
