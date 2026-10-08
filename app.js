@@ -78,13 +78,14 @@ const publicCategory=data.publicCategory;
 document.getElementById('public-questions').innerHTML=publicCategory.questions.map(q=>`<tr><td>${esc(q.question)}</td><td><span class="pill blue">${esc(q.status)}</span><p>${esc(q.answer)}</p></td><td>${esc(q.basis)}<p><a href="${esc(q.href)}">Xem bằng chứng</a></p></td></tr>`).join('');
 document.getElementById('public-opportunities').innerHTML=publicCategory.opportunities.map(o=>`<tr><td><b>${esc(o.direction)}</b></td><td>${esc(o.job)}</td><td>${esc(o.evidence)}<small><a href="#source-${esc(o.source)}">${esc(o.source)}</a>${o.extraSource?` · <a href="#source-${esc(o.extraSource)}">${esc(o.extraSource)}</a>`:''}</small></td><td>${esc(o.level)}</td></tr>`).join('');
 document.getElementById('public-review').innerHTML=publicCategory.reviewDecisions.map(r=>`<tr><td>${esc(r.item)}</td><td><span class="pill outline">${esc(r.decision)}</span></td><td>${esc(r.use)}${r.source?`<small><a href="#source-${esc(r.source)}">${esc(r.source)}</a></small>`:''}</td><td>${esc(r.limit)}</td></tr>`).join('');
+const publicPrice=value=>esc(String(value).replace(/\b\d{5,}\b/g,n=>Number(n).toLocaleString('vi-VN')));
 const programSearch=document.getElementById('public-program-search');
 const programKind=document.getElementById('public-program-kind');
 programKind.innerHTML+=[...new Set(publicCategory.programs.map(p=>p.kind))].map(k=>`<option value="${esc(k)}">${esc(k)}</option>`).join('');
 function renderPublicPrograms(){
  const query=normalize(programSearch.value.trim());
  const rows=publicCategory.programs.filter(p=>(!programKind.value||p.kind===programKind.value)&&normalize([p.rawId,p.provider,p.name].join(' ')).includes(query));
- document.getElementById('public-program-body').innerHTML=rows.length?rows.map(p=>`<tr><td>${esc(p.rawId)}<small>${esc(p.provider)}</small></td><td>${p.url?`<a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.name)}</a>`:esc(p.name)}<small>${esc(p.format)}</small></td><td>${esc(p.kind)}<small>${esc(p.payment)}</small></td><td>${p.listedPrice?`Niêm yết: ${esc(p.listedPrice)} ${esc(p.currency)}<br>`:''}${p.promotionalPrice?`Ưu đãi: ${esc(p.promotionalPrice)} ${esc(p.currency)}<br>`:''}${esc(p.conditions)||'Không công bố trong dòng dữ liệu'}</td><td>${esc(p.note)}</td></tr>`).join(''):'<tr><td colspan="5" class="empty">Không có mục khớp bộ lọc.</td></tr>';
+ document.getElementById('public-program-body').innerHTML=rows.length?rows.map(p=>`<tr><td>${esc(p.rawId)}<small>${esc(p.provider)}</small></td><td>${p.url?`<a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.name)}</a>`:esc(p.name)}<small>${esc(p.format)}</small></td><td>${esc(p.kind)}<small>${esc(p.payment==='paid'?'trả phí':p.payment)}</small></td><td>${p.listedPrice?`Niêm yết: ${publicPrice(p.listedPrice)} ${esc(p.currency)}<br>`:''}${p.promotionalPrice?`Ưu đãi: ${publicPrice(p.promotionalPrice)} ${esc(p.currency)}<br>`:''}${esc(p.conditions)||'Không công bố trong dòng dữ liệu'}</td><td>${esc(p.note)}</td></tr>`).join(''):'<tr><td colspan="5" class="empty">Không có mục khớp bộ lọc.</td></tr>';
  document.getElementById('public-program-count').textContent=`${rows.length} / ${publicCategory.programs.length} mục`;
 }
 programSearch.addEventListener('input',renderPublicPrograms);programKind.addEventListener('change',renderPublicPrograms);renderPublicPrograms();
@@ -132,6 +133,7 @@ function revealReference(hash){
   }
   const target=document.getElementById(id);
   if(!target)return;
+  if(target.tagName==='DETAILS')target.open=true;
   for(let node=target.parentElement;node;node=node.parentElement)if(node.tagName==='DETAILS')node.open=true;
   requestAnimationFrame(()=>target.scrollIntoView({block:'start',behavior:'auto'}));
 }
