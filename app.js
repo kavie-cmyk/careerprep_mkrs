@@ -31,13 +31,16 @@ const trendFileLabels={time:'CSV · chuỗi tháng (37)',region:'CSV · địa p
 document.getElementById('trends-downloads').innerHTML=trends.files.map(f=>`<a class="button secondary" href="${esc(f.path)}" download>${trendFileLabels[f.kind]}</a>`).join('')+'<a class="button secondary" href="research/google-trends/analysis.json" download>JSON · dữ liệu & cách tính</a>';
 const individual = data.individualTrends;
 function drawIndividualChanges(){
-  const W=1100,H=280,L=230,R=55,T=28,B=40,pw=W-L-R,ph=H-T-B;
-  const x=v=>L+(v+50)/200*pw;
-  const ticks=[-50,0,50,100,150].map(v=>`<line x1="${x(v)}" y1="${T}" x2="${x(v)}" y2="${H-B}" stroke="${v===0?'#a9b7ca':'#e0e7f0'}"/><text x="${x(v)}" y="${H-17}" text-anchor="middle">${v>0?'+':''}${v}%</text>`).join('');
-  const bars=individual.map((r,i)=>{const y=T+(i+0.5)*ph/individual.length;return `<text x="${L-15}" y="${y+4}" text-anchor="end">${esc(r.term)}</text><rect x="${Math.min(x(0),x(r.change))}" y="${y-10}" width="${Math.abs(x(r.change)-x(0))}" height="20" rx="2" fill="${r.change>0?'#2657a5':'#7b879b'}"/><text x="${r.change>0?x(r.change)+8:x(r.change)-8}" y="${y+4}" text-anchor="${r.change>0?'start':'end'}">${signed(r.change)}</text>`;}).join('');
-  document.getElementById('single-change-chart').innerHTML=`<h4>Biến động chỉ số trung bình 12 tháng · cả 5 từ khóa</h4><p class="caption">10/2025–09/2026 so với 10/2024–09/2025 · biến động trong từng từ khóa, không phải tăng trưởng doanh thu</p><svg viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="changes-title changes-desc"><title id="changes-title">Biến động chỉ số tìm kiếm của năm từ khóa</title><desc id="changes-desc">${esc(individual.map(r=>`${r.term}: ${signed(r.change)}`).join('; '))}. Các bộ xuất riêng có thang chuẩn hóa riêng; chỉ đối chiếu mức thay đổi theo thời gian trong từng từ khóa.</desc>${ticks}${bars}</svg>`;
+  const bars=individual.map((r,i)=>`<div class="change-row"><a href="#fact-E${33+i}">${esc(r.term)}</a><div class="change-track"><span class="change-zero"></span><span class="change-fill ${r.change>0?'positive':'negative'}" style="left:${r.change>0?25:25+r.change/2}%;width:${Math.abs(r.change)/2}%"></span></div><b>${signed(r.change)}</b></div>`).join('');
+  document.getElementById('single-change-chart').innerHTML=`<h4 id="changes-title">Biến động chỉ số tìm kiếm · năm từ khóa</h4><p class="caption">Trung bình 10/2025–09/2026 so với 10/2024–09/2025</p><p class="sr-only" id="changes-desc">${esc(individual.map(r=>`${r.term}: ${signed(r.change)}`).join('; '))}. Các bộ xuất riêng có thang chuẩn hóa riêng; chỉ đối chiếu mức thay đổi theo thời gian trong từng từ khóa.</p><div class="change-bars">${bars}<div class="change-scale"><span>−50%</span><span>0%</span><span>+50%</span><span>+100%</span><span>+150%</span></div></div>`;
 }
 drawIndividualChanges();
+const intentExamples=[
+  {index:0,queries:['đại học marketing','đại học tài chính marketing'],note:'Có ý định tìm hiểu đại học/tuyển sinh',ref:'Q09'},
+  {index:4,queries:['ai marketing tools','ai marketing news','claude ai'],note:'Có công cụ, tin tức và mô hình AI',ref:'Q12'},
+  {index:3,queries:['chiến lược marketing','sách digital marketing'],note:'Có kiến thức và sách; chưa tách ý định mua khóa',ref:'Q13'}
+];
+document.getElementById('intent-preview').innerHTML=intentExamples.map(e=>{const r=individual[e.index];const found=e.queries.filter(q=>[...r.top,...r.rising].some(v=>v.query===q));return `<tr><td><b>${esc(r.term)}</b><small><a href="#source-${r.source}">${r.source}</a></small></td><td>${found.map(q=>`<span class="query-term">${esc(q)}</span>`).join('')}</td><td>${esc(e.note)}<small><a href="#fact-${e.ref}">${e.ref}</a></small></td></tr>`;}).join('');
 document.getElementById('single-summary').innerHTML=individual.map(r=>`<tr><td><b>${esc(r.term)}</b><small><a href="#source-${esc(r.source)}">${esc(r.source)}</a></small></td>${r.means.map(v=>`<td>${format(v)}</td>`).join('')}<td><b>${signed(r.change)}</b></td></tr>`).join('');
 const singleSelect=document.getElementById('single-term');
 singleSelect.innerHTML=individual.map((r,i)=>`<option value="${i}">${esc(r.term)}</option>`).join('');
@@ -72,7 +75,7 @@ document.getElementById('price-chart').innerHTML = '<div class="price-groups"><d
 chart('price-hnaau', [{metric:'Trực tuyến',value:4},{metric:'Trực tiếp',value:5}],10,'');
 chart('price-tm', [{metric:'Early bird',value:6.21},{metric:'Niêm yết',value:8.91}],10,'');
 document.getElementById('sources').innerHTML = data.sources.map(s => `<article id="source-${esc(s.id)}" class="source-item"><h4><span>${esc(s.id)}</span> ${esc(s.title)}</h4><p><b>${esc(s.publisher)}</b> · ${esc(s.type)}</p><p>${esc(s.period)} · ${esc(s.scope)}</p><p><b>Vị trí:</b> ${esc(s.locator)}</p><p><b>Giới hạn:</b> ${esc(s.limit)}</p><a href="${esc(s.url)}" target="_blank" rel="noopener">Đọc nguồn gốc</a></article>`).join('');
-document.getElementById('qual-body').innerHTML = data.qualitative.map(q => `<tr><td>${esc(q.id)}</td><td>${esc(q.finding)}</td><td><a href="#source-${esc(q.source)}">${esc(q.source)}</a></td></tr>`).join('');
+document.getElementById('qual-body').innerHTML = data.qualitative.map(q => `<tr id="fact-${esc(q.id)}" tabindex="-1"><td>${esc(q.id)}</td><td>${esc(q.finding)}</td><td><a href="#source-${esc(q.source)}">${esc(q.source)}</a></td></tr>`).join('');
 document.getElementById('gaps-body').innerHTML = data.gaps.map(g => `<tr><td><b>${esc(g.question)}</b></td><td><span class="pill amber">${esc(g.status)}</span></td><td>${esc(g.need)}</td><td>${esc(g.method)}</td></tr>`).join('');
 document.getElementById('source-count').textContent = `· ${data.sources.length} nguồn`;
 document.getElementById('footer-count').textContent = `${data.evidence.length} dữ kiện định lượng · ${data.qualitative.length} quan sát định tính · ${data.sources.length} nguồn`;
@@ -85,7 +88,7 @@ function normalize(s){return s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').r
 function renderEvidence(){
   const query = normalize(search.value.trim());
   const rows = data.evidence.filter(e => (!groupFilter.value || e.group === groupFilter.value) && (!sourceFilter.value || e.source === sourceFilter.value) && normalize([e.id,e.metric,e.group,e.value,e.unit,e.source,sourceMap[e.source].publisher,sourceMap[e.source].scope].join(' ')).includes(query));
-  document.getElementById('evidence-body').innerHTML = rows.length ? rows.map(e => {const s=sourceMap[e.source];return `<tr><td>${esc(e.id)}</td><td>${esc(e.group)}</td><td>${esc(e.metric)}</td><td>${format(e.value)} ${esc(e.unit)}</td><td>${esc(s.period)}<small>${esc(s.scope)}</small></td><td><a href="#source-${esc(s.id)}">${esc(s.id)}</a><small>${esc(e.location)}</small></td></tr>`;}).join('') : '<tr><td colspan="6" class="empty">Không có dữ kiện khớp bộ lọc. Điều chỉnh từ khóa hoặc chọn tất cả nhóm.</td></tr>';
+  document.getElementById('evidence-body').innerHTML = rows.length ? rows.map(e => {const s=sourceMap[e.source];return `<tr id="fact-${esc(e.id)}" tabindex="-1"><td>${esc(e.id)}</td><td>${esc(e.group)}</td><td>${esc(e.metric)}</td><td>${format(e.value)} ${esc(e.unit)}</td><td>${esc(s.period)}<small>${esc(s.scope)}</small></td><td><a href="#source-${esc(s.id)}">${esc(s.id)}</a><small>${esc(e.location)}</small></td></tr>`;}).join('') : '<tr><td colspan="6" class="empty">Không có dữ kiện khớp bộ lọc. Điều chỉnh từ khóa hoặc chọn tất cả nhóm.</td></tr>';
   document.getElementById('evidence-count').textContent = `${rows.length} / ${data.evidence.length} dữ kiện`;
 }
 [search,groupFilter,sourceFilter].forEach(el => el.addEventListener(el === search ? 'input' : 'change', renderEvidence));
@@ -102,3 +105,31 @@ const navLinks=[...document.querySelectorAll('.sidebar nav a')];
 const observer=new IntersectionObserver(entries=>{const seen=entries.filter(e=>e.isIntersecting).sort((a,b)=>b.intersectionRatio-a.intersectionRatio);if(seen[0])navLinks.forEach(a=>a.classList.toggle('selected',a.getAttribute('href')==='#'+seen[0].target.id));},{rootMargin:'-10% 0px -65% 0px',threshold:0});
 document.querySelectorAll('main>section').forEach(s=>observer.observe(s));
 navLinks[0].classList.add('selected');
+
+// A source or fact link opens every enclosing disclosure before scrolling.
+// Fact links remain usable after the appendix has been filtered.
+function revealReference(hash){
+  if(!hash || hash==='#')return;
+  const id=decodeURIComponent(hash.slice(1));
+  if(id.startsWith('fact-E') && !document.getElementById(id)){
+    search.value='';groupFilter.value='';sourceFilter.value='';renderEvidence();
+  }
+  const target=document.getElementById(id);
+  if(!target)return;
+  for(let node=target.parentElement;node;node=node.parentElement)if(node.tagName==='DETAILS')node.open=true;
+  requestAnimationFrame(()=>target.scrollIntoView({block:'start',behavior:'auto'}));
+}
+document.addEventListener('click',event=>{
+  const link=event.target.closest('a[href^="#"]');
+  if(!link)return;
+  const hash=link.getAttribute('href');
+  revealReference(hash);
+});
+window.addEventListener('hashchange',()=>revealReference(location.hash));
+revealReference(location.hash);
+window.addEventListener('beforeprint',()=>{
+  document.querySelectorAll('.calculation').forEach(detail=>{detail.dataset.printOpen=String(detail.open);detail.open=true;});
+});
+window.addEventListener('afterprint',()=>{
+  document.querySelectorAll('.calculation').forEach(detail=>{detail.open=detail.dataset.printOpen==='true';delete detail.dataset.printOpen;});
+});
