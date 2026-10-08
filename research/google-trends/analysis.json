@@ -1,0 +1,1609 @@
+{
+  "exported": "2026-10-08 17:09 (theo tên file)",
+  "geography": "VN (theo tên file)",
+  "terms": [
+    "học marketing",
+    "khóa học marketing",
+    "học digital marketing",
+    "marketing thực chiến",
+    "AI marketing"
+  ],
+  "analysisStart": "2023-10-01",
+  "analysisEnd": "2026-09-30",
+  "periodLabels": [
+    "10/2023–09/2024",
+    "10/2024–09/2025",
+    "10/2025–09/2026"
+  ],
+  "calculation": "(Trung bình chỉ số tháng 10/2025–09/2026 / trung bình chỉ số tháng 10/2024–09/2025 − 1) × 100. Tính trên số gốc, chỉ làm tròn khi hiển thị.",
+  "excludedDates": [
+    "2023-09-01"
+  ],
+  "time": [
+    {
+      "date": "2023-09-01",
+      "values": [
+        45,
+        3,
+        5,
+        2,
+        5
+      ]
+    },
+    {
+      "date": "2023-10-01",
+      "values": [
+        35,
+        4,
+        5,
+        2,
+        6
+      ]
+    },
+    {
+      "date": "2023-11-01",
+      "values": [
+        32,
+        3,
+        4,
+        2,
+        5
+      ]
+    },
+    {
+      "date": "2023-12-01",
+      "values": [
+        32,
+        3,
+        4,
+        2,
+        4
+      ]
+    },
+    {
+      "date": "2024-01-01",
+      "values": [
+        37,
+        5,
+        5,
+        2,
+        6
+      ]
+    },
+    {
+      "date": "2024-02-01",
+      "values": [
+        38,
+        3,
+        4,
+        1,
+        5
+      ]
+    },
+    {
+      "date": "2024-03-01",
+      "values": [
+        52,
+        4,
+        6,
+        3,
+        7
+      ]
+    },
+    {
+      "date": "2024-04-01",
+      "values": [
+        52,
+        3,
+        6,
+        2,
+        6
+      ]
+    },
+    {
+      "date": "2024-05-01",
+      "values": [
+        54,
+        3,
+        6,
+        2,
+        5
+      ]
+    },
+    {
+      "date": "2024-06-01",
+      "values": [
+        63,
+        3,
+        6,
+        2,
+        6
+      ]
+    },
+    {
+      "date": "2024-07-01",
+      "values": [
+        88,
+        4,
+        8,
+        1,
+        7
+      ]
+    },
+    {
+      "date": "2024-08-01",
+      "values": [
+        65,
+        4,
+        6,
+        1,
+        7
+      ]
+    },
+    {
+      "date": "2024-09-01",
+      "values": [
+        39,
+        3,
+        5,
+        2,
+        7
+      ]
+    },
+    {
+      "date": "2024-10-01",
+      "values": [
+        33,
+        4,
+        3,
+        2,
+        7
+      ]
+    },
+    {
+      "date": "2024-11-01",
+      "values": [
+        30,
+        4,
+        4,
+        2,
+        7
+      ]
+    },
+    {
+      "date": "2024-12-01",
+      "values": [
+        27,
+        3,
+        4,
+        2,
+        7
+      ]
+    },
+    {
+      "date": "2025-01-01",
+      "values": [
+        26,
+        3,
+        3,
+        1,
+        7
+      ]
+    },
+    {
+      "date": "2025-02-01",
+      "values": [
+        42,
+        5,
+        6,
+        1,
+        8
+      ]
+    },
+    {
+      "date": "2025-03-01",
+      "values": [
+        39,
+        5,
+        4,
+        1,
+        10
+      ]
+    },
+    {
+      "date": "2025-04-01",
+      "values": [
+        34,
+        3,
+        4,
+        1,
+        8
+      ]
+    },
+    {
+      "date": "2025-05-01",
+      "values": [
+        44,
+        4,
+        4,
+        1,
+        10
+      ]
+    },
+    {
+      "date": "2025-06-01",
+      "values": [
+        59,
+        3,
+        5,
+        1,
+        17
+      ]
+    },
+    {
+      "date": "2025-07-01",
+      "values": [
+        100,
+        3,
+        7,
+        2,
+        12
+      ]
+    },
+    {
+      "date": "2025-08-01",
+      "values": [
+        71,
+        4,
+        5,
+        1,
+        9
+      ]
+    },
+    {
+      "date": "2025-09-01",
+      "values": [
+        41,
+        2,
+        3,
+        1,
+        7
+      ]
+    },
+    {
+      "date": "2025-10-01",
+      "values": [
+        27,
+        2,
+        3,
+        1,
+        7
+      ]
+    },
+    {
+      "date": "2025-11-01",
+      "values": [
+        29,
+        2,
+        2,
+        2,
+        20
+      ]
+    },
+    {
+      "date": "2025-12-01",
+      "values": [
+        31,
+        4,
+        3,
+        1,
+        22
+      ]
+    },
+    {
+      "date": "2026-01-01",
+      "values": [
+        28,
+        5,
+        2,
+        1,
+        17
+      ]
+    },
+    {
+      "date": "2026-02-01",
+      "values": [
+        23,
+        3,
+        2,
+        1,
+        18
+      ]
+    },
+    {
+      "date": "2026-03-01",
+      "values": [
+        33,
+        2,
+        3,
+        1,
+        26
+      ]
+    },
+    {
+      "date": "2026-04-01",
+      "values": [
+        37,
+        1,
+        3,
+        1,
+        25
+      ]
+    },
+    {
+      "date": "2026-05-01",
+      "values": [
+        47,
+        2,
+        4,
+        1,
+        23
+      ]
+    },
+    {
+      "date": "2026-06-01",
+      "values": [
+        62,
+        2,
+        4,
+        1,
+        22
+      ]
+    },
+    {
+      "date": "2026-07-01",
+      "values": [
+        64,
+        2,
+        4,
+        1,
+        19
+      ]
+    },
+    {
+      "date": "2026-08-01",
+      "values": [
+        60,
+        2,
+        2,
+        1,
+        15
+      ]
+    },
+    {
+      "date": "2026-09-01",
+      "values": [
+        29,
+        2,
+        2,
+        1,
+        27
+      ]
+    }
+  ],
+  "summary": [
+    {
+      "term": "học marketing",
+      "means": [
+        48.916666666666664,
+        45.5,
+        39.166666666666664
+      ],
+      "change": -13.919413919413925
+    },
+    {
+      "term": "khóa học marketing",
+      "means": [
+        3.5,
+        3.5833333333333335,
+        2.4166666666666665
+      ],
+      "change": -32.55813953488372
+    },
+    {
+      "term": "học digital marketing",
+      "means": [
+        5.416666666666667,
+        4.333333333333333,
+        2.8333333333333335
+      ],
+      "change": -34.615384615384606
+    },
+    {
+      "term": "marketing thực chiến",
+      "means": [
+        1.8333333333333333,
+        1.3333333333333333,
+        1.0833333333333333
+      ],
+      "change": -18.75
+    },
+    {
+      "term": "AI marketing",
+      "means": [
+        5.916666666666667,
+        9.083333333333334,
+        20.083333333333332
+      ],
+      "change": 121.10091743119264
+    }
+  ],
+  "regions": [
+    {
+      "region": "Kon Tum",
+      "values": [
+        100,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "region": "Bắc Kạn",
+      "values": [
+        100,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "region": "Bình Thuận",
+      "values": [
+        89,
+        0,
+        5,
+        0,
+        6
+      ]
+    },
+    {
+      "region": "Hậu Giang",
+      "values": [
+        89,
+        0,
+        0,
+        0,
+        11
+      ]
+    },
+    {
+      "region": "Quảng Ngãi",
+      "values": [
+        87,
+        2,
+        5,
+        0,
+        6
+      ]
+    },
+    {
+      "region": "Phú Yên",
+      "values": [
+        87,
+        0,
+        7,
+        0,
+        6
+      ]
+    },
+    {
+      "region": "Quảng Trị",
+      "values": [
+        87,
+        0,
+        6,
+        0,
+        7
+      ]
+    },
+    {
+      "region": "Ninh Thuận",
+      "values": [
+        86,
+        0,
+        5,
+        0,
+        9
+      ]
+    },
+    {
+      "region": "Bến Tre",
+      "values": [
+        86,
+        0,
+        4,
+        0,
+        10
+      ]
+    },
+    {
+      "region": "Cà Mau",
+      "values": [
+        86,
+        0,
+        0,
+        0,
+        14
+      ]
+    },
+    {
+      "region": "Đăk Nông",
+      "values": [
+        85,
+        0,
+        7,
+        0,
+        8
+      ]
+    },
+    {
+      "region": "Bình Phước",
+      "values": [
+        85,
+        0,
+        6,
+        0,
+        9
+      ]
+    },
+    {
+      "region": "Đồng Tháp",
+      "values": [
+        84,
+        3,
+        5,
+        0,
+        8
+      ]
+    },
+    {
+      "region": "Bình Định",
+      "values": [
+        84,
+        1,
+        6,
+        0,
+        9
+      ]
+    },
+    {
+      "region": "Trà Vinh",
+      "values": [
+        84,
+        0,
+        7,
+        0,
+        9
+      ]
+    },
+    {
+      "region": "tỉnh Kiên Giang",
+      "values": [
+        84,
+        0,
+        6,
+        0,
+        10
+      ]
+    },
+    {
+      "region": "Lào Cai",
+      "values": [
+        84,
+        0,
+        0,
+        0,
+        16
+      ]
+    },
+    {
+      "region": "Hòa Bình",
+      "values": [
+        84,
+        0,
+        0,
+        0,
+        16
+      ]
+    },
+    {
+      "region": "Ninh Bình",
+      "values": [
+        83,
+        0,
+        9,
+        0,
+        8
+      ]
+    },
+    {
+      "region": "Sóc Trăng",
+      "values": [
+        83,
+        0,
+        5,
+        0,
+        12
+      ]
+    },
+    {
+      "region": "Tiền Giang",
+      "values": [
+        82,
+        3,
+        6,
+        0,
+        9
+      ]
+    },
+    {
+      "region": "Tây Ninh",
+      "values": [
+        82,
+        0,
+        5,
+        0,
+        13
+      ]
+    },
+    {
+      "region": "Bà Rịa - Vũng Tàu",
+      "values": [
+        81,
+        3,
+        6,
+        0,
+        10
+      ]
+    },
+    {
+      "region": "An Giang",
+      "values": [
+        81,
+        3,
+        5,
+        0,
+        11
+      ]
+    },
+    {
+      "region": "Long An",
+      "values": [
+        81,
+        2,
+        5,
+        0,
+        12
+      ]
+    },
+    {
+      "region": "Bạc Liêu",
+      "values": [
+        81,
+        0,
+        7,
+        0,
+        12
+      ]
+    },
+    {
+      "region": "Vĩnh Long",
+      "values": [
+        81,
+        0,
+        6,
+        0,
+        13
+      ]
+    },
+    {
+      "region": "Hà Tĩnh",
+      "values": [
+        81,
+        0,
+        4,
+        0,
+        15
+      ]
+    },
+    {
+      "region": "Đắk Lắk",
+      "values": [
+        80,
+        2,
+        9,
+        0,
+        9
+      ]
+    },
+    {
+      "region": "Lâm Đồng",
+      "values": [
+        79,
+        3,
+        6,
+        0,
+        12
+      ]
+    },
+    {
+      "region": "Yên Bái",
+      "values": [
+        79,
+        0,
+        10,
+        0,
+        11
+      ]
+    },
+    {
+      "region": "Thái Bình",
+      "values": [
+        78,
+        3,
+        8,
+        0,
+        11
+      ]
+    },
+    {
+      "region": "Nam Định",
+      "values": [
+        77,
+        3,
+        5,
+        0,
+        15
+      ]
+    },
+    {
+      "region": "Quảng Bình",
+      "values": [
+        77,
+        0,
+        8,
+        0,
+        15
+      ]
+    },
+    {
+      "region": "Hà Nam",
+      "values": [
+        77,
+        0,
+        7,
+        0,
+        16
+      ]
+    },
+    {
+      "region": "Nghệ An",
+      "values": [
+        76,
+        4,
+        6,
+        0,
+        14
+      ]
+    },
+    {
+      "region": "Gia Lai",
+      "values": [
+        76,
+        2,
+        6,
+        0,
+        16
+      ]
+    },
+    {
+      "region": "Khánh Hòa",
+      "values": [
+        76,
+        2,
+        5,
+        2,
+        15
+      ]
+    },
+    {
+      "region": "Lạng Sơn",
+      "values": [
+        76,
+        0,
+        0,
+        0,
+        24
+      ]
+    },
+    {
+      "region": "Hải Dương",
+      "values": [
+        75,
+        4,
+        10,
+        0,
+        11
+      ]
+    },
+    {
+      "region": "Quảng Ninh",
+      "values": [
+        75,
+        0,
+        5,
+        0,
+        20
+      ]
+    },
+    {
+      "region": "Thanh Hoá",
+      "values": [
+        74,
+        3,
+        6,
+        2,
+        15
+      ]
+    },
+    {
+      "region": "Đồng Nai",
+      "values": [
+        74,
+        3,
+        6,
+        2,
+        15
+      ]
+    },
+    {
+      "region": "Vĩnh Phúc",
+      "values": [
+        73,
+        4,
+        5,
+        0,
+        18
+      ]
+    },
+    {
+      "region": "Thừa Thiên Huế",
+      "values": [
+        72,
+        3,
+        6,
+        0,
+        19
+      ]
+    },
+    {
+      "region": "Bắc Giang",
+      "values": [
+        71,
+        0,
+        8,
+        0,
+        21
+      ]
+    },
+    {
+      "region": "Sơn La",
+      "values": [
+        71,
+        0,
+        0,
+        0,
+        29
+      ]
+    },
+    {
+      "region": "Bình Dương",
+      "values": [
+        70,
+        6,
+        7,
+        2,
+        15
+      ]
+    },
+    {
+      "region": "Hưng Yên",
+      "values": [
+        70,
+        5,
+        5,
+        0,
+        20
+      ]
+    },
+    {
+      "region": "Điện Biên",
+      "values": [
+        70,
+        0,
+        0,
+        0,
+        30
+      ]
+    },
+    {
+      "region": "Quảng Nam",
+      "values": [
+        69,
+        8,
+        6,
+        0,
+        17
+      ]
+    },
+    {
+      "region": "Phú Thọ",
+      "values": [
+        69,
+        4,
+        5,
+        0,
+        22
+      ]
+    },
+    {
+      "region": "Tuyên Quang",
+      "values": [
+        68,
+        7,
+        0,
+        0,
+        25
+      ]
+    },
+    {
+      "region": "Hồ Chí Minh",
+      "values": [
+        67,
+        5,
+        6,
+        2,
+        20
+      ]
+    },
+    {
+      "region": "Thái Nguyên",
+      "values": [
+        67,
+        3,
+        7,
+        5,
+        18
+      ]
+    },
+    {
+      "region": "Cần Thơ",
+      "values": [
+        66,
+        3,
+        6,
+        5,
+        20
+      ]
+    },
+    {
+      "region": "Hải Phòng",
+      "values": [
+        65,
+        2,
+        7,
+        1,
+        25
+      ]
+    },
+    {
+      "region": "Bắc Ninh",
+      "values": [
+        64,
+        3,
+        8,
+        0,
+        25
+      ]
+    },
+    {
+      "region": "Hà Giang",
+      "values": [
+        63,
+        0,
+        0,
+        0,
+        37
+      ]
+    },
+    {
+      "region": "Hà Nội",
+      "values": [
+        60,
+        6,
+        7,
+        3,
+        24
+      ]
+    },
+    {
+      "region": "Đà Nẵng",
+      "values": [
+        59,
+        7,
+        9,
+        4,
+        21
+      ]
+    },
+    {
+      "region": "Lai Châu",
+      "values": [
+        59,
+        0,
+        0,
+        0,
+        41
+      ]
+    },
+    {
+      "region": "Cao Bằng",
+      "values": [
+        49,
+        0,
+        0,
+        0,
+        51
+      ]
+    }
+  ],
+  "top": [
+    {
+      "query": "đại học marketing",
+      "interest": 100,
+      "increase": "1%"
+    },
+    {
+      "query": "tài chính marketing",
+      "interest": 65,
+      "increase": "-8%"
+    },
+    {
+      "query": "đại học tài chính",
+      "interest": 56,
+      "increase": "-10%"
+    },
+    {
+      "query": "đại học tài chính marketing",
+      "interest": 55,
+      "increase": "-20%"
+    },
+    {
+      "query": "trường đại học",
+      "interest": 54,
+      "increase": "-8%"
+    },
+    {
+      "query": "trường đại học marketing",
+      "interest": 54,
+      "increase": "-10%"
+    },
+    {
+      "query": "ngành marketing",
+      "interest": 49,
+      "increase": "-6%"
+    },
+    {
+      "query": "marketing học gì",
+      "interest": 35,
+      "increase": "-4%"
+    },
+    {
+      "query": "trường tài chính marketing",
+      "interest": 34,
+      "increase": "-10%"
+    },
+    {
+      "query": "trường đại học tài chính marketing",
+      "interest": 31,
+      "increase": "-10%"
+    },
+    {
+      "query": "marketing là gì",
+      "interest": 21,
+      "increase": "-8%"
+    },
+    {
+      "query": "đại học kinh tế",
+      "interest": 19,
+      "increase": "-30%"
+    },
+    {
+      "query": "đại học kinh tế marketing",
+      "interest": 19,
+      "increase": "-30%"
+    },
+    {
+      "query": "tài chính marketing điểm chuẩn",
+      "interest": 18,
+      "increase": "-20%"
+    },
+    {
+      "query": "điểm chuẩn tài chính marketing",
+      "interest": 17,
+      "increase": "-30%"
+    },
+    {
+      "query": "ngành marketing học gì",
+      "interest": 17,
+      "increase": "-1%"
+    },
+    {
+      "query": "đại học tài chính marketing điểm chuẩn",
+      "interest": 17,
+      "increase": "-30%"
+    },
+    {
+      "query": "điểm chuẩn đại học tài chính marketing",
+      "interest": 16,
+      "increase": "-30%"
+    },
+    {
+      "query": "digital marketing",
+      "interest": 16,
+      "increase": "1%"
+    },
+    {
+      "query": "marketing học trường nào",
+      "interest": 16,
+      "increase": "-20%"
+    },
+    {
+      "query": "học digital marketing",
+      "interest": 15,
+      "increase": "-5%"
+    },
+    {
+      "query": "marketing học trường gì",
+      "interest": 14,
+      "increase": "-6%"
+    },
+    {
+      "query": "các ngành đại học",
+      "interest": 11,
+      "increase": "-20%"
+    },
+    {
+      "query": "khóa học marketing",
+      "interest": 11,
+      "increase": "30%"
+    },
+    {
+      "query": "đại học kinh tế tài chính",
+      "interest": 11,
+      "increase": "-30%"
+    },
+    {
+      "query": "đại học hà nội",
+      "interest": 10,
+      "increase": "-20%"
+    },
+    {
+      "query": "quản trị marketing",
+      "interest": 10,
+      "increase": "-10%"
+    },
+    {
+      "query": "đại học kinh tế tài chính marketing",
+      "interest": 10,
+      "increase": "-30%"
+    },
+    {
+      "query": "điểm chuẩn trường đại học tài chính marketing",
+      "interest": 10,
+      "increase": "-30%"
+    },
+    {
+      "query": "marketing là ngành gì",
+      "interest": 10,
+      "increase": "-6%"
+    },
+    {
+      "query": "ngành marketing học trường nào",
+      "interest": 9,
+      "increase": "-20%"
+    },
+    {
+      "query": "ngành marketing là gì",
+      "interest": 9,
+      "increase": "-8%"
+    },
+    {
+      "query": "trường đại học tài chính marketing điểm chuẩn",
+      "interest": 9,
+      "increase": "-30%"
+    },
+    {
+      "query": "truyền thông marketing",
+      "interest": 8,
+      "increase": "30%"
+    },
+    {
+      "query": "đại học quốc tế",
+      "interest": 8,
+      "increase": "-20%"
+    },
+    {
+      "query": "đại học tài chính marketing tphcm",
+      "interest": 8,
+      "increase": "-20%"
+    },
+    {
+      "query": "đại học mở",
+      "interest": 7,
+      "increase": "-30%"
+    },
+    {
+      "query": "đại học ngân hàng",
+      "interest": 6,
+      "increase": "-30%"
+    },
+    {
+      "query": "marketing học khối nào",
+      "interest": 6,
+      "increase": "-20%"
+    },
+    {
+      "query": "ufm",
+      "interest": 6,
+      "increase": "30%"
+    },
+    {
+      "query": "đại học công nghiệp",
+      "interest": 6,
+      "increase": "-40%"
+    },
+    {
+      "query": "tài chính ngân hàng",
+      "interest": 6,
+      "increase": "-30%"
+    },
+    {
+      "query": "ueh",
+      "interest": 6,
+      "increase": "8%"
+    },
+    {
+      "query": "học phí đại học tài chính marketing",
+      "interest": 5,
+      "increase": "-50%"
+    },
+    {
+      "query": "đại học tài chính marketing học phí",
+      "interest": 5,
+      "increase": "-50%"
+    },
+    {
+      "query": "đại học tài chính marketing xét học bạ",
+      "interest": 5,
+      "increase": "-40%"
+    },
+    {
+      "query": "đại học công thương",
+      "interest": 5,
+      "increase": "60%"
+    },
+    {
+      "query": "quản trị kinh doanh",
+      "interest": 5,
+      "increase": "-30%"
+    },
+    {
+      "query": "đại học tài chính ngân hàng",
+      "interest": 5,
+      "increase": "-40%"
+    },
+    {
+      "query": "đại học thương mại",
+      "interest": 5,
+      "increase": "-30%"
+    }
+  ],
+  "rising": [
+    {
+      "query": "điểm chuẩn đại học tài chính marketing 2024",
+      "interest": 4,
+      "increase": "Breakout"
+    },
+    {
+      "query": "đại học tài chính marketing điểm chuẩn 2024",
+      "interest": 4,
+      "increase": "Breakout"
+    },
+    {
+      "query": "điểm chuẩn đại học tài chính marketing 2025",
+      "interest": 4,
+      "increase": "Breakout"
+    },
+    {
+      "query": "khóa học marketing online ladigi",
+      "interest": 0,
+      "increase": "Breakout"
+    },
+    {
+      "query": "huit",
+      "interest": 1,
+      "increase": "2.100%"
+    },
+    {
+      "query": "trường đại học tài chính marketing cơ sở nguyễn kiệm",
+      "interest": 0,
+      "increase": "1.000%"
+    },
+    {
+      "query": "hub",
+      "interest": 2,
+      "increase": "300%"
+    },
+    {
+      "query": "uth",
+      "interest": 1,
+      "increase": "300%"
+    },
+    {
+      "query": "thạc sĩ marketing",
+      "interest": 3,
+      "increase": "170%"
+    },
+    {
+      "query": "ussh",
+      "interest": 1,
+      "increase": "160%"
+    },
+    {
+      "query": "neu",
+      "interest": 3,
+      "increase": "100%"
+    },
+    {
+      "query": "ftu",
+      "interest": 1,
+      "increase": "90%"
+    },
+    {
+      "query": "điểm chuẩn đại học tài chính marketing 2023",
+      "interest": 3,
+      "increase": "90%"
+    },
+    {
+      "query": "đại học tài chính marketing điểm chuẩn 2023",
+      "interest": 3,
+      "increase": "90%"
+    },
+    {
+      "query": "học viện hàng không",
+      "interest": 1,
+      "increase": "80%"
+    },
+    {
+      "query": "đại học công thương",
+      "interest": 5,
+      "increase": "60%"
+    },
+    {
+      "query": "uel",
+      "interest": 2,
+      "increase": "60%"
+    },
+    {
+      "query": "đại học gia định",
+      "interest": 1,
+      "increase": "50%"
+    },
+    {
+      "query": "đại học tài chính – marketing",
+      "interest": 2,
+      "increase": "50%"
+    },
+    {
+      "query": "trường đại học tài chính – marketing",
+      "interest": 1,
+      "increase": "40%"
+    },
+    {
+      "query": "ngành marketing cần học những môn gì",
+      "interest": 1,
+      "increase": "40%"
+    },
+    {
+      "query": "đại học tài chính marketing quận 7",
+      "interest": 1,
+      "increase": "40%"
+    },
+    {
+      "query": "đại học tài chính marketing ở đâu",
+      "interest": 2,
+      "increase": "40%"
+    },
+    {
+      "query": "đại học tài chính marketing là trường công hay tư",
+      "interest": 1,
+      "increase": "40%"
+    },
+    {
+      "query": "khoá học digital marketing",
+      "interest": 2,
+      "increase": "30%"
+    },
+    {
+      "query": "điểm chuẩn ufm",
+      "interest": 3,
+      "increase": "30%"
+    },
+    {
+      "query": "ufm điểm chuẩn",
+      "interest": 3,
+      "increase": "30%"
+    },
+    {
+      "query": "ufm",
+      "interest": 6,
+      "increase": "30%"
+    },
+    {
+      "query": "truyền thông marketing",
+      "interest": 8,
+      "increase": "30%"
+    },
+    {
+      "query": "d01",
+      "interest": 1,
+      "increase": "30%"
+    },
+    {
+      "query": "khóa học marketing",
+      "interest": 11,
+      "increase": "30%"
+    },
+    {
+      "query": "khóa học digital marketing",
+      "interest": 3,
+      "increase": "20%"
+    },
+    {
+      "query": "trường đại học tài chính marketing quận 7",
+      "interest": 1,
+      "increase": "20%"
+    },
+    {
+      "query": "đại học thăng long",
+      "interest": 1,
+      "increase": "20%"
+    },
+    {
+      "query": "đại học tài chính marketing thủ đức",
+      "interest": 1,
+      "increase": "20%"
+    },
+    {
+      "query": "truyền thông đa phương tiện",
+      "interest": 2,
+      "increase": "20%"
+    },
+    {
+      "query": "d07",
+      "interest": 1,
+      "increase": "20%"
+    },
+    {
+      "query": "khóa học content marketing",
+      "interest": 1,
+      "increase": "20%"
+    },
+    {
+      "query": "content marketing",
+      "interest": 3,
+      "increase": "10%"
+    },
+    {
+      "query": "digital marketing cần học những gì",
+      "interest": 0,
+      "increase": "10%"
+    },
+    {
+      "query": "đại học giao thông vận tải",
+      "interest": 3,
+      "increase": "9%"
+    },
+    {
+      "query": "ueh",
+      "interest": 6,
+      "increase": "8%"
+    },
+    {
+      "query": "thương mại điện tử",
+      "interest": 2,
+      "increase": "6%"
+    },
+    {
+      "query": "trường đại học tài chính marketing thành phố hồ chí minh",
+      "interest": 3,
+      "increase": "5%"
+    },
+    {
+      "query": "đại học thủy lợi",
+      "interest": 1,
+      "increase": "4%"
+    },
+    {
+      "query": "học marketing ra trường làm gì",
+      "interest": 3,
+      "increase": "3%"
+    },
+    {
+      "query": "logistics",
+      "interest": 2,
+      "increase": "3%"
+    },
+    {
+      "query": "điểm chuẩn ueh",
+      "interest": 3,
+      "increase": "3%"
+    },
+    {
+      "query": "ueh điểm chuẩn",
+      "interest": 3,
+      "increase": "2%"
+    },
+    {
+      "query": "khóa học marketing online",
+      "interest": 2,
+      "increase": "2%"
+    }
+  ],
+  "files": [
+    {
+      "kind": "time",
+      "path": "research/google-trends/time_series_VN_20231001-0000_20261008-1709.csv",
+      "rows": 37,
+      "sha256": "781619924f757256b20e5a97cde6a66761a1c37be5274c96f9b1be43fbcac5d9"
+    },
+    {
+      "kind": "region",
+      "path": "research/google-trends/by_region_VN_20231001-0000_20261008-1709.csv",
+      "rows": 63,
+      "sha256": "dac1f00e5170f934096eb03c7d8916f29c319d7d615e714ed09e9512a061bdf2"
+    },
+    {
+      "kind": "top",
+      "path": "research/google-trends/searched_with_top-searches_queries_VN_20231001-0000_20261008-1709.csv",
+      "rows": 50,
+      "sha256": "8053e82ea4e435f50bc281eb8e4592c066151f9a3e874b1a3504be27fba5a864"
+    },
+    {
+      "kind": "rising",
+      "path": "research/google-trends/searched_with_rising-searches_queries_VN_20231001-0000_20261008-1709.csv",
+      "rows": 50,
+      "sha256": "6dca73a6f2dc58b00cec486de225fa0ec99daacba749b783058bffffd56ad78e"
+    }
+  ],
+  "limitations": [
+    "CSV không có metadata về loại tìm kiếm, bộ lọc Category hoặc cách xuất/chuẩn hóa; cần đối chiếu ảnh cấu hình Google Trends.",
+    "CSV liên quan không ghi từ khóa gốc và kỳ so sánh tăng trưởng; không coi increase percent là YoY.",
+    "Mỗi hàng địa phương cộng bằng 100, chưa xác minh định nghĩa thang đo; không xếp hạng quy mô nhu cầu hoặc suy thị phần.",
+    "Từ khóa chung có thể chứa nhu cầu tuyển sinh đại học; chưa tách được người đi làm hoặc người muốn mua khóa học."
+  ]
+}

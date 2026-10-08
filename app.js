@@ -3,6 +3,32 @@ const data = window.RESEARCH;
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const sourceMap = Object.fromEntries(data.sources.map(s => [s.id, s]));
 const format = n => new Intl.NumberFormat('vi-VN', { maximumFractionDigits: 2 }).format(n);
+const trends = data.trends;
+const trendColors = ['#2657a5','#c05b21','#00836f','#8b57ab','#cf3657'];
+const trendMonths = trends.time.filter(r => r.date >= trends.analysisStart && r.date <= trends.analysisEnd);
+const trendSelected = new Set(trends.terms.map((_,i)=>i));
+const signed = n => `${n > 0 ? '+' : ''}${new Intl.NumberFormat('vi-VN',{maximumFractionDigits:1}).format(n)}%`;
+document.getElementById('trends-controls').innerHTML = trends.terms.map((term,i)=>`<label style="--series-color:${trendColors[i]}"><input type="checkbox" data-series="${i}" checked><span>${esc(term)}</span></label>`).join('');
+function drawTrends(){
+  const W=1100,H=360,left=48,right=22,top=20,bottom=48,pw=W-left-right,ph=H-top-bottom;
+  const x=i=>left+i/(trendMonths.length-1)*pw;
+  const y=v=>top+(100-v)/100*ph;
+  const grid=[0,25,50,75,100].map(v=>`<line x1="${left}" y1="${y(v)}" x2="${W-right}" y2="${y(v)}" stroke="#e0e7f0"/><text x="${left-12}" y="${y(v)+4}" text-anchor="end">${v}</text>`).join('');
+  const ticks=[0,6,12,18,24,30,35].map(i=>`<text x="${x(i)}" y="${H-17}" text-anchor="middle">${trendMonths[i].date.slice(5,7)}/${trendMonths[i].date.slice(0,4)}</text>`).join('');
+  const lines=[...trendSelected].map(i=>`<polyline points="${trendMonths.map((r,n)=>`${x(n)},${y(r.values[i])}`).join(' ')}" fill="none" stroke="${trendColors[i]}" stroke-width="2.6"/>${trendMonths.map((r,n)=>`<circle cx="${x(n)}" cy="${y(r.values[i])}" r="3" fill="${trendColors[i]}"><title>${esc(trends.terms[i])} · ${r.date.slice(0,7)}: ${r.values[i]}</title></circle>`).join('')}`).join('');
+  document.getElementById('trends-chart').innerHTML = trendSelected.size ? `<svg viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="trends-title trends-desc"><title id="trends-title">Quan tâm tìm kiếm của ${trendSelected.size} từ khóa trên thang 0–100</title><desc id="trends-desc">36 tháng từ 10/2023 đến 09/2026. ${esc([...trendSelected].map(i=>`${trends.terms[i]}: ${signed(trends.summary[i].change)} biến động trung bình 12 tháng`).join('; '))}. Chi tiết từng tháng có trong bảng dữ liệu gốc.</desc>${grid}${ticks}${lines}</svg>` : '<p class="empty" role="status">Chọn ít nhất một từ khóa để hiển thị biểu đồ.</p>';
+}
+document.querySelectorAll('[data-series]').forEach(input=>input.addEventListener('change',()=>{const i=Number(input.dataset.series);input.checked?trendSelected.add(i):trendSelected.delete(i);drawTrends();}));
+drawTrends();
+document.getElementById('trends-summary').innerHTML = trends.summary.map((r,i)=>`<tr><td><span class="series-dot" style="background:${trendColors[i]}"></span><b>${esc(r.term)}</b></td>${r.means.map(m=>`<td>${format(m)}</td>`).join('')}<td><b>${signed(r.change)}</b></td></tr>`).join('');
+const trendHeader = first=>`<tr><th>${first}</th>${trends.terms.map(t=>`<th>${esc(t)}</th>`).join('')}</tr>`;
+document.getElementById('trends-time-head').innerHTML = trendHeader('Tháng');
+document.getElementById('trends-time-body').innerHTML = trends.time.map(r=>`<tr><td>${r.date.slice(5,7)}/${r.date.slice(0,4)}${trends.excludedDates.includes(r.date)?'<small>Ngoài kỳ phân tích</small>':''}</td>${r.values.map(v=>`<td>${v}</td>`).join('')}</tr>`).join('');
+document.getElementById('trends-region-head').innerHTML = trendHeader('Địa phương');
+document.getElementById('trends-region-body').innerHTML = trends.regions.map(r=>`<tr><td>${esc(r.region)}</td>${r.values.map(v=>`<td>${v}</td>`).join('')}</tr>`).join('');
+['top','rising'].forEach(key=>{document.getElementById(`trends-${key}-body`).innerHTML=trends[key].map(r=>`<tr><td>${esc(r.query)}</td><td>${r.interest}</td><td>${esc(r.increase)}</td></tr>`).join('');});
+const trendFileLabels={time:'CSV · chuỗi tháng (37)',region:'CSV · địa phương (63)',top:'CSV · Top (50)',rising:'CSV · Rising (50)'};
+document.getElementById('trends-downloads').innerHTML=trends.files.map(f=>`<a class="button secondary" href="${esc(f.path)}" download>${trendFileLabels[f.kind]}</a>`).join('')+'<a class="button secondary" href="research/google-trends/analysis.json" download>JSON · dữ liệu & cách tính</a>';
 function chart(target, rows, max = 100, unit = '%') {
   const el = document.getElementById(target);
   el.innerHTML = `<div class="bars" role="img" aria-label="${esc(rows.map(r => `${r.metric}: ${format(r.value)}${unit}`).join('; '))}">${rows.map(r => `<div class="bar-row"><span>${esc(r.metric)}</span><div class="bar-track"><div class="bar-fill" style="--bar-width:${Math.max(0,Math.min(100,r.value/max*100))}%"></div></div><span class="bar-value">${format(r.value)}${unit}</span></div>`).join('')}<div class="chart-axis"><span>0${unit}</span><span>${format(max/2)}${unit}</span><span>${format(max)}${unit}</span></div></div>`;
