@@ -25,7 +25,7 @@ jobs:
       - name: Prepare static artifact
         run: |
           mkdir _site
-          cp index.html styles.css app.js _site/
+          cp index.html styles.css app.js story.css story.js _site/
           cp -r research _site/
           cp -r qa _site/
           touch _site/.nojekyll
