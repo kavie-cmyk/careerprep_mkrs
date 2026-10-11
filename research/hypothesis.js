@@ -24,7 +24,7 @@
  let sections=[];
  if(ds.value==='jd')sections=[['Phạm vi',[['eligible','Trong mẫu đã phân loại'],['excluded','Tin ngoài mẫu']]],['Yêu cầu công việc (nhiều nhãn)',w.stats.jd.map(x=>[x.key,x.label])]];
  else if(ds.value==='reviews')sections=[['Phạm vi sử dụng',[['eligible','Trong phạm vi Category'],['excluded','Ngoài phạm vi / không đủ dữ liệu']]],['Lời kể áp dụng (trong phạm vi)',[['actual','Có kể đã áp dụng / tạo đầu ra'],['not-actual','Chưa kể đã áp dụng / tạo đầu ra']]],['Đặc điểm nguồn',[['eligible-clear','Chưa ghi nhận liên hệ thương mại rõ'],['eligible-commercial','Có liên hệ thương mại hoặc dấu hiệu quảng bá']]]];
- else if(ds.value==='voices')sections=[['AI: nội dung câu hỏi / yêu cầu',w.stats.behavior.map(x=>['ai-request:'+x.label,x.label])],['AI: nội dung nhận xét / lời kể',w.stats.aiOtherTopics.map(x=>['ai-other:'+x.label,x.label])],['Chủ đề nghiên cứu',[['hypothesis:H1','H1 · Quản trị chiến dịch'],['hypothesis:H2','H2 · Tự học / giảng viên'],['hypothesis:H3','H3 · AI']]]];
+ else if(ds.value==='voices')sections=[['AI: nội dung câu hỏi / yêu cầu',[['ai-request-all','Tất cả 33 câu hỏi AI'],...w.stats.behavior.map(x=>['ai-request:'+x.label,x.label])]],['AI: nội dung nhận xét / lời kể',w.stats.aiOtherTopics.map(x=>['ai-other:'+x.label,x.label])],['Chủ đề nghiên cứu',[['hypothesis:H1','H1 · Quản trị chiến dịch'],['hypothesis:H2','H2 · Tự học / giảng viên'],['hypothesis:H3','H3 · AI']]]];
  else if(ds.value==='evidence')sections=[['Loại bằng chứng',[...new Set(w.evidence.map(x=>x.group))].map(v=>[v,v])]];
  group.innerHTML='<option value="">Tất cả</option>'+sections.map(([name,opts])=>`<optgroup label="${escape(name)}">${opts.map(([v,t])=>`<option value="${escape(v)}">${escape(t)}</option>`).join('')}</optgroup>`).join('');
  }
@@ -33,7 +33,7 @@
  if(ds.value==='jd'){if(g==='eligible'&&!x.eligible)return false;if(g==='excluded'&&x.eligible)return false;if(x.reviewed[g]!==undefined&&(!x.eligible||!x.reviewed[g]))return false;}
  else if(ds.value==='reviews'){
  const tests={eligible:x.eligible,'not-actual':x.eligible&&x.outcome!=='Kể đã áp dụng / tạo đầu ra','eligible-clear':x.eligible&&!x.commercial,'eligible-commercial':x.eligible&&x.commercial,actual:x.eligible&&x.outcome==='Kể đã áp dụng / tạo đầu ra',general:x.eligible&&x.outcome==='Khen / kiến thức / kỳ vọng chung',overlap:x.eligible&&x.id==='KT-003',excluded:!x.eligible};if(!tests[g])return false;
- }else if(ds.value==='voices'){if(g.startsWith('ai-request:')&&(!x.isAIRequest||x.aiTopic!==g.slice(11)))return false;if(g.startsWith('ai-other:')&&(x.hypothesis_id!=='H3'||x.isAIRequest||x.aiTopic!==g.slice(9)))return false;if(g.startsWith('hypothesis:')&&x.hypothesis_id!==g.slice(11))return false;}else if(x.group!==g)return false;
+ }else if(ds.value==='voices'){if(g==='ai-request-all'&&!x.isAIRequest)return false;if(g.startsWith('ai-request:')&&(!x.isAIRequest||x.aiTopic!==g.slice(11)))return false;if(g.startsWith('ai-other:')&&(x.hypothesis_id!=='H3'||x.isAIRequest||x.aiTopic!==g.slice(9)))return false;if(g.startsWith('hypothesis:')&&x.hypothesis_id!==g.slice(11))return false;}else if(x.group!==g)return false;
  }
  const q=search.value.trim().toLocaleLowerCase('vi');return !q||JSON.stringify(x).toLocaleLowerCase('vi').includes(q);
  }
