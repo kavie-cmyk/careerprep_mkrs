@@ -7,9 +7,10 @@
  const bars=(rows,n)=>`<div class="wave-bars" role="group">${rows.map((r,i)=>`<a class="wave-bar" href="#wave-data" data-wave-set="${escape(r.set)}" data-wave-group="${escape(r.group||'')}" aria-label="${escape(r.label)}: ${r.count}${n?'/'+n:''}"><span>${escape(r.label)}</span><div class="wave-track"><i style="width:${Math.min(100,r.count/(n||Math.max(...rows.map(v=>v.count)))*100)}%;--bar-color:${['#245ba6','#15806e','#8754ad','#bc7131','#637185','#b44658'][i%6]}"></i></div><b>${r.count}${n?` / ${n}<small>${pct(r.count,n)}</small>`:''}</b></a>`).join('')}</div>`;
  document.getElementById('wave-stats').innerHTML=[['112','JD gốc · 111 vào mẫu'],['115','dòng evidence / tổng hợp'],['54','review · 42 text trong phạm vi'],['164','dòng thảo luận / lời kể']].map(([n,t])=>`<div><strong>${n}</strong><span>${t}</span></div>`).join('');
  document.getElementById('wave-jd-chart').innerHTML=bars([...w.stats.jd].sort((a,b)=>b.count-a.count).map(x=>({...x,set:'jd',group:x.key})),111);
- document.getElementById('wave-ai-chart').innerHTML=bars([...w.stats.behavior].sort((a,b)=>b.count-a.count).map(x=>({...x,set:'voices',group:x.label})),75);
- document.getElementById('wave-review-chart').innerHTML=bars([{label:'Text trong phạm vi, chưa thấy dấu hiệu rõ',count:26,set:'reviews',group:'eligible-clear'},{label:'Text trong phạm vi, kênh thương mại / nghi seeding',count:16,set:'reviews',group:'eligible-commercial'},{label:'Bối cảnh / không đủ text / lệch cột',count:12,set:'reviews',group:'excluded'}],54);
- document.getElementById('wave-output-chart').innerHTML=bars([{label:'Kể đã tạo đầu ra / đã áp dụng',count:12,set:'reviews',group:'actual'},{label:'Kiến thức / khen / kỳ vọng chung',count:29,set:'reviews',group:'general'},{label:'Nội dung trùng tự học',count:1,set:'reviews',group:'overlap'}],42);
+ document.getElementById('wave-ai-chart').innerHTML=bars([...w.stats.behavior].sort((a,b)=>b.count-a.count).map(x=>({...x,set:'voices',group:'ai-request:'+x.label})),w.stats.aiRequests);
+ document.getElementById('wave-review-chart').innerHTML=bars([{label:'Text trong phạm vi Category',count:42,set:'reviews',group:'eligible'},{label:'Ngoài phạm vi / không đủ dữ liệu sử dụng',count:12,set:'reviews',group:'excluded'}],54);
+ document.getElementById('wave-output-chart').innerHTML=bars([{label:'Có lời kể đã áp dụng / tạo đầu ra',count:w.stats.reviewActual,set:'reviews',group:'actual'},{label:'Chưa có lời kể đã áp dụng / tạo đầu ra',count:42-w.stats.reviewActual,set:'reviews',group:'not-actual'}],42);
+ document.getElementById('wave-ai-other-body').innerHTML=w.stats.aiOtherTopics.map(x=>`<tr><td>${escape(x.label)}</td><td>${x.count}/42</td><td><a href="#wave-data" data-wave-set="voices" data-wave-group="ai-other:${escape(x.label)}">Xem các dòng</a></td></tr>`).join('');
  const adjust={budget:'Loại nhãn ngân sách ở JD-013, JD-048.',kpi:'JD-103 là KPI nhân viên, không đo lường marketing.',optimization:'11 quote rộng về sản phẩm, quy trình, lợi nhuận hoặc chiến lược; xem nhật ký từng JD.',agency:'JD-020 là kinh nghiệm làm trong agency, không quản lý agency.'};
  document.getElementById('wave-jd-compare').innerHTML=w.stats.jd.map(x=>`<tr><td>${escape(x.label)}</td><td>${x.raw}/112 (${pct(x.raw,112)})</td><td>${x.count}/111 (${pct(x.count,111)})</td><td>${adjust[x.key]}</td></tr>`).join('');
  document.getElementById('wave-role-matrix').innerHTML=w.stats.roles.map(x=>`<tr><td>${escape(x.role)}</td><td>${x.n}</td>${['budget','kpi','optimization','agency'].map(k=>`<td>${x.metrics[k]}/${x.n}<small>${pct(x.metrics[k],x.n)}</small></td>`).join('')}</tr>`).join('');
@@ -19,19 +20,19 @@
  const ds=document.getElementById('wave-dataset'), group=document.getElementById('wave-group'), search=document.getElementById('wave-search');let page=0;const size=25;
  const human={evidence:'Evidence / tham chiếu',jd:'Yêu cầu tuyển dụng',reviews:'Trải nghiệm khóa học',voices:'Thảo luận / lời kể',opportunities:'So sánh bài toán'};
  function options(){
- let opts=[];
- if(ds.value==='jd')opts=[['eligible','Mẫu đã phân loại'],['excluded','Tin ngoài mẫu'],...w.stats.jd.map(x=>[x.key,x.label])];
- else if(ds.value==='reviews')opts=[['eligible-clear','Trong phạm vi, chưa thấy dấu hiệu rõ'],['eligible-commercial','Trong phạm vi, nguồn thương mại / nghi seeding'],['actual','Kể đã tạo đầu ra'],['general','Khen / kiến thức / kỳ vọng'],['overlap','Nội dung trùng tự học'],['excluded','Bối cảnh / không đủ text / lệch cột']];
- else if(ds.value==='voices')opts=[...new Set(w.voices.map(x=>x.behavior))].map(v=>[v,v]);
- else if(ds.value==='evidence')opts=[...new Set(w.evidence.map(x=>x.group))].map(v=>[v,v]);
- group.innerHTML='<option value="">Tất cả nhóm</option>'+opts.map(([v,t])=>`<option value="${escape(v)}">${escape(t)}</option>`).join('');
+ let sections=[];
+ if(ds.value==='jd')sections=[['Phạm vi',[['eligible','Trong mẫu đã phân loại'],['excluded','Tin ngoài mẫu']]],['Yêu cầu công việc (nhiều nhãn)',w.stats.jd.map(x=>[x.key,x.label])]];
+ else if(ds.value==='reviews')sections=[['Phạm vi sử dụng',[['eligible','Trong phạm vi Category'],['excluded','Ngoài phạm vi / không đủ dữ liệu']]],['Lời kể áp dụng (trong phạm vi)',[['actual','Có kể đã áp dụng / tạo đầu ra'],['not-actual','Chưa kể đã áp dụng / tạo đầu ra']]],['Cờ nguồn (trong phạm vi)',[['eligible-clear','Chưa thấy cờ rõ trong gói Muse'],['eligible-commercial','Có cờ thương mại / nghi seeding']]]];
+ else if(ds.value==='voices')sections=[['AI: nội dung câu hỏi / yêu cầu',w.stats.behavior.map(x=>['ai-request:'+x.label,x.label])],['AI: nội dung nhận xét / lời kể',w.stats.aiOtherTopics.map(x=>['ai-other:'+x.label,x.label])],['Phạm vi giả thuyết',[['hypothesis:H1','H1 · Quản trị chiến dịch'],['hypothesis:H2','H2 · Tự học / giảng viên'],['hypothesis:H3','H3 · AI']]]];
+ else if(ds.value==='evidence')sections=[['Loại bằng chứng',[...new Set(w.evidence.map(x=>x.group))].map(v=>[v,v])]];
+ group.innerHTML='<option value="">Tất cả</option>'+sections.map(([name,opts])=>`<optgroup label="${escape(name)}">${opts.map(([v,t])=>`<option value="${escape(v)}">${escape(t)}</option>`).join('')}</optgroup>`).join('');
  }
  function matches(x){
  const g=group.value;if(g){
  if(ds.value==='jd'){if(g==='eligible'&&!x.eligible)return false;if(g==='excluded'&&x.eligible)return false;if(x.reviewed[g]!==undefined&&(!x.eligible||!x.reviewed[g]))return false;}
  else if(ds.value==='reviews'){
- const tests={'eligible-clear':x.eligible&&!x.commercial,'eligible-commercial':x.eligible&&x.commercial,actual:x.eligible&&x.outcome==='Kể đã áp dụng / tạo đầu ra',general:x.eligible&&x.outcome==='Khen / kiến thức / kỳ vọng chung',overlap:x.eligible&&x.id==='KT-003',excluded:!x.eligible};if(!tests[g])return false;
- }else if(ds.value==='voices'){if(x.behavior!==g)return false;}else if(x.group!==g)return false;
+ const tests={eligible:x.eligible,'not-actual':x.eligible&&x.outcome!=='Kể đã áp dụng / tạo đầu ra','eligible-clear':x.eligible&&!x.commercial,'eligible-commercial':x.eligible&&x.commercial,actual:x.eligible&&x.outcome==='Kể đã áp dụng / tạo đầu ra',general:x.eligible&&x.outcome==='Khen / kiến thức / kỳ vọng chung',overlap:x.eligible&&x.id==='KT-003',excluded:!x.eligible};if(!tests[g])return false;
+ }else if(ds.value==='voices'){if(g.startsWith('ai-request:')&&(!x.isAIRequest||x.aiTopic!==g.slice(11)))return false;if(g.startsWith('ai-other:')&&(x.hypothesis_id!=='H3'||x.isAIRequest||x.aiTopic!==g.slice(9)))return false;if(g.startsWith('hypothesis:')&&x.hypothesis_id!==g.slice(11))return false;}else if(x.group!==g)return false;
  }
  const q=search.value.trim().toLocaleLowerCase('vi');return !q||JSON.stringify(x).toLocaleLowerCase('vi').includes(q);
  }
@@ -41,7 +42,7 @@
  let title,body,meta,quality;
  if(ds.value==='jd'){title=x.title;body=Object.entries(x.reviewed).filter(([,v])=>v).map(([k])=>w.stats.jd.find(t=>t.key===k).label).join(' · ')||'Chưa có quote đủ rõ cho bốn nhãn';meta=`${x.company} · ${x.platform} · ${x.role_type} · ${x.seniority}`;quality=x.eligible?'Trong mẫu 111':'Ngoài mẫu: intern';}
  else if(ds.value==='reviews'){title=x.course_name;body=x.excerpt;meta=`${x.platform} · ${x.posted_date||'Không rõ ngày'} · ${x.payment}`;quality=x.eligible?x.quality:'Không dùng trong chart Category';}
- else if(ds.value==='voices'){title=x.person_role;body=x.excerpt;meta=`${x.platform} · ${x.hypothesis_id} · ${x.behavior}`;quality=x.eligible?x.quality:'Trùng lời kể, không tính độc lập mới';}
+ else if(ds.value==='voices'){title=x.person_role;body=x.excerpt;meta=`${x.platform} · ${x.hypothesis_id} · ${x.discussionForm||'Lời kể / thảo luận'} · ${x.aiTopic||'Ngoài phân loại nội dung AI'}`;quality=x.eligible?x.quality:'Trùng lời kể, không tính độc lập mới';}
  else if(ds.value==='opportunities'){title=x['vấn đề được kể'];body=x['điểm chưa đáp ứng'];meta=x['phương án đang dùng'];quality='Bảng tổng hợp Muse; không phải một người / một giao dịch';}
  else{title=x['bài toán'];body=x['hành vi liên quan đào tạo'];meta=`${x['loại nguồn']} · ${x['ngày đăng']||'Không rõ ngày'} · ${x.hypothesis_id}`;quality=x['mức độc lập với nhà cung cấp'];}
  const limits=x['giới hạn']||x.limitation||'';
