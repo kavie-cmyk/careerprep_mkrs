@@ -1,0 +1,32 @@
+'use strict';
+(() => {
+  const el = id => document.getElementById(id);
+  const esc = v => String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const fmt = n => n.toLocaleString('vi-VN',{maximumFractionDigits:1});
+  const research = window.RESEARCH, stats = window.HYPOTHESIS_DATA.stats;
+  const svg = (w,h,title,content) => `<svg viewBox="0 0 ${w} ${h}" role="img" aria-label="${esc(title)}"><title>${esc(title)}</title>${content}</svg>`;
+  const terms = research.individualTrends;
+  const chartW=470, plotX=191, plotW=235, x=v=>plotX+(v+50)/200*plotW;
+  let chart = [-50,0,50,100,150].map(t=>`<line x1="${x(t)}" x2="${x(t)}" y1="18" y2="222" stroke="${t===0?'#a6b4bc':'#e7edef'}"/><text class="axis-label" x="${x(t)}" y="242" text-anchor="middle">${t>0?'+':''}${t}%</text>`).join('');
+  chart+=terms.map((t,i)=>{const y=33+i*39,c=t.change>0?'#16786e':'#7c91a0';return `<a href="#source-${esc(t.source)}" aria-label="${esc(t.term)}: ${fmt(t.change)} phần trăm; xem nguồn"><text x="0" y="${y+14}" fill="#182d40" font-size="12">${esc(t.term)}</text><rect x="${Math.min(x(0),x(t.change))}" y="${y}" width="${Math.abs(x(t.change)-x(0))}" height="21" rx="2" fill="${c}"/><text x="${t.change>0?x(t.change)+6:x(t.change)-6}" y="${y+14}" text-anchor="${t.change>0?'start':'end'}" fill="${c}" font-size="12" font-weight="700">${t.change>0?'+':''}${fmt(t.change)}%</text></a>`;}).join('');
+  el('story-search-change').innerHTML=svg(chartW,255,'Biến động chỉ số tìm kiếm bình quân trong 12 tháng, theo từng từ khóa',chart);
+  function bars(rows,options={}) {
+    const width=options.width||470,labelWidth=options.labelWidth||220,max=options.max||Math.max(...rows.map(r=>r.count)),height=rows.length*43+18;
+    const available=width-labelWidth-64;
+    const content=rows.map((r,i)=>{const y=i*43+10;return `<a href="${esc(r.href)}" ${r.set?`data-wave-set="${r.set}" data-wave-group="${esc(r.group)}"`:''} aria-label="${esc(r.label)}: ${r.count}${r.n?' trên '+r.n:''}; xem dữ liệu"><text x="0" y="${y+14}" font-size="12" fill="#182d40">${esc(r.label)}</text><rect x="${labelWidth}" y="${y}" width="${available}" height="21" rx="2" fill="#edf1f3"/><rect x="${labelWidth}" y="${y}" width="${r.count/max*available}" height="21" rx="2" fill="${options.color||'#285ec3'}"/><text x="${labelWidth+available+8}" y="${y+14}" font-size="12" fill="#182d40" font-weight="700">${r.count}${r.n?'/'+r.n:''}</text></a>`;}).join('');
+    return svg(width,height,options.title||'Số lượng theo nhóm',content);
+  }
+  const jobLabels={kpi:'KPI / đo lường',budget:'Ngân sách',optimization:'Tối ưu chiến dịch',agency:'Agency / đối tác'};
+  el('story-job-bars').innerHTML=bars([...stats.jd].sort((a,b)=>b.count-a.count).map(r=>({...r,label:jobLabels[r.key],href:'#wave-data',set:'jd',group:r.key})),{max:111,labelWidth:170,title:'111 tin tuyển dụng: 80 đo lường, 69 ngân sách, 50 tối ưu, 45 agency hoặc đối tác'});
+  const aiLabels=['Tạo nội dung / video','Công cụ / lỗi sử dụng','Chi phí / gói dùng','Lớp / nội dung học','Tài liệu / hướng dẫn','Booking / an toàn video'];
+  el('story-ai-bars').innerHTML=bars(stats.behavior.map((r,i)=>({...r,label:aiLabels[i],href:'#wave-data',set:'voices',group:'ai-request:'+r.label})).sort((a,b)=>b.count-a.count),{max:10,labelWidth:212,color:'#16786e',title:'33 câu hỏi AI: 10 lớp học, 9 công cụ, 7 nội dung video, 4 tài liệu, 2 chi phí, 1 booking và an toàn'});
+  const select=el('story-trend-select');select.innerHTML=terms.map((t,i)=>`<option value="${i}">${esc(t.term)}</option>`).join('');select.value='4';
+  function monthly(){const t=terms[+select.value],points=t.time.filter(r=>r.date>='2023-10-01'&&r.date<='2026-09-01');const w=800,h=244,left=42,right=22,top=22,bottom=40,xx=i=>left+i/(points.length-1)*(w-left-right),yy=v=>h-bottom-v/100*(h-top-bottom);let content=[0,25,50,75,100].map(v=>`<line x1="${left}" x2="${w-right}" y1="${yy(v)}" y2="${yy(v)}" stroke="#dce5e8"/><text x="${left-10}" y="${yy(v)+4}" text-anchor="end" class="axis-label">${v}</text>`).join('');content+=`<polyline fill="none" stroke="#16786e" stroke-width="2.5" points="${points.map((r,i)=>`${xx(i)},${yy(r.value)}`).join(' ')}"/>`;content+=points.map((r,i)=>`<circle cx="${xx(i)}" cy="${yy(r.value)}" r="3" fill="#16786e"><title>${r.date.slice(0,7)}: ${r.value}</title></circle>`).join('');content+=[0,6,12,18,24,30,35].map(i=>`<text class="axis-label" x="${xx(i)}" y="${h-15}" text-anchor="${i===0?'start':i===35?'end':'middle'}">${points[i].date.slice(5,7)}/${points[i].date.slice(0,4)}</text>`).join('');el('story-monthly').innerHTML=svg(w,h,`${t.term}: chỉ số tìm kiếm từng tháng từ tháng 10/2023 đến tháng 9/2026`,content)+`<p class="fine">${esc(t.term)} · 36 điểm tháng · <a href="#source-${t.source}">Nguồn bộ xuất riêng</a></p>`;}
+  select.addEventListener('change',monthly);monthly();
+  const courses=[{key:'foundation',name:'Marketing Foundation',sessions:6,hours:'2,5–3 giờ / buổi',price:'4,8 triệu',note:'Niêm yết / khóa'},{key:'digital',name:'Digital Marketing',sessions:10,hours:'2,5–3 giờ / buổi',price:'5 triệu',note:'Niêm yết / gói hai phần'},{key:'social',name:'Social Media AI',sessions:8,hours:'2 giờ / buổi',price:'4,89 triệu',note:'Niêm yết / khóa'}];
+  el('story-course-facts').innerHTML=courses.map(c=>`<article class="course-fact ${c.key}"><h3>${c.name}</h3><div class="fact-number"><strong>${c.sessions}</strong><span>buổi Zoom<br>${c.hours}</span></div><div class="session-dots" aria-label="${c.sessions} buổi">${'<i aria-hidden="true"></i>'.repeat(c.sessions)}</div><p class="price">${c.price}<small>${c.note}</small></p></article>`).join('');
+  const tabs=[...document.querySelectorAll('[data-course]')];function activate(tab,focus=false){tabs.forEach(t=>{const active=t===tab;t.setAttribute('aria-selected',String(active));t.tabIndex=active?0:-1;el('course-'+t.dataset.course).hidden=!active;});if(focus)tab.focus();}
+  tabs.forEach((tab,i)=>{tab.addEventListener('click',()=>activate(tab));tab.addEventListener('keydown',e=>{let n;if(e.key==='ArrowRight')n=(i+1)%tabs.length;else if(e.key==='ArrowLeft')n=(i+tabs.length-1)%tabs.length;else if(e.key==='Home')n=0;else if(e.key==='End')n=tabs.length-1;else return;e.preventDefault();activate(tabs[n],true);});});
+  function openHash(){const id=decodeURIComponent(location.hash.slice(1));const target=el(id);if(!target)return;for(let node=target;node;node=node.parentElement)if(node.tagName==='DETAILS')node.open=true;}
+  window.addEventListener('hashchange',openHash);openHash();
+})();

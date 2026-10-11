@@ -38,7 +38,7 @@
     const prefix='#three-c-record-';if(!location.hash.startsWith(prefix))return;
     const id=decodeURIComponent(location.hash.slice(prefix.length)), k=index.get(id);if(!k)return;
     set.value=k;statuses();status.value='';search.value=id;page=0;draw();
-    const row=el('three-c-record-'+id);if(row)row.scrollIntoView({block:'start'});
+    const row=el('three-c-record-'+id);if(row){for(let node=row.parentElement;node;node=node.parentElement)if(node.tagName==='DETAILS')node.open=true;requestAnimationFrame(()=>row.scrollIntoView({block:'start'}));}
   }
   window.addEventListener('hashchange',navigate);
   el('three-c-audit-body').innerHTML=data.audit.map(a=>`<tr><td>${a.ids.map(id=>`<a href="#three-c-record-${esc(id)}">${esc(id)}</a>`).join(' · ')}</td><td>${esc(a.status)}</td><td>${esc(a.note)}</td></tr>`).join('');
