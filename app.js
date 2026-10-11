@@ -98,7 +98,7 @@ document.getElementById('sources').innerHTML = data.sources.map(s => `<article i
 document.getElementById('qual-body').innerHTML = data.qualitative.map(q => `<tr id="fact-${esc(q.id)}" tabindex="-1"><td>${esc(q.id)}</td><td>${esc(q.finding)}</td><td><a href="#source-${esc(q.source)}">${esc(q.source)}</a></td></tr>`).join('');
 document.getElementById('gaps-body').innerHTML = data.gaps.map(g => `<tr><td><b>${esc(g.question)}</b></td><td><span class="pill amber">${esc(g.status)}</span></td><td>${esc(g.need)}</td><td>${esc(g.method)}</td></tr>`).join('');
 document.getElementById('source-count').textContent = `· ${data.sources.length} nguồn`;
-document.getElementById('footer-count').textContent = `${data.evidence.length} dữ kiện định lượng · ${data.qualitative.length} quan sát định tính · ${data.sources.length} nguồn`;
+document.getElementById('footer-count').textContent = 'Dữ liệu thị trường và 3C · Cập nhật 11.10.2026';
 const groupFilter = document.getElementById('group-filter');
 const sourceFilter = document.getElementById('source-filter');
 const search = document.getElementById('search');
