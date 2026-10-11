@@ -31,3 +31,5 @@ main{max-width:1800px}section{padding-top:44px}h1{font-size:34px;max-width:850px
 @media(max-width:1100px){.wave-chart-grid{grid-template-columns:1fr}.wave-controls{grid-template-columns:1fr 1fr}.wave-stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.wave-chart{padding:14px}.wave-stats{gap:8px}.wave-stats>div{padding:12px}.wave-stats strong{font-size:24px}.wave-controls{grid-template-columns:1fr}.wave-bar{grid-template-columns:1.2fr 1fr 56px;gap:7px;font-size:11px}.wave-verdict{padding:4px 12px}.wave-pagination{gap:9px}.wave-logic{min-width:780px}}
 @media print{.wave-chart-grid{grid-template-columns:1fr 1fr}.wave-controls,.wave-pagination{display:none}.wave-chart{break-inside:avoid}}
+
+.ceo-chart-grid{grid-template-columns:repeat(3,minmax(0,1fr))}@media(max-width:1100px){.ceo-chart-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:700px){.ceo-chart-grid{grid-template-columns:1fr}}
