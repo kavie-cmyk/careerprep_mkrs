@@ -5,20 +5,20 @@
  const pct=(n,d)=>new Intl.NumberFormat('vi-VN',{maximumFractionDigits:1}).format(n/d*100)+'%';
  const link=id=>`<a href="#wave-record-${escape(id)}">${escape(id)}</a>`;
  const bars=(rows,n)=>`<div class="wave-bars" role="group">${rows.map((r,i)=>`<a class="wave-bar" href="#wave-data" data-wave-set="${escape(r.set)}" data-wave-group="${escape(r.group||'')}" aria-label="${escape(r.label)}: ${r.count}${n?'/'+n:''}"><span>${escape(r.label)}</span><div class="wave-track"><i style="width:${Math.min(100,r.count/(n||Math.max(...rows.map(v=>v.count)))*100)}%;--bar-color:${['#245ba6','#15806e','#8754ad','#bc7131','#637185','#b44658'][i%6]}"></i></div><b>${r.count}${n?` / ${n}<small>${pct(r.count,n)}</small>`:''}</b></a>`).join('')}</div>`;
- document.getElementById('wave-stats').innerHTML=[['112','JD gốc · 111 vào mẫu'],['115','dòng evidence / tổng hợp'],['54','review · 42 text trong phạm vi'],['164','dòng thảo luận / lời kể']].map(([n,t])=>`<div><strong>${n}</strong><span>${t}</span></div>`).join('');
+ document.getElementById('wave-stats').innerHTML=[['112','JD gốc · 111 vào mẫu'],['115','dữ kiện / tổng hợp'],['54','review · 42 nội dung sử dụng'],['164','dòng thảo luận / lời kể']].map(([n,t])=>`<div><strong>${n}</strong><span>${t}</span></div>`).join('');
  document.getElementById('wave-jd-chart').innerHTML=bars([...w.stats.jd].sort((a,b)=>b.count-a.count).map(x=>({...x,set:'jd',group:x.key})),111);
  document.getElementById('wave-ai-chart').innerHTML=bars([...w.stats.behavior].sort((a,b)=>b.count-a.count).map(x=>({...x,set:'voices',group:'ai-request:'+x.label})),w.stats.aiRequests);
- document.getElementById('wave-review-chart').innerHTML=bars([{label:'Text trong phạm vi Category',count:42,set:'reviews',group:'eligible'},{label:'Ngoài phạm vi / không đủ dữ liệu sử dụng',count:12,set:'reviews',group:'excluded'}],54);
+ document.getElementById('wave-review-chart').innerHTML=bars([{label:'Nội dung thuộc phạm vi nghiên cứu',count:42,set:'reviews',group:'eligible'},{label:'Ngoài phạm vi / không đủ dữ liệu sử dụng',count:12,set:'reviews',group:'excluded'}],54);
  document.getElementById('wave-output-chart').innerHTML=bars([{label:'Có lời kể đã áp dụng / tạo đầu ra',count:w.stats.reviewActual,set:'reviews',group:'actual'},{label:'Chưa có lời kể đã áp dụng / tạo đầu ra',count:42-w.stats.reviewActual,set:'reviews',group:'not-actual'}],42);
  document.getElementById('wave-ai-other-body').innerHTML=w.stats.aiOtherTopics.map(x=>`<tr><td>${escape(x.label)}</td><td>${x.count}/42</td><td><a href="#wave-data" data-wave-set="voices" data-wave-group="ai-other:${escape(x.label)}">Xem các dòng</a></td></tr>`).join('');
- const adjust={budget:'Loại nhãn ngân sách ở JD-013, JD-048.',kpi:'JD-103 là KPI nhân viên, không đo lường marketing.',optimization:'11 quote rộng về sản phẩm, quy trình, lợi nhuận hoặc chiến lược; xem nhật ký từng JD.',agency:'JD-020 là kinh nghiệm làm trong agency, không quản lý agency.'};
+ const adjust={budget:'Loại nhãn ngân sách ở JD-013, JD-048.',kpi:'JD-103 là KPI nhân viên, không đo lường marketing.',optimization:'11 trích đoạn rộng về sản phẩm, quy trình, lợi nhuận hoặc chiến lược; xem nhật ký từng JD.',agency:'JD-020 là kinh nghiệm làm trong agency, không quản lý agency.'};
  document.getElementById('wave-jd-compare').innerHTML=w.stats.jd.map(x=>`<tr><td>${escape(x.label)}</td><td>${x.raw}/112 (${pct(x.raw,112)})</td><td>${x.count}/111 (${pct(x.count,111)})</td><td>${adjust[x.key]}</td></tr>`).join('');
  document.getElementById('wave-role-matrix').innerHTML=w.stats.roles.map(x=>`<tr><td>${escape(x.role)}</td><td>${x.n}</td>${['budget','kpi','optimization','agency'].map(k=>`<td>${x.metrics[k]}/${x.n}<small>${pct(x.metrics[k],x.n)}</small></td>`).join('')}</tr>`).join('');
  document.getElementById('wave-audit-body').innerHTML=w.issues.map(x=>`<tr><td>${escape(x.item)}</td><td>${escape(x.decision)}</td><td>${escape(x.reason)}</td></tr>`).join('');
  const rawBase='research/muse/2026-10-11/raw/';
  document.getElementById('wave-downloads').innerHTML=Object.keys(w.originalHashes).map(n=>`<a class="button secondary" download href="${rawBase+encodeURIComponent(n.replace('hypothesis_review (1).md','hypothesis_review_copy.md'))}">${escape(n)}</a>`).join('')+'<a class="button secondary" download href="research/muse/2026-10-11/reviewed.json">Dữ liệu đã phân loại + quyết định sử dụng</a>';
  const ds=document.getElementById('wave-dataset'), group=document.getElementById('wave-group'), search=document.getElementById('wave-search');let page=0;const size=25;
- const human={evidence:'Evidence / tham chiếu',jd:'Yêu cầu tuyển dụng',reviews:'Trải nghiệm khóa học',voices:'Thảo luận / lời kể',opportunities:'So sánh bài toán'};
+ const human={evidence:'Dữ kiện / tham chiếu',jd:'Yêu cầu tuyển dụng',reviews:'Trải nghiệm khóa học',voices:'Thảo luận / lời kể',opportunities:'So sánh bài toán'};
  function options(){
  let sections=[];
  if(ds.value==='jd')sections=[['Phạm vi',[['eligible','Trong mẫu đã phân loại'],['excluded','Tin ngoài mẫu']]],['Yêu cầu công việc (nhiều nhãn)',w.stats.jd.map(x=>[x.key,x.label])]];
@@ -40,8 +40,8 @@
  function original(x){return `<details><summary>Toàn bộ trường gốc &amp; phân loại</summary><dl class="wave-fields">${Object.entries(x).filter(([k])=>!excludedFields.has(k)).map(([k,v])=>`<dt>${escape(k)}</dt><dd>${escape(typeof v==='object'?JSON.stringify(v):v)}</dd>`).join('')}</dl></details>`;}
  function row(x){
  let title,body,meta,quality;
- if(ds.value==='jd'){title=x.title;body=Object.entries(x.reviewed).filter(([,v])=>v).map(([k])=>w.stats.jd.find(t=>t.key===k).label).join(' · ')||'Chưa có quote đủ rõ cho bốn nhãn';meta=`${x.company} · ${x.platform} · ${x.role_type} · ${x.seniority}`;quality=x.eligible?'Trong mẫu 111':'Ngoài mẫu: intern';}
- else if(ds.value==='reviews'){title=x.course_name;body=x.excerpt;meta=`${x.platform} · ${x.posted_date||'Không rõ ngày'} · ${x.payment}`;quality=x.eligible?x.quality:'Không dùng trong chart Category';}
+ if(ds.value==='jd'){title=x.title;body=Object.entries(x.reviewed).filter(([,v])=>v).map(([k])=>w.stats.jd.find(t=>t.key===k).label).join(' · ')||'Chưa có trích đoạn đủ rõ cho bốn nhãn';meta=`${x.company} · ${x.platform} · ${x.role_type} · ${x.seniority}`;quality=x.eligible?'Trong mẫu 111':'Ngoài mẫu: intern';}
+ else if(ds.value==='reviews'){title=x.course_name;body=x.excerpt;meta=`${x.platform} · ${x.posted_date||'Không rõ ngày'} · ${x.payment}`;quality=x.eligible?x.quality:'Ngoài phạm vi thống kê';}
  else if(ds.value==='voices'){title=x.person_role;body=x.excerpt;meta=`${x.platform} · ${x.hypothesis_id} · ${x.discussionForm||'Lời kể / thảo luận'} · ${x.aiTopic||'Ngoài phân loại nội dung AI'}`;quality=x.eligible?x.quality:'Trùng lời kể, không tính độc lập mới';}
  else if(ds.value==='opportunities'){title=x['vấn đề được kể'];body=x['điểm chưa đáp ứng'];meta=x['phương án đang dùng'];quality='Bảng tổng hợp Muse; không phải một người / một giao dịch';}
  else{title=x['bài toán'];body=x['hành vi liên quan đào tạo'];meta=`${x['loại nguồn']} · ${x['ngày đăng']||'Không rõ ngày'} · ${x.hypothesis_id}`;quality=x['mức độc lập với nhà cung cấp'];}
