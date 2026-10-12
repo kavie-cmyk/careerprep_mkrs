@@ -10,4 +10,4 @@ Original MMA × Decision Lab PDF was reopened on 12 October: pages 22–23 confi
 
 Static checks: balanced HTML, unique IDs, all script hooks, every new record link and 48 received-file hashes. JavaScript syntax passes for all four UI scripts. 24 original Google Trends CSVs and data denominators 111 / 33 / 42 remain unchanged.
 
-Live checks and screenshot are recorded after publication.
+Live checks: four columns on desktop, two at 753 px and one at 375 px, without document overflow. Learner table fits all three widths. Decor Hà Nội link opens both related records (2 / 124), displays previous learning and the unconfirmed-payment status. The renamed duplicate-status filter preserves its underlying value and returns 6 / 124 records. The AI link filters 33 / 164 discussion records. Main conclusion and AI survey scope render correctly. Final source links have block click targets, verified by mouse navigation. Snapshot: qa/research-editorial-v20.jpg. Final live asset version: research-v20.1.
