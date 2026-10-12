@@ -1,0 +1,37 @@
+[
+  {
+    "file": "README.md",
+    "bytes": 12472,
+    "sha256": "09e59467751ffdfd41f08203362684932aadb8c47fa22604aa5f33d3272f7a24"
+  },
+  {
+    "file": "collection_log_new.csv",
+    "bytes": 45376,
+    "sha256": "e755bd2b67af764e87c4ce830dd8d2cf5c630eb70985ae1430d132240087fda5"
+  },
+  {
+    "file": "customer_cases_new.csv",
+    "bytes": 41544,
+    "sha256": "66c790b7574b89c3a7ce7565732adc4dfd54ec63ea84ab1cd76afd2e38fb876d"
+  },
+  {
+    "file": "open_questions.csv",
+    "bytes": 25355,
+    "sha256": "66b63c3c57582078bcc495235afd9f515a49c99dca6b087b01349b1af69cbe7d"
+  },
+  {
+    "file": "practice_and_feedback.csv",
+    "bytes": 73688,
+    "sha256": "61603736c55fab49c599b63b7dddcbd53ec6c7fea7e04aa3eda0550981c3984a"
+  },
+  {
+    "file": "program_updates.csv",
+    "bytes": 139797,
+    "sha256": "074624b795ead3533c42bc36ec1171a0220e5533bb3d6a47443dcd4a94b1c049"
+  },
+  {
+    "file": "sources_new.csv",
+    "bytes": 34205,
+    "sha256": "72b3d10d5aa07ce750fa91a83784801c07f6469c41d570fc4aef7590aa347315"
+  }
+]

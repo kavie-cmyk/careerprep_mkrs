@@ -1,7 +1,11 @@
-# CareerPrep — Market research and enrollment recommendations
+# CareerPrep — 4C market research report
 
-CEO report covering category demand, competitors and alternatives, customer accounts, and CareerPrep's current courses. Updated 11 October 2026. The main narrative connects public evidence to course-specific enrollment recommendations; the appendix retains original data, source links, verification notes, and the targeted Muse collection request.
+A market research report from a market research employee to the Head of Marketing. Category, Competitor, Consumer and Company appear side by side with equal hierarchy. Each column presents the research question, conclusion, evidence, source links and limits. The report does not prescribe enrollment campaigns or budget allocation.
 
-Charts use the received research data: keyword-specific Google Trends changes and 36 monthly observations, 111 eligible job postings, and 33 AI questions. They do not estimate buyers, market share, or course sales. Course prices preserve package and promotion conditions.
+Updated 12 October 2026. The received follow-up retains seven original files (728 CSV rows) and separate review notes. Charts use the supplied keyword-specific Google Trends changes, 36 monthly points, 111 eligible job postings and 33 AI questions. Collected articles, testimonials, enquiries, actual payments and verified outcomes are kept distinct.
 
-Open `index.html` in a browser. No external dependencies or build step. GitHub Pages deployment copies `index.html`, `styles.css`, `story.css`, `app.js`, `story.js`, and the `research` and `qa` directories. `qa/responsive.html` displays the report at three frame sizes for layout inspection.
+All 47 uploaded files were reconciled to their immutable bytes; 39 already matched saved packs and eight original versions/reference files were added. The existing 24 Google Trends CSVs remain available. The Category V2 pack carries forward the initial records and rejects the unsupported M-E109/M-C107 claim about 130 learners. The input register records source scope, use and limitations and allows inspection/download of every uploaded CSV.
+
+Open `index.html` in a browser. No build step or external dependency. GitHub Pages deploys the root HTML and scripts plus the `research` and `qa` directories. `research/report.css` styles the report; `research/catalog.js` provides source and input exploration. `qa/responsive.html` displays mobile, tablet and desktop frames.
+
+`research/muse/2026-10-12-followup/build_review.py` reproduces the follow-up review layer; `qa/build_input_register.py` builds the complete input register. Raw files are not changed. `impact.md` records research conclusion changes and `muse_remaining_prompt.md` limits the remaining public-data collection.
