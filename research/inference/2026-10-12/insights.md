@@ -6,7 +6,7 @@ Báo cáo gửi Trưởng phòng Marketing · Cập nhật 12/10/2026.
 
 **Lựa chọn chiến lược:** đưa bài tập và góp ý của giảng viên thành trọng tâm thông điệp tuyển sinh của Marketing Foundation và Digital Marketing, hướng đến người đang làm marketing nhưng còn vướng ở kế hoạch, chỉ số hoặc ngân sách.
 
-**Vì A+B+C+D → nên:** vì nhu cầu học sâu gắn với việc phải giải quyết trong công việc (A); nhiều đối thủ cùng có thực hành (B); một nhóm người đã làm nghề vẫn chưa biết cách lựa chọn và đánh giá cách làm (C); và CareerPrep có ví dụ góp ý đúng những phần này (D), nên CareerPrep tập trung thông điệp Foundation và Digital vào các vấn đề đó, lấy bài tập và cách giảng viên góp ý làm minh chứng chính.
+**Vì A+B+C+D → nên:** vì tin tuyển dụng yêu cầu đo hiệu quả và quản lý ngân sách (A); nhiều đối thủ cùng có bài tập (B); một số người đã làm marketing vẫn khó lập kế hoạch hoặc đọc chỉ số quảng cáo (C); và CareerPrep có lời kể về góp ý thông điệp, phân tích quảng cáo và chia ngân sách (D), nên giới thiệu Foundation và Digital cho người cần học cách lập kế hoạch truyền thông, đọc chỉ số quảng cáo hoặc phân bổ ngân sách; đặt ví dụ chữa bài trước danh sách nội dung chương trình.
 
 Đây là lựa chọn chiến lược suy luận từ các nguồn khi đọc cùng nhau. Các dữ liệu mô tả nhu cầu và cách cung cấp đào tạo; chúng chưa kiểm chứng một quan hệ nhân quả về tăng đăng ký. Lựa chọn vẫn có thể triển khai ở mức thông điệp minh họa cách học, không cần hứa vượt trội hoặc bảo đảm kết quả sau học.
 
@@ -36,7 +36,7 @@ Nguồn: CP1a-022/002; CP2-002/041; M3C-PU-100/103/109/110/114; VFU-PU001/002.
 
 Trần Dũng kể đã làm dự án nhưng kiến thức rời rạc và quyết định cảm tính. Irene, người quản lý nội dung, kể tự học qua sách và nguồn trên mạng chưa hiệu quả. Tác giả Decor Hà Nội đánh giá tốt tài liệu BRANDCamp nhưng còn khó áp dụng, sau đó học thêm lớp trực tiếp và cũng thấy lớp đó ngắn, nặng kiến thức.
 
-Những trường hợp này cùng cho thấy nhu cầu sắp xếp lại kiến thức và dùng được trong tình huống cụ thể. Với nhóm này, sự hướng dẫn có thể giúp giải quyết phần còn vướng khi tự học. **Insight:** biết làm một việc chưa bảo đảm biết cách đánh giá lựa chọn của mình. Thu Hà, Digital Marketing Leader, kể chạy quảng cáo theo mẹo nhưng muốn hiểu chỉ số; Thanh Hằng, Assistant Director, đã tự học nhưng chưa chắc kiến thức đúng và đủ (M3C-CC-002/010, do Tomorrow Marketers chọn đăng). Những lời kể này bổ sung nhu cầu được hướng dẫn cách lựa chọn và kiểm tra, không xác nhận chữa bài là nguyên nhân chính khiến họ đăng ký.
+**Insight:** đã làm marketing vẫn có thể thiếu phương pháp lập kế hoạch truyền thông và đọc chỉ số quảng cáo. Trần Dũng muốn hệ thống kiến thức nghiên cứu, lập kế hoạch; Irene tự học nhưng chưa biết áp dụng hiệu quả. Thu Hà, Digital Marketing Leader, kể chạy quảng cáo theo mẹo nhưng muốn hiểu chỉ số; Thanh Hằng, Assistant Director, đã tự học nhưng chưa chắc kiến thức đúng và đủ (M3C-CC-002/010, do Tomorrow Marketers chọn đăng). Những lời kể này bổ sung nhu cầu hiểu chỉ số quảng cáo và hệ thống kiến thức. Chưa xác nhận chữa bài là nguyên nhân chính khiến họ đăng ký.
 
 Các động cơ khác vẫn tồn tại: tìm hiểu nghề, bổ sung kiến thức, kết nối hoặc theo bạn bè giới thiệu. Có người tự học thành công. Sinh viên Quan Nguyen và thực tập sinh Hien Do được ghi đúng bối cảnh, không dùng như người đã làm nghề lâu năm. Bài cá nhân có thể mô tả trải nghiệm nhưng không tự xác minh kết quả sau học hoặc thanh toán.
 
@@ -60,12 +60,12 @@ Nguồn: M3C-PF-023/016/039/022; M3C-CC-107/111; M3C-OQ-P2-001. Sáu bài Founda
 | --- | --- | --- | --- |
 | A · Category | AI marketing +121,4%; 23/33 câu hỏi không hỏi lớp/nội dung học; 80/111 tin cần đo lường, 69/111 cần ngân sách; trường hợp đã tham gia lớp | AI thu hút tìm kiếm; yêu cầu công việc và lời kể người học giúp xác định nhu cầu đào tạo | Chọn vấn đề công việc làm lý do học, không suy tăng mua khóa từ tìm kiếm AI |
 | B · Competitor | AIM, TM, Vinalink có bài tập/dự án; BRANDCamp có bài và thảo luận | Một lời hứa “có thực hành” nữa khó tạo khác biệt | Minh họa cách hướng dẫn thay vì lặp quyền lợi phổ biến |
-| C · Consumer | Trần Dũng quyết định cảm tính; Irene tự học chưa hiệu quả; Thu Hà cần hiểu chỉ số; Thanh Hằng chưa chắc kiến thức đúng/đủ | Người đã biết làm vẫn cần cách lựa chọn và đánh giá quyết định | Thông điệp trả lời việc còn vướng và cách được hướng dẫn |
-| D · Company | PF-023 góp ý thông điệp/bảo mật; PF-016 chữa phân tích quảng cáo/ngân sách | CareerPrep có ví dụ góp ý vào quyết định cụ thể, phù hợp với nhu cầu C | Bắt đầu với Foundation và Digital, dùng hai ví dụ này làm minh họa |
+| C · Consumer | Trần Dũng quyết định cảm tính; Irene tự học chưa hiệu quả; Thu Hà cần hiểu chỉ số; Thanh Hằng chưa chắc kiến thức đúng/đủ | Người đã làm marketing vẫn cần phương pháp lập kế hoạch và đọc chỉ số quảng cáo | Thông điệp nêu nhu cầu lập kế hoạch hoặc đọc chỉ số, kèm ví dụ chữa bài |
+| D · Company | PF-023 góp ý thông điệp/bảo mật; PF-016 chữa phân tích quảng cáo/ngân sách | CareerPrep có góp ý thông điệp ở Foundation, phân tích quảng cáo và ngân sách ở Digital | Bắt đầu với Foundation và Digital, dùng hai ví dụ này làm minh họa |
 
-**Cơ hội nên ưu tiên:** giúp người đã biết làm biết cách lựa chọn và đánh giá. Nhu cầu có trường hợp đã tham gia lớp, phù hợp với nội dung và ví dụ hướng dẫn của CareerPrep.
+**Cơ hội nên ưu tiên:** hướng dẫn người đã làm marketing lập kế hoạch truyền thông và đọc chỉ số quảng cáo. Đã có người học kể khó khăn, cùng ví dụ chữa bài liên quan từ CareerPrep.
 
-**Rào cản lớn nhất trong mạch phân tích này:** một lời hứa “thực hành” nữa khó tạo lý do chọn CareerPrep khi đối thủ cũng có bài tập. Cần giúp người đọc hiểu lớp hướng dẫn việc đang vướng như thế nào. Đây là thứ tự ưu tiên do phân tích, không phải bảng xếp hạng rào cản mua được khảo sát. Không kết luận rằng thông điệp hiện tại đã thiếu ví dụ hoặc người mua đã phản ứng theo cách này.
+**Rào cản lớn nhất trong mạch phân tích này:** một lời hứa “thực hành” nữa khó tạo lý do chọn CareerPrep khi đối thủ cũng có bài tập. Cần minh họa đề bài và nhận xét của giảng viên về thông điệp, quảng cáo hoặc ngân sách. Đây là thứ tự ưu tiên do phân tích, không phải bảng xếp hạng rào cản mua được khảo sát. Không kết luận rằng thông điệp hiện tại đã thiếu ví dụ hoặc người mua đã phản ứng theo cách này.
 
 ## Đề xuất thông điệp
 
