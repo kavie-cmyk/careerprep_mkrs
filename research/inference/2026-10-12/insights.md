@@ -1,65 +1,70 @@
-# Lập luận nghiên cứu 4C — CareerPrep
+# Phân tích thị trường đào tạo marketing — CareerPrep
 
-Ngày 12/10/2026 · Nhân viên nghiên cứu thị trường gửi trưởng phòng Marketing.
+Báo cáo gửi Trưởng phòng Marketing · Cập nhật 12/10/2026.
 
-Hình ví dụ người dùng gửi chỉ hướng dẫn cách lập luận: dữ kiện → cách giải thích → insight từng C → kết nối bốn C. Không sử dụng các kết quả mẫu làm sự thật. Báo cáo giữ kết luận nghiên cứu và một hàm ý định vị; không chuyển thành kế hoạch tuyển sinh hay phân bổ ngân sách.
+## Kết luận chính
 
-## Category
+CareerPrep có cơ hội ở nhóm đã làm marketing nhưng còn cần học cách lập kế hoạch, hiểu chỉ số và phân bổ ngân sách. Đây là nhận định về nhu cầu người học và sự phù hợp của chương trình; chưa phải kết luận về thị phần, lý do đăng ký phổ biến nhất hay chất lượng vượt trội của CareerPrep.
 
-**Dữ kiện:** Google Trends, Việt Nam, bình quân 10/2025–9/2026 so với 12 tháng trước: chỉ số “AI marketing” tăng 121,4%; bốn từ khóa học chung giảm. Từng từ khóa được xuất và chuẩn hóa riêng, nên chỉ so biến động trong cùng bộ, không so độ lớn giữa các từ khóa. Mẫu tuyển dụng đã phân loại gồm 111 tin: 80 có đo lường, 69 có ngân sách, 50 có tối ưu, 45 có agency/đối tác. Một tin được gắn nhiều nhãn. Lời kể M3C-CC-111, M3C-CC-109 và M3C-CC-003 nối yêu cầu hệ thống kiến thức với việc học.
+## Category — Thị trường
 
-**Suy luận:** sự quan tâm phân hóa theo chủ đề, trong khi yêu cầu nghề tạo động lực nâng kỹ năng. Khi đọc cùng hành vi tham gia học trong các trường hợp định tính, nguồn tăng trưởng có cơ sở nằm ở học để giải quyết công việc cụ thể, gồm cả AI và năng lực lập kế hoạch/đo lường.
+Chỉ số tìm kiếm bình quân cho “AI marketing” tăng 121,4% trong giai đoạn 10/2025–9/2026 so với 12 tháng trước. Bốn từ khóa học marketing chung giảm. Các từ khóa được chuẩn hóa riêng; kết quả không chứng minh cùng một nhóm người đã chuyển từ học marketing sang học AI.
 
-**Insight:** nhu cầu nâng năng lực người đang làm nghề là một nguồn tăng trưởng đáng chú ý. Không có cơ sở gọi toàn thị trường bão hòa, hoặc kết luận toàn bộ cơ hội tăng trưởng nằm ở AI.
+Trong 111 tin tuyển dụng được phân tích, 80 có yêu cầu đo lường, 69 có ngân sách, 50 có tối ưu và 45 có làm việc với đơn vị dịch vụ hoặc đối tác. Các nhóm có thể trùng trong cùng một tin. Đây là yêu cầu nghề, không phải số người muốn đăng ký học.
 
-**Đối chiếu ngược:** OP-04 và OP-06 có tự học miễn phí; 23 trong 33 câu hỏi AI không thuộc nhóm tìm lớp/nội dung học/đăng ký. Chỉ số tìm kiếm không phải người mua và tin tuyển dụng không phải ý định học. Kết luận mô tả hướng cơ hội, không ước tính số người mua hoặc tăng trưởng doanh thu.
+Những lời kể của Trần Dũng, Irene và Thùy Nga bổ sung một thông tin quan trọng: người đã làm việc vẫn tham gia lớp để hệ thống kiến thức hoặc học cách dùng trong công việc. Khi đọc cùng yêu cầu nghề, đào tạo bổ sung kỹ năng cho người đi làm là một hướng tăng trưởng đáng xem xét. AI có sức hút nhưng không bao quát hết nhu cầu chuyên môn.
 
-**Nguồn:** S14; dữ liệu Google Trends và 24 CSV; mẫu JD và phương pháp phân loại 11/10; M3C-CC-111/109/003; OP-04/06. Bối cảnh SME và đào tạo doanh nghiệp vẫn giữ tại S32–S34, không dùng để xếp thứ tự doanh thu các phân khúc.
+Tự học miễn phí vẫn là một lựa chọn. OP-04 và OP-06 có các trường hợp tự học; 23 trong 33 câu hỏi AI không thuộc nhóm hỏi lớp hoặc nội dung học. Vì vậy, sự quan tâm tới một kỹ năng chưa xác nhận sẽ mua khóa. Chưa có giao dịch cùng kỳ để tính tốc độ tăng số người mua toàn thị trường.
 
-## Competitor
+Nguồn: S14–S18; 24 bảng Google Trends; mẫu tuyển dụng ngày 11/10; M3C-CC-111/109/003; OP-04/06. S32–S34 bổ sung bối cảnh doanh nghiệp nhỏ và đào tạo đội ngũ, chưa đủ để so doanh thu các phân khúc.
 
-**Dữ kiện:** AIM Hands-On có bài kế hoạch nhóm và hướng dẫn tại lớp (CP1a-022); TM có Capstone (CP1a-002), mentoring theo gói ghi nhận 11/10 (M3C-PU-103); Vinalink có bài theo buổi và mini campaign, công bố hỗ trợ (CP2-002); HNAAu có thực hành công cụ theo buổi (CP2-041); FAQ BRANDCamp mô tả bài tập và thảo luận (M3C-PU-114). Các dịch vụ không cùng hình thức, thời lượng và mức hỗ trợ.
+## Competitor — Đối thủ và cách học thay thế
 
-**Suy luận:** “AI” và “thực hành” không mô tả một năng lực chỉ có ở CareerPrep. So sánh tên gọi hoặc số buổi không đủ để hiểu giá trị khác nhau. Nội dung bài và cách hướng dẫn là căn cứ so sánh có ý nghĩa hơn.
+AIM Academy có bài kế hoạch theo nhóm và hướng dẫn tại lớp. Tomorrow Marketers có bài cuối khóa trên dữ liệu, cùng quyền lợi hướng dẫn riêng theo gói được ghi nhận. Vinalink có bài theo buổi và chiến dịch nhỏ. Hướng Nghiệp Á Âu có thực hành công cụ theo buổi. Hướng dẫn nền tảng BRANDCamp có bài tập và thảo luận.
 
-**Insight:** có thực hành chưa đủ để phân biệt một khóa. Khác biệt đáng xem xét là người học được sửa quyết định nào, bằng cách nào và có sản phẩm học tập nào cho thấy điều đó.
+Bài tập và hỗ trợ đã có ở nhiều chương trình. “Có thực hành” vì thế chưa đủ là điểm khác biệt của CareerPrep. Muốn so chất lượng, cần đọc bài tập, nội dung nhận xét và xem người học được sửa bài ra sao. Thông tin công bố hiện tại chỉ cho phép so các cách cung cấp dịch vụ.
 
-**Đối chiếu ngược:** đối thủ cũng có hướng dẫn; CareerPrep chưa được chứng minh vượt trội. Một mục “không tìm thấy” không được đọc thành “không cung cấp”. TM còn xung đột phiên bản giá; Vinalink còn hai bộ giá; AIM 6,5 triệu là cho cặp hai người. Không dựng bảng xếp hạng giá hoặc chất lượng từ những điều kiện chưa tương đương.
+Giá phải đọc cùng điều kiện: AIM 6,5 triệu đồng là cho cặp hai người; Tomorrow Marketers có thông tin giá khác nhau giữa các trang/ngày; Vinalink có hai phần ghi giá khác nhau. Không so những mức này như cùng một gói. Thông tin chưa tìm được về hỗ trợ không được coi là bằng chứng đơn vị không hỗ trợ.
 
-**Nguồn:** CP1a-022/002; CP2-002/041; M3C-PU-100/103/109/110/114; VFU-PU001/002. Giá được giữ ở phần điều kiện riêng; không suy mức hỗ trợ từ giá niêm yết.
+Nguồn: CP1a-022/002; CP2-002/041; M3C-PU-100/103/109/110/114; VFU-PU001/002.
 
-## Consumer
+## Consumer — Người học
 
-**Dữ kiện:** Trần Dũng đã làm dự án nhưng kể kiến thức rời rạc và quyết định cảm tính (M3C-CC-111). Irene kể tự học qua sách và nguồn online chưa hiệu quả (M3C-CC-109). Decor Hà Nội đánh giá tốt tài liệu BRANDCamp nhưng còn khó vận dụng, sau đó học thêm lớp khác và cũng thấy lớp đó ngắn/nặng kiến thức (M3C-CC-005, trùng M3C-CC-100). Lời kể không được chuyển thành tỷ lệ người học.
+Trần Dũng kể đã làm dự án nhưng kiến thức rời rạc và quyết định cảm tính. Irene, người quản lý nội dung, kể tự học qua sách và nguồn trên mạng chưa hiệu quả. Tác giả Decor Hà Nội đánh giá tốt tài liệu BRANDCamp nhưng còn khó áp dụng, sau đó học thêm lớp trực tiếp và cũng thấy lớp đó ngắn, nặng kiến thức.
 
-**Suy luận:** một nhóm người học thiếu cách kết nối kiến thức và kiểm tra cách làm, dù đã tiếp cận thông tin. Hướng dẫn và góp ý có thể làm lớp học đáng cân nhắc khi người học đang vướng ở việc vận dụng. Đây là lời giải thích cho một nhóm quan sát được, chưa phải cơ chế mua đã được xác nhận cho toàn thị trường.
+Những trường hợp này cùng cho thấy nhu cầu sắp xếp lại kiến thức và dùng được trong tình huống cụ thể. Với nhóm này, sự hướng dẫn có thể giúp giải quyết phần còn vướng khi tự học. Đây là cách giải thích từ trải nghiệm được kể, không xác nhận chữa bài là nguyên nhân chính khiến họ đăng ký.
 
-**Insight:** giá trị đáng xem xét là giúp người học biết mình đang làm đúng hay sai và sửa được phần còn vướng.
+Các động cơ khác vẫn tồn tại: tìm hiểu nghề, bổ sung kiến thức, kết nối hoặc theo bạn bè giới thiệu. Có người tự học thành công. Sinh viên Quan Nguyen và thực tập sinh Hien Do được ghi đúng bối cảnh, không dùng như người đã làm nghề lâu năm. Bài cá nhân có thể mô tả trải nghiệm nhưng không tự xác minh kết quả sau học hoặc thanh toán.
 
-**Đối chiếu ngược:** OP-08 có động cơ nền tảng/kết nối/bổ sung kiến thức ở sinh viên; M3C-CC-114 có bạn bè giới thiệu; OP-04 có tự học AI thành công. Không viết “mọi người mua vì tự học thất bại”. Đã học không đồng nghĩa có bằng chứng thanh toán. Ba bình luận M3C-CC-115/116/117 lần lượt hỏi thông tin, xin bài tham khảo và muốn học miễn phí.
+Nguồn: M3C-CC-111/109/005/114; M3C-CC-001/113; OP-04/08. M3C-CC-005 và M3C-CC-100 là cùng một trường hợp. Ba bình luận M3C-CC-115/116/117 lần lượt hỏi thông tin, xin bài và muốn học miễn phí, không tính cả ba thành người có ý định mua.
 
-**Nguồn:** M3C-CC-111/109/005/114/115/116/117; OP-04/08; 33 câu hỏi AI. Review 42 dòng có 11 kể áp dụng, trong đó bảy có liên hệ thương mại; không dùng làm tỷ lệ áp dụng của người đi làm hoặc học viên CareerPrep.
+## Company — CareerPrep
 
-## Company
+Bài nhóm MoMo x ePass của Marketing Foundation được học viên kể có góp ý về lý do thông điệp thuyết phục và lo ngại bảo mật khi liên kết tài khoản. Trần Dũng và Quynh Huong nói về cùng bài nhóm.
 
-**Dữ kiện:** lời kể về bài MoMo x ePass mô tả góp ý lý do thông điệp thuyết phục và rào cản bảo mật (M3C-PF-023). Phản hồi DMIA ngày 09/10/2026 kể chữa đánh giá tối ưu, ngân sách và hành trình khách hàng (M3C-PF-016). Hai loại nguồn khác nhau: bài cá nhân tự đăng và phản hồi qua form của đơn vị. Trần Dũng và Quynh Huong kể cùng nhóm, không phải hai dự án độc lập.
+Phản hồi Digital Marketing ngày 09/10/2026 kể được chữa cách đánh giá quảng cáo, phân bổ ngân sách và tìm vấn đề theo hành trình khách hàng. Phản hồi này được thu qua biểu mẫu của CareerPrep, khác với bài cá nhân tự đăng; chưa có bài làm đính kèm.
 
-**Suy luận:** phần hướng dẫn được mô tả đi vào cách kiểm tra lập luận và ra quyết định, cụ thể hơn lời khen chung. Foundation và Digital có căn cứ trải nghiệm cho giá trị này; Social AI chưa có sản phẩm/lời kể tương ứng trong dữ liệu nhận được.
+Nội dung Foundation và Digital cùng các ví dụ hướng dẫn phù hợp với nhu cầu hệ thống kiến thức, lập kế hoạch và đánh giá hoạt động marketing. Dữ liệu này chưa chứng minh CareerPrep hướng dẫn tốt hơn đối thủ hoặc đo được mức tiến bộ của người học.
 
-**Insight:** CareerPrep có cơ sở thể hiện giá trị “làm bài có lý do, sửa bài có căn cứ”, nhưng chưa có căn cứ xác định ưu thế độc quyền hoặc mức cải thiện sau học.
+Cần đọc cả góp ý: phản hồi Digital ngày 19/09/2025 đề nghị giảng chậm hơn; ngày 12/08/2026 mong được chữa bài nộp trễ, chưa xác nhận đã được chữa. Social Media AI chưa có lời kể hoặc sản phẩm học viên tương ứng trong dữ liệu thu thập.
 
-**Đối chiếu ngược:** M3C-PF-039, ngày 19/09/2025, đề nghị giảng chậm hơn cho người mới; M3C-PF-022 mong chữa bài nộp trễ, chưa xác nhận đã được chữa. Sáu bài Foundation và hai bài Digital là bài thu thập được, không phải số người mua/tỷ lệ hài lòng. 56 dòng Instagram không phải 56 người riêng biệt và không xác minh kết quả việc làm/lương. Chưa có cặp bản bài trước/sau.
+Nguồn: M3C-PF-023/016/039/022; M3C-CC-107/111; M3C-OQ-P2-001. Sáu bài Foundation và hai bài Digital là số bài thu thập, không phải tỷ lệ hài lòng. 56 bản ghi Instagram không xác nhận 56 người riêng biệt hoặc tỷ lệ có việc, tăng lương. Bài Data Foundation được giữ riêng khi chưa xác nhận chương trình và đơn vị.
 
-**Nguồn:** M3C-PF-023/016/039/022; M3C-CC-107/111; M3C-OQ-P2-001. Bài Data Foundation không được gán vào DMIA khi chưa xác định chương trình/chủ thể.
+## Vì sao bốn C dẫn đến kết luận này?
 
-## Kết nối bốn C
+| Phần nghiên cứu | Điều được ghi nhận | Ý nghĩa đối với kết luận |
+| --- | --- | --- |
+| Thị trường | Công việc đòi hỏi đo lường và ngân sách; AI được quan tâm hơn | Người đang làm nghề có lý do bổ sung kỹ năng |
+| Đối thủ | Nhiều chương trình đã có thực hành và hỗ trợ | Không dùng riêng “có thực hành” để khẳng định lợi thế |
+| Người học | Có kinh nghiệm hoặc tự học nhưng vẫn cần hệ thống kiến thức | Có nhu cầu hướng dẫn cách lập kế hoạch và áp dụng |
+| CareerPrep | Nội dung phù hợp và có ví dụ chữa bài cụ thể | Có thể giải thích lớp hỗ trợ những nhu cầu này ra sao |
 
-Vì yêu cầu nghề đòi hỏi biết vận dụng, một nhóm người học kể vẫn thiếu cách làm, còn thực hành đã có ở nhiều đối thủ, **CareerPrep có cơ sở để tập trung vào giá trị giúp người làm marketing biến kiến thức thành kế hoạch và quyết định có căn cứ**. Điểm đáng phân biệt nằm ở cách giảng viên giúp tìm ra vấn đề và sửa lập luận trên bài làm; Foundation và Digital đã có mô tả cho quá trình này.
+Các kết quả ủng hộ cơ hội phục vụ nhóm nhu cầu nói trên. Những ví dụ như sửa thông điệp hay chữa cách chia ngân sách giúp mô tả giá trị lớp học rõ hơn lời hứa chung về “thực chiến”. Chưa đủ cơ sở coi đây là định vị độc quyền hoặc là yếu tố làm tăng đăng ký.
 
-**Hàm ý định vị từ nghiên cứu:** “Làm marketing có căn cứ” là hướng định vị phù hợp với nhu cầu và trải nghiệm đã thu thập. Chưa tuyên bố CareerPrep giỏi hơn đối thủ, mọi học viên tiến bộ hoặc người học sẽ mua nhiều hơn. Không có số liệu nào được nhân thành doanh thu giả định.
+Cần bổ sung: phỏng vấn người học và người không đăng ký về nguyên nhân chọn lớp; so bài tập và nhận xét giữa các chương trình tương ứng; kiểm tra bài trước và sau góp ý. Nếu giá, lịch, chứng chỉ hoặc kết nối chi phối lựa chọn, vai trò của chữa bài trong quyết định đăng ký phải được điều chỉnh.
 
-Thông tin có thể thay đổi nhận định: nguyên nhân chọn khóa từ người học/người từ chối; bài và nhận xét cùng điều kiện tại CareerPrep và đối thủ; cặp bài trước/sau. Nếu các động cơ khác chi phối việc chọn mua hoặc đối thủ có mức hướng dẫn tương đương/tốt hơn, vai trò của chữa bài trong định vị phải được điều chỉnh.
+## Kiểm tra nguồn và phạm vi
 
-## Độ phủ đầu vào
+Đã đối chiếu 48 tài liệu đã nhận và giữ riêng 24 bảng Google Trends. Hai hình ví dụ chỉ hướng dẫn cấu trúc và cách lập luận; kết quả trong hình không được dùng làm sự thật. Các file gốc không thay đổi. Thông tin 130 học viên/lớp 2026 đã bị loại vì nguồn không hỗ trợ; các trường hợp trùng vẫn được nhận diện.
 
-Giữ và đối chiếu 47 đầu vào đã có ở v18, thêm hình phương pháp mới thành 48 file trong sổ đối chiếu. Giữ riêng 24 CSV Google Trends. Dữ liệu giao vẫn nguyên byte; không phục hồi claim 130 học viên/lớp 2026 đã bị loại; không cộng bản trùng thành người mới; các khoảng trống còn mở không bị dùng để phủ định lời kể bổ sung.
+Đọc lại báo cáo MMA × Decision Lab ngày 12/10, trang PDF 22–23: 32% là câu trả lời chưa hiểu rõ AI. Các tỷ lệ 63/60/57/48/43% nói về nguồn cập nhật kiến thức **AI trong marketing**, không phải cách học marketing nói chung. Dashboard đã ghi rõ phạm vi này. Khảo sát Việt Nam có 94 người, thu thập 10/2023–2/2024; không dùng để đo nhu cầu mua khóa hiện tại hoặc so thành xu hướng với khảo sát Đông Nam Á khác mẫu.
