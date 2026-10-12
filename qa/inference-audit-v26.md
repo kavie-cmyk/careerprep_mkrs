@@ -30,4 +30,4 @@
 
 ## Kiểm tra triển khai
 
-HTML lồng thẻ hợp lệ; ID không trùng; 77 ID cũ được giữ; 34 liên kết bản ghi có trong dữ liệu; index và template khớp; git diff không lỗi khoảng trắng. Dữ liệu gốc, ba dataset, trích đoạn và chuỗi số liệu không đổi. Kiểm tra hiển thị sẽ được ghi nhận sau xuất bản.
+HTML lồng thẻ hợp lệ; ID không trùng; 77 ID cũ được giữ; 34 liên kết bản ghi có trong dữ liệu; index và template khớp; git diff không lỗi khoảng trắng. Dữ liệu gốc, ba dataset, trích đoạn và chuỗi số liệu không đổi. Bản v26 đã xuất bản và kiểm tra bốn insight, mạch A+B+C+D và bảng Consumer ba trường hợp. Màn hình desktop 1363 px không tràn ngang. Các khung 375/753/1351 px có chiều rộng nội dung đúng bằng khung; hai bảng 4C hiển thị 1/2/4 cột; hai biểu đồ Category đều có. Ảnh kết luận: research-inference-v26.jpg. Kiểm tra ảnh còn phát hiện hai tiêu đề diễn đạt vòng: đã đổi thành câu trực tiếp về giới thiệu hai khóa và sự phù hợp của phần góp ý.
