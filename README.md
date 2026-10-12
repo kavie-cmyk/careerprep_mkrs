@@ -1,6 +1,6 @@
 # CareerPrep — 4C market research report
 
-A market research report from a market research employee to the Head of Marketing. Category, Competitor, Consumer and Company appear side by side with equal hierarchy. Each column presents the research question, conclusion, evidence, source links and limits. The report does not prescribe enrollment campaigns or budget allocation.
+A market research report from a market research employee to the Head of Marketing. Category, Competitor, Consumer and Company appear side by side with equal hierarchy. Each column presents the research question, conclusion, evidence, source links and limits. The conclusion now recommends one concrete enrollment-message change derived from the four C insights, as explicitly requested by the user; it does not add unrelated campaign or budget plans.
 
 Updated 12 October 2026. The received follow-up retains seven original files (728 CSV rows) and separate review notes. Charts use the supplied keyword-specific Google Trends changes, 36 monthly points, 111 eligible job postings and 33 AI questions. Collected articles, testimonials, enquiries, actual payments and verified outcomes are kept distinct.
 
@@ -13,3 +13,5 @@ Open `index.html` in a browser. No build step or external dependency. GitHub Pag
 The v20 report describes observed learner needs and program fit with concrete tasks. It avoids slogan-like positioning and distinguishes job requirements from purchase intent, program fit from competitive superiority, and experience reports from measured improvement. It reduces repetition and rewrites the source-browser controls in plain Vietnamese. The user’s example is a method reference only. The inference register is `research/inference/2026-10-12/insights.md`; original research facts and denominators are unchanged.
 
 MMA × Decision Lab pages 22–23 were rechecked against the original PDF on 12 October. Learning-resource percentages concern AI in marketing, and the report explicitly labels that scope. Raw inputs and numerical series remain unchanged. `qa/editorial-review-v20.md` records the reasoning and editorial review.
+
+The v21 report turns each C into an explicit evidence → inference explanation and joins A+B+C+D into one strategic action. It prioritizes showing how instructors critique work for working marketers who need help choosing and evaluating a plan, metrics or budget. Foundation and Digital are selected because the collected evidence has relevant examples, not a proven sales or quality ranking. Proposed messages are labelled as proposals. All raw inputs, original numerical series and source browsers are retained.
