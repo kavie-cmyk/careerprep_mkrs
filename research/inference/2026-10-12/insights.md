@@ -54,11 +54,11 @@ Cần đọc cả góp ý: phản hồi Digital ngày 19/09/2025 đề nghị gi
 
 Nguồn: M3C-PF-023/016/039/022; M3C-CC-107/111; M3C-OQ-P2-001. Sáu bài Foundation và hai bài Digital là số bài thu thập, không phải tỷ lệ hài lòng. 56 bản ghi Instagram không xác nhận 56 người riêng biệt hoặc tỷ lệ có việc, tăng lương. Bài Data Foundation được giữ riêng khi chưa xác nhận chương trình và đơn vị.
 
-## Từ từng C đến cơ hội và rào cản ưu tiên
+## Bốn căn cứ của lựa chọn
 
 | C | Dữ liệu | Insight suy luận | Vai trò trong lựa chọn |
 | --- | --- | --- | --- |
-| A · Category | AI marketing +121,4%; 23/33 câu hỏi không hỏi lớp/nội dung học; 80/111 tin cần đo lường, 69/111 cần ngân sách; trường hợp đã tham gia lớp | AI tạo sự chú ý, nhưng cơ hội học sâu rõ hơn ở việc người học chưa tự giải quyết được | Chọn vấn đề công việc làm lý do học, không suy tăng mua khóa từ tìm kiếm AI |
+| A · Category | AI marketing +121,4%; 23/33 câu hỏi không hỏi lớp/nội dung học; 80/111 tin cần đo lường, 69/111 cần ngân sách; trường hợp đã tham gia lớp | AI thu hút tìm kiếm; yêu cầu công việc và lời kể người học giúp xác định nhu cầu đào tạo | Chọn vấn đề công việc làm lý do học, không suy tăng mua khóa từ tìm kiếm AI |
 | B · Competitor | AIM, TM, Vinalink có bài tập/dự án; BRANDCamp có bài và thảo luận | Một lời hứa “có thực hành” nữa khó tạo khác biệt | Minh họa cách hướng dẫn thay vì lặp quyền lợi phổ biến |
 | C · Consumer | Trần Dũng quyết định cảm tính; Irene tự học chưa hiệu quả; Thu Hà cần hiểu chỉ số; Thanh Hằng chưa chắc kiến thức đúng/đủ | Người đã biết làm vẫn cần cách lựa chọn và đánh giá quyết định | Thông điệp trả lời việc còn vướng và cách được hướng dẫn |
 | D · Company | PF-023 góp ý thông điệp/bảo mật; PF-016 chữa phân tích quảng cáo/ngân sách | CareerPrep có ví dụ góp ý vào quyết định cụ thể, phù hợp với nhu cầu C | Bắt đầu với Foundation và Digital, dùng hai ví dụ này làm minh họa |
@@ -67,7 +67,7 @@ Nguồn: M3C-PF-023/016/039/022; M3C-CC-107/111; M3C-OQ-P2-001. Sáu bài Founda
 
 **Rào cản lớn nhất trong mạch phân tích này:** một lời hứa “thực hành” nữa khó tạo lý do chọn CareerPrep khi đối thủ cũng có bài tập. Cần giúp người đọc hiểu lớp hướng dẫn việc đang vướng như thế nào. Đây là thứ tự ưu tiên do phân tích, không phải bảng xếp hạng rào cản mua được khảo sát. Không kết luận rằng thông điệp hiện tại đã thiếu ví dụ hoặc người mua đã phản ứng theo cách này.
 
-## Một hành động cụ thể
+## Đề xuất thông điệp
 
 Viết lại phần giới thiệu tuyển sinh của Foundation và Digital theo trình tự **việc người học đang vướng → bài tập trong lớp → giảng viên góp ý gì**, đặt trước danh sách nội dung chương trình.
 
@@ -76,7 +76,7 @@ Viết lại phần giới thiệu tuyển sinh của Foundation và Digital the
 
 Chọn hai khóa vì dữ liệu có ví dụ liên quan, không phải vì đã chứng minh doanh thu hay hiệu quả cao nhất. Không tự tạo bài trước–sau, không hứa chữa riêng từng người hoặc tăng doanh thu. Social Media AI vẫn giữ đủ nội dung, giá và giới hạn nguồn trong báo cáo; chưa có ví dụ tương ứng để làm minh chứng cho hành động này.
 
-## Điều có thể làm thay đổi lựa chọn
+## Điều có thể thay đổi đề xuất
 
 Nếu giá, lịch học, chứng chỉ hoặc kết nối chi phối lựa chọn của nhóm này, vai trò của chữa bài trong thông điệp cần được điều chỉnh. Muốn khẳng định tiến bộ hay hơn đối thủ, cần bài làm/nhận xét so cùng điều kiện. Những giới hạn đó xác định mức cam kết có thể viết; kết luận hiện tại vẫn là hành động cụ thể ở trên.
 

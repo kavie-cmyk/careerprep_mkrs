@@ -15,3 +15,5 @@ The v20 report describes observed learner needs and program fit with concrete ta
 MMA × Decision Lab pages 22–23 were rechecked against the original PDF on 12 October. Learning-resource percentages concern AI in marketing, and the report explicitly labels that scope. Raw inputs and numerical series remain unchanged. `qa/editorial-review-v20.md` records the reasoning and editorial review.
 
 The v21 report turns each C into an explicit evidence → inference explanation and joins A+B+C+D into one strategic action. It prioritizes showing how instructors critique work for working marketers who need help choosing and evaluating a plan, metrics or budget. Foundation and Digital are selected because the collected evidence has relevant examples, not a proven sales or quality ranking. Proposed messages are labelled as proposals. All raw inputs, original numerical series and source browsers are retained.
+
+The v22 editorial revision removes repeated strategy paragraphs, uses short data summaries for the four-C synthesis, and rewrites vague report-owned wording in plain Vietnamese. Raw excerpts, IDs, original dataset values and all evidence browsers stay intact.
