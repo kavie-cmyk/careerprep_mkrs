@@ -56,7 +56,7 @@ Hình ví dụ người dùng gửi chỉ hướng dẫn cách lập luận: d�
 
 Vì yêu cầu nghề đòi hỏi biết vận dụng, một nhóm người học kể vẫn thiếu cách làm, còn thực hành đã có ở nhiều đối thủ, **CareerPrep có cơ sở để tập trung vào giá trị giúp người làm marketing biến kiến thức thành kế hoạch và quyết định có căn cứ**. Điểm đáng phân biệt nằm ở cách giảng viên giúp tìm ra vấn đề và sửa lập luận trên bài làm; Foundation và Digital đã có mô tả cho quá trình này.
 
-**Hàm ý định vị từ nghiên cứu:** “Làm marketing có căn cứ” là hướng có cơ sở để xem xét. Chưa tuyên bố CareerPrep giỏi hơn đối thủ, mọi học viên tiến bộ hoặc người học sẽ mua nhiều hơn. Không có số liệu nào được nhân thành doanh thu giả định.
+**Hàm ý định vị từ nghiên cứu:** “Làm marketing có căn cứ” là hướng định vị phù hợp với nhu cầu và trải nghiệm đã thu thập. Chưa tuyên bố CareerPrep giỏi hơn đối thủ, mọi học viên tiến bộ hoặc người học sẽ mua nhiều hơn. Không có số liệu nào được nhân thành doanh thu giả định.
 
 Thông tin có thể thay đổi nhận định: nguyên nhân chọn khóa từ người học/người từ chối; bài và nhận xét cùng điều kiện tại CareerPrep và đối thủ; cặp bài trước/sau. Nếu các động cơ khác chi phối việc chọn mua hoặc đối thủ có mức hướng dẫn tương đương/tốt hơn, vai trò của chữa bài trong định vị phải được điều chỉnh.
 
