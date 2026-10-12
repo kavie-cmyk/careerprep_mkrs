@@ -56,7 +56,7 @@ Foundation có 6 bài học viên tự đăng; Digital có 2; đây là số bà
 
 **Vì** công việc đòi hỏi đo hiệu quả và quản lý ngân sách (A), nhiều đối thủ cùng có bài tập (B), một nhóm người đi làm muốn có phương pháp lập kế hoạch hoặc hiểu chỉ số quảng cáo (C), và CareerPrep có ví dụ góp ý về thông điệp, phân tích quảng cáo và ngân sách (D) → **nên giới thiệu Foundation và Digital cho người cần học cách lập kế hoạch truyền thông hoặc đánh giá quảng cáo, đặt ví dụ chữa bài trước danh sách nội dung chương trình.**
 
-**Cơ hội ưu tiên:** người đã làm hoặc tự học marketing nhưng cần hệ thống kiến thức thành phương pháp lập kế hoạch và phân tích quảng cáo. **Rào cản cần giải quyết trước:** bài tập là quyền lợi phổ biến; thông điệp cần giải thích phần giảng viên giúp sửa. Đây là lựa chọn ưu tiên từ phân tích, chưa phải bảng xếp hạng rào cản hoặc quy mô phân khúc đã khảo sát.
+**Cơ hội ưu tiên:** người đang làm marketing nhưng cần hệ thống kiến thức thành phương pháp lập kế hoạch truyền thông và phân tích quảng cáo. **Rào cản cần giải quyết trước:** bài tập là quyền lợi phổ biến; thông điệp cần giải thích phần giảng viên giúp sửa. Đây là lựa chọn ưu tiên từ phân tích, chưa phải bảng xếp hạng rào cản hoặc quy mô phân khúc đã khảo sát.
 
 Thông điệp đề xuất:
 
