@@ -37,7 +37,9 @@ MMA × Decision Lab: Việt Nam, n=94, thu thập 10/2023–2/2024. Khó khăn A
 | Hướng Nghiệp Á Âu AI Digital Marketing | Thực hành công cụ theo buổi | CP2-041; M3C-PU-110 |
 | BRANDCamp video | Bài tập, trắc nghiệm, thảo luận theo hướng dẫn nền tảng | M3C-PU-114; VFU-PU002 |
 
-**Insight Competitor:** nhiều nơi cùng có bài tập, nên riêng lời hứa “có thực hành” khó giải thích lý do chọn CareerPrep. Cần minh họa giảng viên góp ý vào bài làm thế nào. Đây là suy luận từ quyền lợi công bố, chưa đo phản ứng người mua hoặc xếp hạng chất lượng giảng dạy.
+**Insight Competitor:** kiến thức nền tảng có nguồn tự học giá thấp; cách hướng dẫn là điểm phân biệt giữa các khóa. Khi bài tập và thảo luận có cả ở video 299.000 đồng, chúng không phân biệt được riêng hình thức lớp có giảng viên; các lựa chọn khác nhau ở lịch học, bài nhóm, trao đổi trực tiếp và điều kiện nhận góp ý. Kiến thức marketing có thể tiếp cận qua HubSpot Academy miễn phí (ALT1-002), phần học Meta Blueprint miễn phí nhưng thi chứng chỉ có lệ phí (ALT1-003), hoặc khóa Foundation of Digital Marketing BRANDCamp 299.000 đồng/85 video (VFU-PU002). BRANDCamp cũng có bài tập và thảo luận với giảng viên/học viên theo hướng dẫn nền tảng (M3C-PU-114), nên không coi video là hình thức hoàn toàn không hỗ trợ.
+
+Khi đọc cùng AIM và Tomorrow Marketers, cạnh tranh còn nằm ở cách tổ chức học và phạm vi hỗ trợ: lịch học, kế hoạch nhóm, trao đổi trực tiếp, hướng dẫn riêng theo gói (CP1a-022/002; M3C-PU-103). Các hình thức đáp ứng một phần nhu cầu khác nhau; không mặc định thay thế hoàn toàn, có cùng nội dung/chất lượng hay giải thích toàn bộ chênh lệch giá. Đây là suy luận về các lựa chọn cạnh tranh, chưa phải nghiên cứu nhân quả về lý do mua. Hành động cho CareerPrep được đặt riêng ở kết luận chiến lược.
 
 Học phí phải đọc cùng gói: AIM 6,5 triệu đồng/2 người, không phải mỗi người; Tomorrow Marketers khác giá giữa các trang/ngày, chưa rõ điều kiện; Vinalink phần chính và hỏi đáp ghi khác giá. Hướng Nghiệp Á Âu trọn khóa 9 buổi khác chuyên đề 3 buổi. BRANDCamp có 85 video, giá 299.000 đồng ghi nhận 12/10. Tự học miễn phí là lựa chọn thật; không mặc định người quan tâm kỹ năng sẽ mua lớp.
 
@@ -54,9 +56,9 @@ Foundation có 6 bài học viên tự đăng; Digital có 2; đây là số bà
 
 ## Bốn C dẫn đến lựa chọn chiến lược
 
-**Vì** công việc đòi hỏi đo hiệu quả và quản lý ngân sách (A), nhiều đối thủ cùng có bài tập (B), một nhóm người đi làm muốn có phương pháp lập kế hoạch hoặc hiểu chỉ số quảng cáo (C), và CareerPrep có ví dụ góp ý về thông điệp, phân tích quảng cáo và ngân sách (D) → **nên giới thiệu Foundation và Digital cho người cần học cách lập kế hoạch truyền thông hoặc đánh giá quảng cáo, đặt ví dụ chữa bài trước danh sách nội dung chương trình.**
+**Vì** công việc đòi hỏi đo hiệu quả và quản lý ngân sách (A), người học có lựa chọn tự học miễn phí hoặc giá thấp, còn các lớp khác nhau ở phần hỗ trợ (B), một nhóm người đi làm muốn có phương pháp lập kế hoạch hoặc hiểu chỉ số quảng cáo (C), và CareerPrep có ví dụ góp ý về thông điệp, phân tích quảng cáo và ngân sách (D) → **nên giới thiệu Foundation và Digital cho người cần học cách lập kế hoạch truyền thông hoặc đánh giá quảng cáo, đặt ví dụ chữa bài trước danh sách nội dung chương trình.**
 
-**Cơ hội ưu tiên:** người đang làm marketing nhưng cần hệ thống kiến thức thành phương pháp lập kế hoạch truyền thông và phân tích quảng cáo. **Rào cản cần giải quyết trước:** bài tập là quyền lợi phổ biến; thông điệp cần giải thích phần giảng viên giúp sửa. Đây là lựa chọn ưu tiên từ phân tích, chưa phải bảng xếp hạng rào cản hoặc quy mô phân khúc đã khảo sát.
+**Cơ hội ưu tiên:** người đang làm marketing nhưng cần hệ thống kiến thức thành phương pháp lập kế hoạch truyền thông và phân tích quảng cáo. **Rào cản cần giải quyết trước:** người học có lựa chọn tự học giá thấp; lớp có giảng viên cần giải thích phần hướng dẫn được nhận. Đây là lựa chọn ưu tiên từ phân tích, chưa phải bảng xếp hạng rào cản hoặc quy mô phân khúc đã khảo sát.
 
 Thông điệp đề xuất:
 
