@@ -1,87 +1,72 @@
-# Phân tích thị trường đào tạo marketing — CareerPrep
+# CareerPrep — Nghiên cứu thị trường đào tạo marketing theo 4C
 
-Báo cáo gửi Trưởng phòng Marketing · Cập nhật 12/10/2026.
+Báo cáo gửi Trưởng phòng Marketing · Dữ liệu đến 12/10/2026.
 
-## Kết luận chính
+## Nhu cầu được xác định từ lời kể
 
-**Lựa chọn chiến lược:** đưa bài tập và góp ý của giảng viên thành trọng tâm thông điệp tuyển sinh của Marketing Foundation và Digital Marketing, hướng đến người đang làm marketing nhưng còn vướng ở kế hoạch, chỉ số hoặc ngân sách.
+Hai nhu cầu cụ thể ở người đã làm marketing:
 
-**Vì A+B+C+D → nên:** vì tin tuyển dụng yêu cầu đo hiệu quả và quản lý ngân sách (A); nhiều đối thủ cùng có bài tập (B); một số người đã làm marketing vẫn khó lập kế hoạch hoặc đọc chỉ số quảng cáo (C); và CareerPrep có lời kể về góp ý thông điệp, phân tích quảng cáo và chia ngân sách (D), nên giới thiệu Foundation và Digital cho người cần học cách lập kế hoạch truyền thông, đọc chỉ số quảng cáo hoặc phân bổ ngân sách; đặt ví dụ chữa bài trước danh sách nội dung chương trình.
-
-Đây là lựa chọn chiến lược suy luận từ các nguồn khi đọc cùng nhau. Các dữ liệu mô tả nhu cầu và cách cung cấp đào tạo; chúng chưa kiểm chứng một quan hệ nhân quả về tăng đăng ký. Lựa chọn vẫn có thể triển khai ở mức thông điệp minh họa cách học, không cần hứa vượt trội hoặc bảo đảm kết quả sau học.
-
-## Category — Thị trường
-
-Chỉ số tìm kiếm bình quân cho “AI marketing” tăng 121,4% trong giai đoạn 10/2025–9/2026 so với 12 tháng trước. Bốn từ khóa học marketing chung giảm. Các từ khóa được chuẩn hóa riêng; kết quả không chứng minh cùng một nhóm người đã chuyển từ học marketing sang học AI.
-
-Trong 111 tin tuyển dụng được phân tích, 80 có yêu cầu đo lường, 69 có ngân sách, 50 có tối ưu và 45 có làm việc với đơn vị dịch vụ hoặc đối tác. Các nhóm có thể trùng trong cùng một tin. Đây là yêu cầu nghề, không phải số người muốn đăng ký học.
-
-Những lời kể của Trần Dũng, Irene và Thùy Nga bổ sung một thông tin quan trọng: người đã làm việc vẫn tham gia lớp để hệ thống kiến thức hoặc học cách dùng trong công việc. Khi đọc cùng yêu cầu nghề, đào tạo bổ sung kỹ năng cho người đi làm là một hướng tăng trưởng đáng xem xét. AI có sức hút nhưng không bao quát hết nhu cầu chuyên môn.
-
-Tự học miễn phí vẫn là một lựa chọn. OP-04 và OP-06 có các trường hợp tự học; 23 trong 33 câu hỏi AI không thuộc nhóm hỏi lớp hoặc nội dung học. Vì vậy, sự quan tâm tới một kỹ năng chưa xác nhận sẽ mua khóa. Chưa có giao dịch cùng kỳ để tính tốc độ tăng số người mua toàn thị trường.
-
-Nguồn: S14–S18; 24 bảng Google Trends; mẫu tuyển dụng ngày 11/10; M3C-CC-111/109/003; OP-04/06. S32–S34 bổ sung bối cảnh doanh nghiệp nhỏ và đào tạo đội ngũ, chưa đủ để so doanh thu các phân khúc.
-
-## Competitor — Đối thủ và cách học thay thế
-
-AIM Academy có bài kế hoạch theo nhóm và hướng dẫn tại lớp. Tomorrow Marketers có bài cuối khóa trên dữ liệu, cùng quyền lợi hướng dẫn riêng theo gói được ghi nhận. Vinalink có bài theo buổi và chiến dịch nhỏ. Hướng Nghiệp Á Âu có thực hành công cụ theo buổi. Hướng dẫn nền tảng BRANDCamp có bài tập và thảo luận.
-
-Bài tập và hỗ trợ đã có ở nhiều chương trình. “Có thực hành” vì thế chưa đủ là điểm khác biệt của CareerPrep. **Insight:** khi nhiều nơi cùng có thực hành, thêm một lời hứa về bài tập không giải thích được lý do chọn CareerPrep. Vì vậy, thông điệp cần minh họa một bài cụ thể và cách giảng viên góp ý. Muốn so chất lượng, cần đọc bài tập, nội dung nhận xét và xem người học được sửa bài ra sao. Thông tin công bố hiện tại chỉ cho phép so các cách cung cấp dịch vụ.
-
-Giá phải đọc cùng điều kiện: AIM 6,5 triệu đồng là cho cặp hai người; Tomorrow Marketers có thông tin giá khác nhau giữa các trang/ngày; Vinalink có hai phần ghi giá khác nhau. Không so những mức này như cùng một gói. Thông tin chưa tìm được về hỗ trợ không được coi là bằng chứng đơn vị không hỗ trợ.
-
-Nguồn: CP1a-022/002; CP2-002/041; M3C-PU-100/103/109/110/114; VFU-PU001/002.
-
-## Consumer — Người học
-
-Trần Dũng kể đã làm dự án nhưng kiến thức rời rạc và quyết định cảm tính. Irene, người quản lý nội dung, kể tự học qua sách và nguồn trên mạng chưa hiệu quả. Tác giả Decor Hà Nội đánh giá tốt tài liệu BRANDCamp nhưng còn khó áp dụng, sau đó học thêm lớp trực tiếp và cũng thấy lớp đó ngắn, nặng kiến thức.
-
-**Insight:** đã làm marketing vẫn có thể thiếu phương pháp lập kế hoạch truyền thông và đọc chỉ số quảng cáo. Trần Dũng muốn hệ thống kiến thức nghiên cứu, lập kế hoạch; Irene tự học nhưng chưa biết áp dụng hiệu quả. Thu Hà, Digital Marketing Leader, kể chạy quảng cáo theo mẹo nhưng muốn hiểu chỉ số; Thanh Hằng, Assistant Director, đã tự học nhưng chưa chắc kiến thức đúng và đủ (M3C-CC-002/010, do Tomorrow Marketers chọn đăng). Những lời kể này bổ sung nhu cầu hiểu chỉ số quảng cáo và hệ thống kiến thức. Chưa xác nhận chữa bài là nguyên nhân chính khiến họ đăng ký.
-
-Các động cơ khác vẫn tồn tại: tìm hiểu nghề, bổ sung kiến thức, kết nối hoặc theo bạn bè giới thiệu. Có người tự học thành công. Sinh viên Quan Nguyen và thực tập sinh Hien Do được ghi đúng bối cảnh, không dùng như người đã làm nghề lâu năm. Bài cá nhân có thể mô tả trải nghiệm nhưng không tự xác minh kết quả sau học hoặc thanh toán.
-
-Nguồn: M3C-CC-111/109/005/114; M3C-CC-001/113; OP-04/08. M3C-CC-005 và M3C-CC-100 là cùng một trường hợp. Ba bình luận M3C-CC-115/116/117 lần lượt hỏi thông tin, xin bài và muốn học miễn phí, không tính cả ba thành người có ý định mua.
-
-## Company — CareerPrep
-
-Bài nhóm MoMo x ePass của Marketing Foundation được học viên kể có góp ý về lý do thông điệp thuyết phục và lo ngại bảo mật khi liên kết tài khoản. Trần Dũng và Quynh Huong nói về cùng bài nhóm.
-
-Phản hồi Digital Marketing ngày 09/10/2026 kể được chữa cách đánh giá quảng cáo, phân bổ ngân sách và tìm vấn đề theo hành trình khách hàng. Phản hồi này được thu qua biểu mẫu của CareerPrep, khác với bài cá nhân tự đăng; chưa có bài làm đính kèm.
-
-Nội dung Foundation và Digital cùng các ví dụ hướng dẫn phù hợp với nhu cầu hệ thống kiến thức, lập kế hoạch và đánh giá hoạt động marketing. Dữ liệu này chưa chứng minh CareerPrep hướng dẫn tốt hơn đối thủ hoặc đo được mức tiến bộ của người học.
-
-Cần đọc cả góp ý: phản hồi Digital ngày 19/09/2025 đề nghị giảng chậm hơn; ngày 12/08/2026 mong được chữa bài nộp trễ, chưa xác nhận đã được chữa. Social Media AI chưa có lời kể hoặc sản phẩm học viên tương ứng trong dữ liệu thu thập.
-
-Nguồn: M3C-PF-023/016/039/022; M3C-CC-107/111; M3C-OQ-P2-001. Sáu bài Foundation và hai bài Digital là số bài thu thập, không phải tỷ lệ hài lòng. 56 bản ghi Instagram không xác nhận 56 người riêng biệt hoặc tỷ lệ có việc, tăng lương. Bài Data Foundation được giữ riêng khi chưa xác nhận chương trình và đơn vị.
-
-## Bốn căn cứ của lựa chọn
-
-| C | Dữ liệu | Insight suy luận | Vai trò trong lựa chọn |
+| Trường hợp | Khó khăn trước học | Điều muốn học | Nguồn |
 | --- | --- | --- | --- |
-| A · Category | AI marketing +121,4%; 23/33 câu hỏi không hỏi lớp/nội dung học; 80/111 tin cần đo lường, 69/111 cần ngân sách; trường hợp đã tham gia lớp | AI thu hút tìm kiếm; yêu cầu công việc và lời kể người học giúp xác định nhu cầu đào tạo | Chọn vấn đề công việc làm lý do học, không suy tăng mua khóa từ tìm kiếm AI |
-| B · Competitor | AIM, TM, Vinalink có bài tập/dự án; BRANDCamp có bài và thảo luận | Một lời hứa “có thực hành” nữa khó tạo khác biệt | Minh họa cách hướng dẫn thay vì lặp quyền lợi phổ biến |
-| C · Consumer | Trần Dũng quyết định cảm tính; Irene tự học chưa hiệu quả; Thu Hà cần hiểu chỉ số; Thanh Hằng chưa chắc kiến thức đúng/đủ | Người đã làm marketing vẫn cần phương pháp lập kế hoạch và đọc chỉ số quảng cáo | Thông điệp nêu nhu cầu lập kế hoạch hoặc đọc chỉ số, kèm ví dụ chữa bài |
-| D · Company | PF-023 góp ý thông điệp/bảo mật; PF-016 chữa phân tích quảng cáo/ngân sách | CareerPrep có góp ý thông điệp ở Foundation, phân tích quảng cáo và ngân sách ở Digital | Bắt đầu với Foundation và Digital, dùng hai ví dụ này làm minh họa |
+| Trần Dũng, làm việc tại PMAX | Đã làm dự án nhưng kiến thức rời rạc, quyết định cảm tính | Hệ thống kiến thức nghiên cứu và lập kế hoạch truyền thông | M3C-CC-111, bài cá nhân LinkedIn |
+| Thu Hà, trưởng nhóm digital | Chạy quảng cáo theo mẹo, chưa hiểu ý nghĩa các chỉ số | Hiểu chỉ số và liên kết dữ liệu để đánh giá hiệu quả quảng cáo | M3C-CC-002, Tomorrow Marketers chọn đăng |
 
-**Cơ hội nên ưu tiên:** hướng dẫn người đã làm marketing lập kế hoạch truyền thông và đọc chỉ số quảng cáo. Đã có người học kể khó khăn, cùng ví dụ chữa bài liên quan từ CareerPrep.
+**Insight Consumer:** kinh nghiệm làm dự án và mẹo tự học chưa giải quyết hết việc lập kế hoạch và phân tích quảng cáo của nhóm này. Nhu cầu là hệ thống kiến thức thành phương pháp nghiên cứu, lập kế hoạch hoặc đọc số liệu. Đây là suy luận từ các trường hợp, chưa đo mức phổ biến trong toàn thị trường.
 
-**Rào cản lớn nhất trong mạch phân tích này:** một lời hứa “thực hành” nữa khó tạo lý do chọn CareerPrep khi đối thủ cũng có bài tập. Cần minh họa đề bài và nhận xét của giảng viên về thông điệp, quảng cáo hoặc ngân sách. Đây là thứ tự ưu tiên do phân tích, không phải bảng xếp hạng rào cản mua được khảo sát. Không kết luận rằng thông điệp hiện tại đã thiếu ví dụ hoặc người mua đã phản ứng theo cách này.
+Irene (M3C-CC-109) tự học qua sách và nguồn trên mạng chưa hiệu quả; Thanh Hằng (M3C-CC-010) chưa chắc kiến thức tự học đúng và đủ. Hai lời kể bổ sung nhu cầu hệ thống kiến thức, không được gán thêm một nhiệm vụ công việc chưa được nêu. Decor Hà Nội (M3C-CC-005/100, cùng một người) đánh giá tốt tài liệu BRANDCamp nhưng còn khó áp dụng, rồi học thêm lớp trực tiếp. Các động cơ khác gồm tìm hiểu nghề, kết nối và bạn bè giới thiệu (M3C-CC-114, OP-08); có người tự học thành công (OP-04/06). Quan Nguyen là sinh viên; Hien Do là thực tập sinh, không dùng như người làm nghề lâu năm.
 
-## Đề xuất thông điệp
+## Category — Vì sao đây là nhu cầu đào tạo đáng xem xét?
 
-Viết lại phần giới thiệu tuyển sinh của Foundation và Digital theo trình tự **việc người học đang vướng → bài tập trong lớp → giảng viên góp ý gì**, đặt trước danh sách nội dung chương trình.
+Trong 111 tin tuyển dụng được phân tích: 80 yêu cầu đo lường, 69 yêu cầu ngân sách, 50 yêu cầu tối ưu, 45 yêu cầu làm với đơn vị dịch vụ hoặc đối tác. Một tin có thể thuộc nhiều nhóm. Tin tuyển dụng mô tả yêu cầu nghề, không tự xác nhận ý định học; lời kể các trường hợp đã tham gia lớp bổ sung lý do tìm đào tạo.
 
-- Foundation — thông điệp đề xuất: “Học cách chọn khách hàng và lập kế hoạch truyền thông qua bài nhóm được giảng viên góp ý.” Minh họa bằng bài nhóm MoMo x ePass và góp ý về lý do thuyết phục, an toàn khi liên kết tài khoản (M3C-PF-023).
-- Digital — thông điệp đề xuất: “Học cách đọc chỉ số, chia ngân sách và đánh giá quảng cáo qua bài tập được hướng dẫn.” Minh họa bằng lời kể người học vướng ở phân tích, được chữa đánh giá hiệu quả, ngân sách và hành trình khách hàng (M3C-PF-016).
+**Insight Category:** có cơ hội đào tạo bổ sung kỹ năng cho người đang làm marketing, tập trung vào lập kế hoạch và đo hiệu quả. Căn cứ là yêu cầu công việc kết hợp với khó khăn và mục tiêu học được kể, không chỉ mức quan tâm đến một chủ đề.
 
-Chọn hai khóa vì dữ liệu có ví dụ liên quan, không phải vì đã chứng minh doanh thu hay hiệu quả cao nhất. Không tự tạo bài trước–sau, không hứa chữa riêng từng người hoặc tăng doanh thu. Social Media AI vẫn giữ đủ nội dung, giá và giới hạn nguồn trong báo cáo; chưa có ví dụ tương ứng để làm minh chứng cho hành động này.
+Google Trends Việt Nam: bình quân 10/2025–9/2026 so với 12 tháng trước, “AI marketing” +121,4%; “học marketing” −13,9%; “khoá học marketing” −30,3%; “học digital marketing” −33,6%; “marketing thực chiến” −20%. Mỗi từ khóa được chuẩn hóa riêng; không so lượng tìm giữa các từ khóa, không suy cùng một nhóm người đã chuyển sang AI. Nguồn S14–S18, 24 bảng CSV; mỗi chuỗi hiển thị 36 tháng 10/2023–9/2026.
 
-## Điều có thể thay đổi đề xuất
+Trong 33 câu hỏi AI, 10 hỏi lớp/nội dung học, 23 hỏi công cụ, cách làm, tài liệu hoặc chủ đề khác. Đây là câu hỏi, chưa phải giao dịch. Tìm kiếm AI có thể giúp chọn chủ đề thu hút sự chú ý, chưa đo tăng người mua khóa. S32–S34 bổ sung bối cảnh doanh nghiệp nhỏ và đào tạo đội ngũ; chưa đủ để so doanh thu đào tạo doanh nghiệp với cá nhân.
 
-Nếu giá, lịch học, chứng chỉ hoặc kết nối chi phối lựa chọn của nhóm này, vai trò của chữa bài trong thông điệp cần được điều chỉnh. Muốn khẳng định tiến bộ hay hơn đối thủ, cần bài làm/nhận xét so cùng điều kiện. Những giới hạn đó xác định mức cam kết có thể viết; kết luận hiện tại vẫn là hành động cụ thể ở trên.
+MMA × Decision Lab: Việt Nam, n=94, thu thập 10/2023–2/2024. Khó khăn AI: 57% kỹ năng/đào tạo, 44% chi phí, 32% chưa hiểu rõ AI. Tình trạng đào tạo: 28% đã có, 34% dự kiến, 27% không, 12% không biết (làm tròn thành 101%). Nguồn cập nhật kiến thức **AI trong marketing**: khóa 63%, hội thảo 60%, báo cáo 57%, đồng nghiệp 48%, sự kiện 43%; không dùng như cách học marketing nói chung hoặc chứng minh chi trả. Khảo sát Đông Nam Á 2026 n=143, 78% coi kỹ năng/đào tạo là thách thức; khác mẫu và địa lý, không đo xu hướng 57%→78% tại Việt Nam. Nguồn S01/S02.
 
-## Kiểm tra nguồn và phạm vi
+## Competitor — Nhu cầu đã có những lựa chọn nào?
 
-Đã đối chiếu 48 tài liệu đã nhận và giữ riêng 24 bảng Google Trends. Hai hình ví dụ chỉ hướng dẫn cấu trúc và cách lập luận; kết quả trong hình không được dùng làm sự thật. Các file gốc không thay đổi. Thông tin 130 học viên/lớp 2026 đã bị loại vì nguồn không hỗ trợ; các trường hợp trùng vẫn được nhận diện.
+| Lựa chọn | Bài tập hoặc thực hành công bố | Nguồn |
+| --- | --- | --- |
+| AIM Hands-On Marketing | Kế hoạch nhóm, hướng dẫn tại lớp, thuyết trình | CP1a-022; M3C-PU-100 |
+| Tomorrow Marketers AI Digital Marketing | Bài cuối khóa trên dữ liệu; hướng dẫn riêng theo gói | CP1a-002; M3C-PU-103 |
+| Vinalink Content Marketing 3C | Bài theo buổi, chiến dịch nhỏ | CP2-002; M3C-PU-109 |
+| Hướng Nghiệp Á Âu AI Digital Marketing | Thực hành công cụ theo buổi | CP2-041; M3C-PU-110 |
+| BRANDCamp video | Bài tập, trắc nghiệm, thảo luận theo hướng dẫn nền tảng | M3C-PU-114; VFU-PU002 |
 
-Đọc lại báo cáo MMA × Decision Lab ngày 12/10, trang PDF 22–23: 32% là câu trả lời chưa hiểu rõ AI. Các tỷ lệ 63/60/57/48/43% nói về nguồn cập nhật kiến thức **AI trong marketing**, không phải cách học marketing nói chung. Dashboard đã ghi rõ phạm vi này. Khảo sát Việt Nam có 94 người, thu thập 10/2023–2/2024; không dùng để đo nhu cầu mua khóa hiện tại hoặc so thành xu hướng với khảo sát Đông Nam Á khác mẫu.
+**Insight Competitor:** nhiều nơi cùng có bài tập, nên riêng lời hứa “có thực hành” khó giải thích lý do chọn CareerPrep. Cần minh họa giảng viên góp ý vào bài làm thế nào. Đây là suy luận từ quyền lợi công bố, chưa đo phản ứng người mua hoặc xếp hạng chất lượng giảng dạy.
+
+Học phí phải đọc cùng gói: AIM 6,5 triệu đồng/2 người, không phải mỗi người; Tomorrow Marketers khác giá giữa các trang/ngày, chưa rõ điều kiện; Vinalink phần chính và hỏi đáp ghi khác giá. Hướng Nghiệp Á Âu trọn khóa 9 buổi khác chuyên đề 3 buổi. BRANDCamp có 85 video, giá 299.000 đồng ghi nhận 12/10. Tự học miễn phí là lựa chọn thật; không mặc định người quan tâm kỹ năng sẽ mua lớp.
+
+## Company — CareerPrep có minh họa nào phù hợp?
+
+| Nhu cầu học | Nội dung giảng viên góp ý được kể | Nguồn |
+| --- | --- | --- |
+| Nghiên cứu và lập kế hoạch truyền thông | Bài nhóm MoMo x ePass: làm rõ vì sao thông điệp thuyết phục, xử lý lo ngại bảo mật khi liên kết tài khoản | M3C-PF-023; Quynh Huong và Trần Dũng cùng một bài nhóm |
+| Hiểu chỉ số để đánh giá quảng cáo | Chữa bài phân tích hiệu quả, phân bổ ngân sách và tìm vấn đề theo hành trình khách hàng | M3C-PF-016, phản hồi 09/10/2026 qua biểu mẫu CareerPrep |
+
+**Insight Company:** hai ví dụ góp ý phù hợp với nhu cầu lập kế hoạch và phân tích quảng cáo, có thể dùng để giải thích cách lớp hướng dẫn. Nguồn là lời kể, chưa có bài đầy đủ trước–sau, chưa đo tiến bộ hoặc chứng minh tốt hơn đối thủ.
+
+Foundation có 6 bài học viên tự đăng; Digital có 2; đây là số bài tìm được, không phải tỷ lệ hài lòng. Social Media AI chưa có bài tương ứng trong dữ liệu thu thập. 56 bản ghi story Instagram do đơn vị chọn đăng chưa xác nhận 56 người riêng biệt hoặc kết quả được kể; ghi chú 57 story chưa khớp đủ bản ghi (M3C-OQ-P2-001). Bài Data Foundation được giữ riêng khi chưa xác nhận chương trình/đơn vị. Phản hồi Digital 19/09/2025 muốn học chậm hơn (PF-039); 12/08/2026 mong được chữa bài nộp trễ, chưa xác nhận đã được chữa (PF-022). Góp ý Data Marketers thuộc khóa khác.
+
+## Bốn C dẫn đến lựa chọn chiến lược
+
+**Vì** công việc đòi hỏi đo hiệu quả và quản lý ngân sách (A), nhiều đối thủ cùng có bài tập (B), một nhóm người đi làm muốn có phương pháp lập kế hoạch hoặc hiểu chỉ số quảng cáo (C), và CareerPrep có ví dụ góp ý về thông điệp, phân tích quảng cáo và ngân sách (D) → **nên hướng phần giới thiệu Foundation và Digital đến nhóm này, nêu rõ điều họ muốn học và đặt ví dụ chữa bài trước danh sách nội dung chương trình.**
+
+**Cơ hội ưu tiên:** người đã làm hoặc tự học marketing nhưng cần hệ thống kiến thức thành phương pháp lập kế hoạch và phân tích quảng cáo. **Rào cản cần giải quyết trước:** bài tập là quyền lợi phổ biến; thông điệp cần giải thích phần giảng viên giúp sửa. Đây là lựa chọn ưu tiên từ phân tích, chưa phải bảng xếp hạng rào cản hoặc quy mô phân khúc đã khảo sát.
+
+Thông điệp đề xuất:
+
+- Foundation: “Học cách nghiên cứu khách hàng và lập kế hoạch truyền thông qua bài nhóm được giảng viên góp ý.” Minh họa bằng góp ý MoMo x ePass.
+- Digital: “Hiểu chỉ số để đánh giá quảng cáo và phân bổ ngân sách qua bài tập được giảng viên chữa.” Minh họa bằng phản hồi chữa bài 09/10/2026.
+
+Chọn hai khóa vì có ví dụ liên quan, không phải vì đã chứng minh doanh thu hay chất lượng cao nhất. Không gọi CareerPrep là nơi duy nhất thực hành; không hứa tăng doanh thu, tăng lương hoặc kèm riêng từng người. Chưa xác minh chữa bài là động cơ đăng ký chính hay phản ứng với thông điệp hiện tại. Nếu giá, lịch, chứng chỉ hoặc kết nối chi phối lựa chọn, cần điều chỉnh vai trò của chữa bài.
+
+## Phạm vi và kiểm tra nguồn
+
+48 tài liệu nghiên cứu/tham khảo trước đó và 24 bảng Google Trends được giữ; ảnh phản hồi mới về phần tổng hợp được thêm vào danh mục như tham khảo biên tập, tổng cộng 49 tài liệu. Hình ví dụ và ảnh góp ý không cung cấp sự thật thị trường. Loại thông tin 130 học viên/lớp 2026 vì nguồn không hỗ trợ. Các trường hợp trùng vẫn được nhận diện. Ba bình luận M3C-CC-115/116/117 là hỏi thông tin, xin bài và muốn miễn phí, không mặc định cả ba muốn trả học phí.
+
+42/54 đánh giá khóa học thuộc phạm vi; 11/42 kể áp dụng, 7/11 có liên hệ thương mại; 16/42 có liên hệ thương mại tổng thể. Chủ yếu khóa video, không dùng để suy tỷ lệ áp dụng của CareerPrep. File gốc, nguồn, gói giá, ngày ghi nhận và các trường hợp phản bác vẫn tra cứu được trong dashboard.

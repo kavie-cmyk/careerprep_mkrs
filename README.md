@@ -19,3 +19,5 @@ The v21 report turns each C into an explicit evidence → inference explanation 
 The v22 editorial revision removes repeated strategy paragraphs, uses short data summaries for the four-C synthesis, and rewrites vague report-owned wording in plain Vietnamese. Raw excerpts, IDs, original dataset values and all evidence browsers stay intact.
 
 The v23 wording review replaces unspecified choosing/evaluating and references to "these tasks" with explicit communication planning, advertising metrics, message feedback and budget allocation. The strategic chain and downloadable inference register use the same concrete terms, grounded in CC-111, CC-002, PF-023 and PF-016.
+
+The v24 full narrative review states the learning need before the strategic proposal. Consumer now shows named learner difficulty → desired learning; all four synthesis cards state an inference with evidence below. The causal synthesis explains why the offer fits those needs. The editorial screenshot is retained as the 49th reference, not market evidence. Original research series, quotations and records are unchanged.

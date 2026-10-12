@@ -15,6 +15,7 @@ for f in (ROOT/'research').rglob('*'):
 def kind(f,path):
     name=f.name.lower()
     if f.name=='image(8).png':return 'Cách suy luận và kết nối 4C','Tham chiếu phương pháp','Ví dụ minh họa do người dùng gửi; chỉ dùng cách nối dữ kiện thành insight, không nhận kết quả mẫu là thực tế.'
+    if name.startswith('screenshot'):return 'Nhận xét về phần tổng hợp 4C','Sửa mạch báo cáo và cách trình bày nhu cầu','Ảnh người dùng chỉ ra các ô tổng hợp chưa nêu rõ nhu cầu. Dùng để kiểm tra và sửa báo cáo, không dùng làm dữ kiện thị trường.'
     if name.endswith('.png'):return 'Khung nghiên cứu 4C','Tham chiếu cấu trúc','Ảnh Category đặt câu hỏi và căn cứ; không phải dữ kiện thị trường.'
     if 'conclusion' in name or 'hypothesis_review' in name:return 'Category / Competitor / Consumer','Đối chiếu, cập nhật kết luận','Kết luận của gói không được chấp nhận tự động; số JD, review và các khoảng trống được cập nhật theo bản rà soát.'
     if 'qa' in name or 'verification' in name:return 'Kiểm tra dữ liệu','Giữ làm căn cứ phân loại','Dùng để loại claim không được nguồn hỗ trợ và tránh đưa dữ liệu trùng/sai phạm vi vào kết luận.'
@@ -37,7 +38,7 @@ for f in sorted(UPLOAD.iterdir()):
         matched+=1;path=sorted(paths,key=lambda p:(len(p),p))[0]
     else:
         added+=1
-        destination=BASE/'raw'/f.name.replace(' ','_').replace('(','_').replace(')','')
+        destination=BASE/'raw'/('feedback_'+sha[:12]+'.png' if f.name.lower().startswith('screenshot') else f.name.replace(' ','_').replace('(','_').replace(')',''))
         destination.parent.mkdir(exist_ok=True);shutil.copyfile(f,destination);path=str(destination.relative_to(ROOT))
     assert hashlib.sha256((ROOT/path).read_bytes()).hexdigest()==sha
     rows=None

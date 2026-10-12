@@ -527,10 +527,21 @@
       "use": "Dùng theo bản rà soát",
       "note": "Nguồn, kỳ, mẫu và giới hạn được giữ riêng; không chấp nhận mọi claim trong một file.",
       "reviewPath": "research/muse/2026-10-12-followup/reviewed.json"
+    },
+    {
+      "name": "Screenshot 2026-10-12 at 7.52.54 pm.png",
+      "path": "research/input-register/raw/feedback_23f971abb757.png",
+      "sha256": "23f971abb757d70de5d8c0c8acad480b4ceaf7b9b9b750301df8b07543304fbb",
+      "bytes": 117373,
+      "rows": null,
+      "scope": "Nhận xét về phần tổng hợp 4C",
+      "use": "Sửa mạch báo cáo và cách trình bày nhu cầu",
+      "note": "Ảnh người dùng chỉ ra các ô tổng hợp chưa nêu rõ nhu cầu. Dùng để kiểm tra và sửa báo cáo, không dùng làm dữ kiện thị trường.",
+      "reviewPath": ""
     }
   ],
   "hashMatchedBefore": 39,
-  "archivedNow": 9,
+  "archivedNow": 10,
   "updated": "2026-10-12",
   "googleTrendsFiles": 24
 }

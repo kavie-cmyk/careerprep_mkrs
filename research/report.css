@@ -23,3 +23,8 @@
 .connection-grid article>strong{display:block;font-size:23px;line-height:1.3;margin:14px 0 10px;color:var(--research-ink)}.reader-v20 .c-finding{min-height:255px}.reader-v20 .research-thesis h2{max-width:570px}
 @media(max-width:1199px){.reader-v20 .c-finding{min-height:230px}}
 @media(max-width:600px){.reader-v20 .c-finding{min-height:0}.connection-grid article>strong{font-size:22px}}
+
+/* v24: each synthesis card states the insight first and names its evidence. */
+.insight-summary h3{font-size:18px;line-height:1.45;margin:13px 0 12px;color:var(--research-ink)}.insight-summary article{display:flex;flex-direction:column}.insight-summary article>p{font-size:12px}.insight-summary .summary-evidence{font-size:11px;color:var(--research-muted);border-top:1px solid var(--research-line);padding-top:12px;margin-top:auto}.insight-summary article>a{margin-top:8px}.reader-v20 .c-finding{min-height:315px}
+@media(max-width:1199px){.reader-v20 .c-finding{min-height:265px}}
+@media(max-width:600px){.reader-v20 .c-finding{min-height:0}.insight-summary h3{font-size:19px}.insight-summary article>p{font-size:13px}.insight-summary .summary-evidence{font-size:12px}}
