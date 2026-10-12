@@ -14,6 +14,7 @@ for f in (ROOT/'research').rglob('*'):
 
 def kind(f,path):
     name=f.name.lower()
+    if f.name=='image(8).png':return 'Cách suy luận và kết nối 4C','Tham chiếu phương pháp','Ví dụ minh họa do người dùng gửi; chỉ dùng cách nối dữ kiện thành insight, không nhận kết quả mẫu là thực tế.'
     if name.endswith('.png'):return 'Khung nghiên cứu 4C','Tham chiếu cấu trúc','Ảnh Category đặt câu hỏi và căn cứ; không phải dữ kiện thị trường.'
     if 'conclusion' in name or 'hypothesis_review' in name:return 'Category / Competitor / Consumer','Đối chiếu, cập nhật kết luận','Kết luận của gói không được chấp nhận tự động; số JD, review và các khoảng trống được cập nhật theo bản rà soát.'
     if 'qa' in name or 'verification' in name:return 'Kiểm tra dữ liệu','Giữ làm căn cứ phân loại','Dùng để loại claim không được nguồn hỗ trợ và tránh đưa dữ liệu trùng/sai phạm vi vào kết luận.'

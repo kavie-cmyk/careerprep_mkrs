@@ -24,3 +24,7 @@ Báo cáo được trình bày cho nhân viên nghiên cứu thị trường g�
 ## Việc cần bổ sung có ảnh hưởng quyết định
 
 CareerPrep cung cấp số tuyển sinh trả tiền, thực thu, hoàn tiền, chi phí tuyển sinh và giảng dạy, khả năng hỗ trợ mỗi lớp; bài thật cùng nhận xét, quyền dùng bài và phản hồi người bỏ học. Muse tiếp tục thu thập đúng các khoảng trống công khai trong `muse_remaining_prompt.md`; không tìm doanh thu nội bộ từ chỉ số mạng xã hội.
+
+## Bổ sung lập luận v19
+
+Bản báo cáo mới đi từ dữ kiện tới cách giải thích và insight cho từng C, rồi kết nối thành một hàm ý định vị. Toàn bộ lập luận, phản ví dụ và phạm vi được lưu ở `research/inference/2026-10-12/insights.md`. Hình ví dụ mới chỉ dùng làm tham chiếu phương pháp, không dùng kết quả mẫu làm dữ kiện.

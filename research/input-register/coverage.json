@@ -430,6 +430,17 @@
       "reviewPath": ""
     },
     {
+      "name": "image(8).png",
+      "path": "research/input-register/raw/image_8.png",
+      "sha256": "ecbfd473d2a749c1d25b76f16870752f2d73ab50ea16973f667241b8138f3897",
+      "bytes": 646534,
+      "rows": null,
+      "scope": "Cách suy luận và kết nối 4C",
+      "use": "Tham chiếu phương pháp",
+      "note": "Ví dụ minh họa do người dùng gửi; chỉ dùng cách nối dữ kiện thành insight, không nhận kết quả mẫu là thực tế.",
+      "reviewPath": ""
+    },
+    {
       "name": "jd_sample.csv",
       "path": "research/muse/2026-10-11/raw/jd_sample.csv",
       "sha256": "3a15e376cbaa702a395b842f4126b2d6b9e4cefb4ca0d50e8d64be1d0be99953",
@@ -519,7 +530,7 @@
     }
   ],
   "hashMatchedBefore": 39,
-  "archivedNow": 8,
+  "archivedNow": 9,
   "updated": "2026-10-12",
   "googleTrendsFiles": 24
 }

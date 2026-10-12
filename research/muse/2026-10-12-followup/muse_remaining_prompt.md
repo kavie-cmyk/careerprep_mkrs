@@ -41,3 +41,15 @@ Có thể kiểm tra Social ưu đãi, VAT và lịch có năm từ thông báo 
 5. `collection_log_additional.csv` và `open_questions_updated.csv`: mỗi route đã thử và trạng thái câu hỏi hiện tại; cập nhật theo đúng phạm vi, không dùng kết quả âm tính ở bình luận để phủ định bài mới ở nơi khác.
 
 Trước khi trả, kiểm tra ID duy nhất, mọi source ID có trong bảng nguồn, đủ cột CSV (text có dấu phẩy phải quote), số dòng đúng với README. Tách số dòng, số bài, số người và số dự án; chỉ đếm số người độc lập khi có cơ sở khử trùng. Mọi câu không xác minh được phải ghi phần thiếu cụ thể.
+
+
+## Bổ sung theo nhận định 4C ngày 12/10 — chỉ thu thập, không viết kết luận
+
+Mục đích là kiểm tra nhận định: một nhóm người học cần giúp biến kiến thức thành kế hoạch và quyết định có căn cứ. Không tìm chỉ các lời khen xác nhận nhận định này.
+
+1. Tìm bài cá nhân người đi làm kể nguyên nhân chọn CareerPrep, AIM, TM, Vinalink, HNAAu hoặc BRANDCamp. Phân biệt: chọn vì chữa bài/hướng dẫn; giá; chứng chỉ; kết nối; bạn giới thiệu; người mới tìm nghề. Giữ cả nguyên nhân khác và người không mua. Tìm bằng tên khóa + “tự học”, “chữa bài”, “sửa bài”, “chọn”, “vì sao”, “review”, “không đăng ký” trên Google/Bing; sau đó mở URL cá nhân/blog/LinkedIn. Không dùng persona nhà cung cấp làm khách hàng.
+2. Với Foundation và Digital CareerPrep và các lớp đối thủ tương ứng, tìm một bài cụ thể và góp ý có cùng người/nhóm, khóa, kỳ. Tìm theo “bài cuối khóa”, “capstone”, “proposal”, “IMC plan”, “feedback”, “mentoring”, kèm đơn vị/khóa. Có thể lần từ tác giả bài đã thu thập ra các bài liên quan; không gộp bài hai người thành trước/sau. Hãy thu thập cả bài chỉ được mô tả, nhưng gắn rõ không có file.
+3. Tìm riêng cặp bài trước/sau khi được góp ý. Chỉ coi là cặp khi cùng bài và có căn cứ về thứ tự thời gian; không tự đánh giá bài đã tiến bộ. Ghi phần góp ý thay đổi ở đâu và URL của từng phiên bản. Nếu không tìm được, trả trạng thái “chưa có” và nhật ký đã tìm.
+4. Thu thập trải nghiệm chữa bài không đầy đủ, học quá nhanh, bận việc hoặc bỏ học. Mục đích là biết điều kiện nào làm việc học khó vận dụng; không dùng các góp ý để gán chất lượng chung cho một đơn vị.
+
+Output thêm `decision_and_feedback_cases.csv`: case_id, provider, program, person_alias, role_verbatim, event_date, study_status, payment_evidence_verbatim, selection_reason_verbatim, rejected_alternative_verbatim, assignment_description, instructor_feedback_verbatim, before_url, after_url, same_assignment_evidence, source_url, source_relationship, access_date, duplicate_of, missing_information. Trả `sources_new.csv` và `collection_log_new.csv` cho các URL/đường tìm này. Ô không có căn cứ để trống hoặc “không nêu”; giữ nguyên trích đoạn và không suy ra nguyên nhân mua từ lời cảm ơn sau học.
